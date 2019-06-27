@@ -4,9 +4,9 @@
 
 ## What is it?
 
-A static website using the [Eleventy](https://www.11ty.io/) static site 
-generator, with [Netlify CMS](https://www.netlifycms.org/), and hosted and 
-deployed with [Netlify](https://www.netlify.com).
+A personal website built with [Eleventy](https://www.11ty.io/), an awesome 
+static site generator. Includes [Netlify CMS](https://www.netlifycms.org/), and 
+proudly hosted and deployed with [Netlify](https://www.netlify.com).
 
 ## Local development
 
