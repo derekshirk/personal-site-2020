@@ -1,32 +1,14 @@
 ---
-title: About us
+title: About Me
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 navtitle: About
 tags:
   - nav
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
-Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
-fruit  
+Derek is a proud husband, father and mobile web enthusiast. As our senior front-end designer, Derek often works at the intersection of design and development. For as long as he can remember, Derek always practiced art and design through various mediums, but he attributes the CSS Zen Garden [2005] for steering his passion towards the web.
 
-## Our services
+Today, Derek applies his skills sketching, prototyping and refactoring CSS with his sights set on building strong front-end foundations that help support fast, accessible and inclusive web interfaces. His favorite developer topic to discuss over drinks are git commands and his favorite place to have a conversation is on a chairlift.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-### Blue-sky thinking
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-#### Management frameworks
-
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-##### Regulatory convergence
-
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+When Derek isn’t designing things at Cloud Four he enjoys spending time researching nutrition, natural medicine and photographing his family and other subjects of interest around the Pacific Northwest.

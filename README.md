@@ -54,5 +54,9 @@ DEBUG=* npx eleventy
 
 ## Bug reports, feature requests, etc
 
-This is an ongoing project and I welcome contributions. Feel free to submit 
-a PR for feature requests or create an Issue to report bugs.
+This is an ongoing project and I welcome contributions. 
+Feel free to submit a PR for feature requests or create an Issue to report bugs.
+
+## Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/derekshirk/personal-site-2019&stack=cms)

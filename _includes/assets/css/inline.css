@@ -1,7 +1,8 @@
 :root {
-	--turkey: #FFF0EB;
-	--white: white;
-	--blue: blue;
+	--color-turkey: #FFF0EB;
+	--color-white: white;
+	--color-blue: blue;
+	--color-purple: #9e80d1;
 }
 
 *, *:before, *:after {
@@ -19,7 +20,7 @@ body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+	background-color: var(--color-white);
 }
 
 main {
@@ -34,7 +35,7 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+	color: var(--color-purple);
 }
 
 a[href]:not(:hover) {
@@ -111,7 +112,7 @@ article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--white);
+	border-bottom: 1px solid var(--color-white);
 }
 
 main > section > article > * {
@@ -130,18 +131,18 @@ a[rel="tag"]:visited {
   padding: 0 .5em;
 	line-height: 2em;
 	height: 2em;
-  border: 1px solid var(--white);
-	background-color: var(--white);
-	color: var(--blue);
+  border: 1px solid var(--color-white);
+	background-color: var(--color-white);
+	color: var(--color-blue);
   border-radius: .25em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
 }
 
 a[rel="tag"]:hover {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
+	border: 1px solid var(--color-blue);
+	background-color: var(--color-blue);
+	color: var(--color-white);
 }
 
 a[rel="tag"]:last-child {
@@ -174,9 +175,9 @@ textarea {
 }
 
 button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
+	border: 1px solid var(--color-blue);
+	background-color: var(--color-blue);
+	color: var(--color-white);
 	cursor: pointer;
 }
 

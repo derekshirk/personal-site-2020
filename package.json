@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-netlify-boilerplate",
+  "name": "derek-shirk-personal-website",
   "version": "1.0.1",
-  "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
+  "description": "A personal website and blog",
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate"
+    "url": "https://github.com/derekshirk/personal-site-2019"
   },
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "url": "https://www.danurbanowicz.com/"
+    "name": "Derek Shirk",
+    "email": "derekshirk@gmail.com",
+    "url": "https://derekshirk.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
+    "url": "https://github.com/derekshirk/personal-site-2019/issues"
   },
-  "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
+  "homepage": "https://github.com/derekshirk/personal-site-2019",
   "devDependencies": {
     "@11ty/eleventy": "^0.8.2",
     "luxon": "^1.12.1",
