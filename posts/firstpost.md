@@ -1,6 +1,6 @@
 ---
 title: I tied the not
-summary: I went and done it - I got married. 
+summary: I went and done it - I got married.
 date: 2012-07-30
 tags:
   - personal
