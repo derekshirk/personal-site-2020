@@ -1,9 +1,9 @@
 ---
 layout: layouts/blog.njk
-title: Blog
+title: Writing
 tags:
   - nav
-navtitle: Blog
-date: 2017-01-01
+navtitle: Writing
+date: 2019-01-01
 permalink: /blog/index.html
 ---

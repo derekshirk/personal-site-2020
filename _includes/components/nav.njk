@@ -2,8 +2,9 @@
   <ul>
   {%- for nav in collections.nav | sort(attribute="date") -%}
     <li>
-      <a 
-        href="{{ nav.url | url }}"{% if nav.url == page.url %} 
+      <a
+        class="Header-link"
+        href="{{ nav.url | url }}"{% if nav.url == page.url %}
         data-current="current item"{% endif %}
       >
         {{ nav.data.navtitle }}

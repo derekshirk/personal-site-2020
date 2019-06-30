@@ -4,7 +4,11 @@
   <title>{{ title or renderData.title or metadata.title }}</title>
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% set css %}
-    {% include "assets/css/inline.css" %}
+    {% include "assets/css/base.css" %}
+    {% include "assets/css/header.css" %}
+    {% include "assets/css/post.css" %}
+    {% include "assets/css/button.css" %}
+    {% include "assets/css/input.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   {% set js %}

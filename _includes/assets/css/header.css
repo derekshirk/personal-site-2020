@@ -1,0 +1,72 @@
+/* Custom Header */
+
+:root {
+  --header-background-color: var(--color-purple);
+  --header-height: 80px;
+}
+
+.Header {
+  align-items: center;
+  background-color: var(--header-background-color);
+  box-shadow: 0 1px 1px rgba(150, 150, 150 ,0.2);
+  color: var(--color-white);
+  display: flex;
+  height: var(--header-height);
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* left: 0; */
+  /* position: fixed; */
+  /* right: 0; */
+  /* top: 0; */
+  width: 100%;
+  z-index: 10;
+}
+
+.Header-linkLogo {
+  display: flex;
+}
+
+.Header-logo {
+  color: var(--color-white);
+  max-width: 48px;
+}
+
+.Header-logoPath {
+  fill: currentColor;
+}
+
+.Header-link,
+.Header-link[href] {
+  color: var(--color-white);
+}
+
+/* Header Logo (style as h2) */
+
+header > em {
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Header Nav */
+
+header nav ul :first-child {
+  margin-left: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+header nav li a[href]:not(:hover) {
+  text-decoration: none;
+}
+
+header nav li a[data-current="current item"] {
+  font-weight: 700;
+  text-decoration: underline;
+}
