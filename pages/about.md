@@ -1,10 +1,11 @@
 ---
 title: About Me
-date: 2017-01-01T00:00:00.000Z
+date: 2019-01-03
 permalink: /about/index.html
 navtitle: About
 tags:
   - nav
+order: 3
 ---
 
 Derek is a proud husband, father and mobile web enthusiast. As our senior front-end designer, Derek often works at the intersection of design and development. For as long as he can remember, Derek always practiced art and design through various mediums, but he attributes the CSS Zen Garden [2005] for steering his passion towards the web.

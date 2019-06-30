@@ -17,6 +17,9 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify CSS
+  // @TODO
+  // 1. Consider PostCSS
+  // 2. Consider Autoprefixer
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
