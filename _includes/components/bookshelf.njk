@@ -10,6 +10,11 @@
           {% endif %}
         </a>
       </h3>
+
+      {% if book.data.author %%}
+        <p>{{book.data.author}} </p>
+      {% endif %%}
+
       {% if book.data.summary %}
         <p>
           {{ book.data.summary }}
