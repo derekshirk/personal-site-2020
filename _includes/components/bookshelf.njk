@@ -1,0 +1,35 @@
+<section class="Bookshelf">
+  {% for book in bookslist | reverse %}
+    <article{% if book.url == url %} data-current="current item"{% endif %}>
+      <h3>
+        <a href="{{ book.url | url }}">
+          {% if book.data.title %}
+            {{ book.data.title }}
+          {% else %}
+            Untitled
+          {% endif %}
+        </a>
+      </h3>
+      {% if book.data.summary %}
+        <p>
+          {{ book.data.summary }}
+        </p>
+      {% endif %}
+      <p>
+        <time datetime="{{ book.date | machineDate }}">
+          <small>{{ book.date | readableDate }} by {{ metadata.author.name }}</small>
+        </time>
+      </p>
+      {% if book.data.tags %}
+        <p>
+          {% for tag in book.data.tags %}
+            {%- if tag != "post" -%}
+              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+            {%- endif -%}
+          {% endfor %}
+        </p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</section>
