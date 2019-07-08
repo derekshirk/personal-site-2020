@@ -1,7 +1,7 @@
 ---
 title: Armada
 author: Earnest Cline
-summary: From the author of Ready Player One, a rollicking alien invasion   thriller that embraces and subverts science-fiction conventions as only Ernest Cline can
+cover: https://m.media-amazon.com/images/I/71CLY5CR2YL._AC_UL872_QL65_.jpg
 date: 2019-07-01
 tags:
   - Development
