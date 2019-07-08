@@ -28,9 +28,9 @@ body {
   height: 100vh;
 }
 
-main {
+/* main {
   max-width: 37.5em;
-}
+} */
 
 p,
 pre,
@@ -60,6 +60,14 @@ main > article :first-child {
   margin-top: 0;
 }
 
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 pre {
   direction: ltr;
   font-size: 14px;
@@ -83,7 +91,7 @@ ul {
 }
 
 @media screen and (min-width:768px) {
-	:root {
-		font-size: 1.1rem;
-	}
+  :root {
+    font-size: 1.1rem;
+  }
 }

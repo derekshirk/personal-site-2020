@@ -3,6 +3,22 @@
  */
 
 .Bookshelf {
+  display: flex;
+  flex-direction: row;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  font-size: 0.875em;
+  margin-bottom: calc(1em + 2vw);
+  line-height: 1.2;
+}
+
+.Bookshelf-cover {
+  border: 1px solid #f3f3f3;
+}
+
+.Bookshelf-art {
+  display: block;
+
 }
