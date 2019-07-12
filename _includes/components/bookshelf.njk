@@ -1,14 +1,20 @@
 <section class="Bookshelf">
   {% for book in bookslist | reverse %}
-    <article{% if book.url == url %} data-current="current item"{% endif %}>
+    <article>
 
-      <figure class="Bookshelf-cover">
-        <img
-          src="{{book.data.cover}}"
-          alt=""
-          class="Bookshelf-art"
-        >
-      </figure>
+      {% if book.data.url %}
+      <a href="{{ book.data.url }}">
+      {% endif %}
+        <figure class="Bookshelf-cover">
+          <img
+            src="{{ book.data.cover }}"
+            alt=""
+            class="Bookshelf-art"
+          >
+        </figure>
+      {% if book.data.url %}
+      </a>
+      {% endif %}
 
       <h4>
         {% if book.data.title %}
@@ -19,7 +25,7 @@
       </h4>
 
       {% if book.data.author %}
-        <p>{{book.data.author}} </p>
+        <p>{{ book.data.author }} </p>
       {% endif %}
 
       {% if book.data.summary %}

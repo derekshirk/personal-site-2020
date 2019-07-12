@@ -1,7 +1,8 @@
 ---
 title: I am Number Four
 author: Pittacus Lore
-cover: https://m.media-amazon.com/images/I/41rseIwuyXL._AC_UL872_QL65_.jpg
+cover: /static/img/book-covers/i-am-number-four.jpg
+url: https://amzn.to/2l7q8xh
 date: 2019-07-01
 tags:
   - Science Fiction
