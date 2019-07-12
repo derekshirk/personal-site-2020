@@ -8,9 +8,14 @@ if (window.netlifyIdentity) {
   });
 }
 
-// Yank theme color from localStorage and use it.
+// Yank theme bgColor from localStorage and use it.
 document.documentElement.style.setProperty(
   "--primary-theme-background-color", localStorage.getItem("userThemeColor")
+);
+
+// Yank theme textColor from localStorage and use it.
+document.documentElement.style.setProperty(
+  "--primary-theme-text-color", localStorage.getItem("userTextColor")
 );
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -37,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Save the value for next time page is visited.
       localStorage.setItem("userThemeColor", bgColor);
+      localStorage.setItem("userTextColor", color);
     });
   });
 
