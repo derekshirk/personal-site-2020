@@ -36,9 +36,9 @@ body {
   height: 100vh;
 }
 
-/* main {
+.ContentMain {
   max-width: 37.5em;
-} */
+}
 
 p,
 pre,

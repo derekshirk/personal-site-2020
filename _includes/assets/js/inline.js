@@ -8,6 +8,11 @@ if (window.netlifyIdentity) {
   });
 }
 
+// Yank theme color from localStorage and use it.
+document.documentElement.style.setProperty(
+  "--primary-theme-background-color", localStorage.getItem("userThemeColor")
+);
+
 document.addEventListener("DOMContentLoaded", function() {
 
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
@@ -29,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
         '--primary-theme-text-color': color
       });
       console.log(bgColor, color);
+
+      // Save the value for next time page is visited.
+      localStorage.setItem("userThemeColor", bgColor);
     });
   });
 
