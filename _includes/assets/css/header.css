@@ -1,7 +1,7 @@
 /* Custom Header */
 
 :root {
-  --header-background-color: var(--color-purple);
+  --header-background-color: var(--primary-theme-background-color);
   --header-height: 80px;
 }
 
@@ -9,16 +9,11 @@
   align-items: center;
   background-color: var(--header-background-color);
   box-shadow: 0 1px 1px rgba(150, 150, 150 ,0.2);
-  color: var(--color-white);
   display: flex;
   height: var(--header-height);
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
-  /* left: 0; */
-  /* position: fixed; */
-  /* right: 0; */
-  /* top: 0; */
   width: 100%;
   z-index: 10;
 }
@@ -38,7 +33,7 @@
 
 .Header-link,
 .Header-link[href] {
-  color: var(--color-white);
+  color: var(--primary-theme-text-color);
 }
 
 /* Header Logo (style as h2) */
