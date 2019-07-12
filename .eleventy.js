@@ -54,7 +54,7 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // only content in the `posts/` directory
+  // only content in the `books/` directory
   eleventyConfig.addCollection("books", function(collection) {
     return collection.getAllSorted().filter(function(item) {
       return item.inputPath.match(/^\.\/books\//) !== null;
