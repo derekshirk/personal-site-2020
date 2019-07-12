@@ -1,7 +1,8 @@
 ---
 title: Steve Jobs
 author: Walter Isaacson
-cover: https://m.media-amazon.com/images/I/81VStYnDGrL._AC_UL872_QL65_.jpg
+cover: /static/img/book-covers/steve-jobs.jpg
+url: https://amzn.to/2XH9LVD
 date: 2019-07-01
 tags:
   - Biography

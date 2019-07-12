@@ -1,7 +1,8 @@
 ---
 title: Ready Player One
 author: Earnest Cline
-cover: https://m.media-amazon.com/images/I/91WubiE4doL._AC_UL872_QL65_.jpg
+cover: /static/img/book-covers/ready-player-one.jpg
+url: https://amzn.to/2Sm8imR
 date: 2019-07-02
 tags:
   - Science Fiction
