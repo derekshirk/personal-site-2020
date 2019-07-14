@@ -47,6 +47,13 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  // only content in the `books/` directory
+  eleventyConfig.addCollection("books", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.inputPath.match(/^\.\/books\//) !== null;
+    });
+  });
+
   // only content in the `posts/` directory
   eleventyConfig.addCollection("posts", function(collection) {
     return collection.getAllSorted().filter(function(item) {
@@ -54,10 +61,10 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // only content in the `books/` directory
-  eleventyConfig.addCollection("books", function(collection) {
+  // only content in the `projects/` directory
+   eleventyConfig.addCollection("projects", function(collection) {
     return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/books\//) !== null;
+      return item.inputPath.match(/^\.\/projects\//) !== null;
     });
   });
 
