@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.njk
+layout: layouts/writing.njk
 title: Writing
 tags:
   - nav
