@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+section: about
+---
+
+<section>
+  <div class="Container ContentProse">
+
+    <div class="Grid Grid-about">
+      <div>
+        <h1>{{ title }}</h1>
+        {{ layoutContent | safe }}
+
+        <h4>Places to find me</h4>
+        {% for site in social %}
+          - thing
+          {{ url }}
+        {% endfor %}
+        {{ social.github.url }}
+      </div>
+      <div>
+        <img src="/static/img/derek-shirk-headshot.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>

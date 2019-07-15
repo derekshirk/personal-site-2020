@@ -1,0 +1,19 @@
+/**
+ * @Define utilities
+ */
+
+.u-bgPurple {
+  background-color: var(--color-purple) !important;
+}
+
+.u-bgBlue {
+  background-color: var(--color-blue) !important;
+}
+
+.u-bgMint {
+  background-color: var(--color-mint) !important;
+}
+
+.u-bgBlack {
+  background-color: var(--color-black) !important;
+}

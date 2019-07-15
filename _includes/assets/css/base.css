@@ -21,6 +21,38 @@
   box-sizing: border-box;
 }
 
+/**
+ * Force body to always meet viewport height
+ */
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/**
+ * Prevent media from overflowing its container horizontally
+ */
+
+img,
+svg,
+iframe,
+input {
+  max-width: 100%;
+}
+
+/**
+ * Prevent some media from detaching width from height in supported browsers
+ */
+
+img,
+svg {
+  height: auto;
+}
+
 html,
 body {
   font-family: var(--font-family);
@@ -81,10 +113,6 @@ figure {
   margin: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 pre {
   direction: ltr;
   font-size: 14px;
@@ -111,6 +139,16 @@ ul {
   :root {
     font-size: 1.1rem;
   }
+}
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1420px;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 92%;
 }
 
 .ContentMain {
