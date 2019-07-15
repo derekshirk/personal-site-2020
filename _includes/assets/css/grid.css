@@ -1,0 +1,7 @@
+.Grid {
+  display: grid;
+}
+
+.Grid-about {
+  grid-template-columns: 0.5fr 0.5fr;
+}
