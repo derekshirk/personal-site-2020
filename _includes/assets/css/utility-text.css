@@ -1,0 +1,19 @@
+/**
+ * @define utilities
+ */
+
+.u-textWhite {
+  color: var(--color-white) !important;
+}
+
+.u-textBlack {
+  color: var(--color-black) !important;
+}
+
+.u-textMint {
+  color: var(--color-mint) !important;
+}
+
+.u-textBlue {
+  color: var(--color-blue) !important;
+}
