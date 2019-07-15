@@ -92,6 +92,8 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
+  // make the seed target act like prod
+  env = (env=="seed") ? "prod" : env;
   return {
     templateFormats: ["md", "njk", "html", "11ty.js"],
 
@@ -108,7 +110,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: ".",
       includes: "_includes",
-      data: "_data",
+      data: "_data/${env}",
       output: "_site"
     }
   };
