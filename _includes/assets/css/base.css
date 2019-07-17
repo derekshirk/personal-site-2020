@@ -1,18 +1,14 @@
 :root {
-
   --primary-background-color: var(--color-white);
   --primary-text-color: var(--color-black);
-
   --primary-theme-background-color: var(--color-purple);
   --primary-theme-text-color: var(--color-white);
-
   --font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 /**
  * Modular Scale
  *
- * @see https://github.com/erikjung/postcss-modular-scale-unit
  * @see http://www.modularscale.com/?1&em&1.2
  * @see https://github.com/erikjung/postcss-modular-scale-unit
  */
