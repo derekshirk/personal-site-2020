@@ -1,0 +1,160 @@
+/**
+ * @define utilities
+ */
+
+/* stylelint-disable function-whitespace-after, plugin/selector-bem-pattern */
+
+/**
+ * Mixin: Make utility class that adds vertical space between adjacent items.
+ *
+ * @see http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+ */
+
+@define-mixin spaceBetweenStep $value, $suffix, $verb, $prefix {
+  .u-$(prefix)$(verb)Items$(suffix) > * + * {
+    margin-top: $value !important;
+  }
+}
+
+/**
+ * Mixin: Make utility classes for adding space outside one or more edges of
+ * an element.
+ */
+
+@define-mixin spaceOutsideStep $value, $suffix, $prefix, $verb: space {
+  .u-$(prefix)$(verb)$(suffix) {
+    margin: $(value) !important;
+  }
+
+  .u-$(prefix)$(verb)Ends$(suffix) {
+    margin-bottom: $(value) !important;
+    margin-top: $(value) !important;
+  }
+
+  .u-$(prefix)$(verb)Sides$(suffix) {
+    margin-left: $(value) !important;
+    margin-right: $(value) !important;
+  }
+
+  .u-$(prefix)$(verb)Top$(suffix) {
+    margin-top: $(value) !important;
+  }
+
+  .u-$(prefix)$(verb)Bottom$(suffix) {
+    margin-bottom: $(value) !important;
+  }
+
+  .u-$(prefix)$(verb)Left$(suffix) {
+    margin-left: $(value) !important;
+  }
+
+  .u-$(prefix)$(verb)Right$(suffix) {
+    margin-right: $(value) !important;
+  }
+}
+
+/**
+ * Mixin: Make utility classes for adding space inside one or more edges of an
+ * element.
+ */
+
+@define-mixin spaceInsideStep $value, $suffix, $prefix {
+  .u-$(prefix)pad$(suffix) {
+    padding: $(value) !important;
+  }
+
+  .u-$(prefix)padEnds$(suffix) {
+    padding-bottom: $(value) !important;
+    padding-top: $(value) !important;
+  }
+
+  .u-$(prefix)padSides$(suffix) {
+    padding-left: $(value) !important;
+    padding-right: $(value) !important;
+  }
+
+  .u-$(prefix)padTop$(suffix) {
+    padding-top: $(value) !important;
+  }
+
+  .u-$(prefix)padBottom$(suffix) {
+    padding-bottom: $(value) !important;
+  }
+
+  .u-$(prefix)padLeft$(suffix) {
+    padding-left: $(value) !important;
+  }
+
+  .u-$(prefix)padRight$(suffix) {
+    padding-right: $(value) !important;
+  }
+}
+
+/**
+ * Mixin: Make space between, inside and outside utilities for each step in our
+ * modular scale. Optional $prefix allows for creation of responsive variations.
+ */
+
+@define-mixin makeSpaceUtilities $prefix {
+  /**
+   * Negative scale steps swap `-` for `0`.
+   */
+
+  @for $step from 6 to 1 {
+    @mixin spaceBetweenStep calc(-$(step)msu * 1rem), 0$(step), space, $prefix;
+    @mixin spaceBetweenStep calc(-$(step)msu * 1em), 0$(step), stagger, $prefix;
+    @mixin spaceOutsideStep calc(-$(step)msu * 1rem), 0$(step), $prefix;
+    @mixin spaceOutsideStep calc(-$(step)msu * -1rem), 0$(step), $prefix, pull;
+    @mixin spaceInsideStep calc(-$(step)msu * 1rem), 0$(step), $prefix;
+  }
+
+  /**
+   * Default values omit the suffix and use the `0` step.
+   */
+
+  @mixin spaceBetweenStep calc(0msu * 1rem), , space, $prefix;
+  @mixin spaceBetweenStep calc(0msu * 1em), , stagger, $prefix;
+  @mixin spaceOutsideStep calc(0msu * 1rem), , $prefix;
+  @mixin spaceOutsideStep calc(0msu * -1rem), , $prefix, pull;
+  @mixin spaceInsideStep calc(0msu * 1rem), , $prefix;
+
+  /**
+   * Positive scale steps.
+   */
+
+  @for $step from 1 to 6 {
+    @mixin spaceBetweenStep calc($(step)msu * 1rem), $step, space, $prefix;
+    @mixin spaceBetweenStep calc($(step)msu * 1em), $step, stagger, $prefix;
+    @mixin spaceOutsideStep calc($(step)msu * 1rem), $step, $prefix;
+    @mixin spaceOutsideStep calc($(step)msu * -1rem), $step, $prefix, pull;
+    @mixin spaceInsideStep calc($(step)msu * 1rem), $step, $prefix;
+  }
+
+  /**
+   * Reset utilities. These come last to give them slight precedence over the
+   * other utilities to make it easier to clear whitespace across breakpoints.
+   */
+
+  @mixin spaceOutsideStep 0, None, $prefix;
+  @mixin spaceInsideStep 0, None, $prefix;
+}
+
+/**
+ * Actually output space utilities, default and for various breakpoints.
+ */
+
+@mixin makeSpaceUtilities;
+
+@media (--sm-viewport) {
+  @mixin makeSpaceUtilities sm-;
+}
+
+@media (--md-viewport) {
+  @mixin makeSpaceUtilities md-;
+}
+
+@media (--lg-viewport) {
+  @mixin makeSpaceUtilities lg-;
+}
+
+/* stylelint-enable */
