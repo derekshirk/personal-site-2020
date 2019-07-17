@@ -6,9 +6,6 @@ const htmlmin = require("html-minifier");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
-  // A useful way to reference the context we are runing eleventy in
-  let env = process.env.ELEVENTY_ENV;
-
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
@@ -93,7 +90,6 @@ module.exports = function(eleventyConfig) {
   );
 
   // make the seed target act like prod
-  env = (env=="seed") ? "prod" : env;
   return {
     templateFormats: ["md", "njk", "html", "11ty.js"],
 
@@ -110,7 +106,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: ".",
       includes: "_includes",
-      data: "_data/${env}",
+      data: "_data",
       output: "_site"
     }
   };

@@ -19,9 +19,10 @@ module.exports = class {
   async render ({ rawCss, rawFilepath }) {
     return await postcss([
       // require('postcss-comment'),
-      require('precss'),
       require('postcss-import'),
       require('postcss-mixins'),
+      require('precss'),
+      require('autoprefixer'),
       require('postcss-modular-scale-unit'),
       require('postcss-color-mix'),
       require('cssnano')
