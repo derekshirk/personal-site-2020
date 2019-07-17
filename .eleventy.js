@@ -89,7 +89,6 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
-  // make the seed target act like prod
   return {
     templateFormats: ["md", "njk", "html", "11ty.js"],
 
