@@ -3,7 +3,7 @@
 
   {% include "components/head.njk" %}
 
-  <body>
+  <body {% if class %} class="{{ class }}"{% endif %}>
   <header class="Header">
     <a
       class="Header-link Header-linkLogo"

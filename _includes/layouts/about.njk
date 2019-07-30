@@ -12,7 +12,11 @@ section: about
         <h4>Places to find me</h4>
         <ul>
           {% for item in social.sites %}
-          <li>{{ item.url }}</li>
+          <li>
+            <a href="{{ item.url }}">
+              {{ item.name | capitalize }}
+            </a>
+          </li>
           {% endfor %}
         </ul>
       </div>
