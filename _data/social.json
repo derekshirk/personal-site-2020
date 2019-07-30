@@ -1,27 +1,27 @@
 {
   "sites": [
     {
-      "name": "github",
+      "name": "GitHub",
       "url": "https://github.com/derekshirk",
       "icon": ""
     },
     {
-      "name": "codepen",
+      "name": "CodePen",
       "url": "https://codepen.io/derekshirk",
       "icon": ""
     },
     {
-      "name": "twitter",
+      "name": "Twitter",
       "url": "https://twitter.com/derek_shirk",
       "icon": ""
     },
     {
-      "name": "linkedin",
+      "name": "Linkedin",
       "url": "https://www.linkedin.com/in/derekshirk",
       "icon": ""
     },
     {
-      "name": "instagram",
+      "name": "Instagram",
       "url": "https://instagram.com/derekshirk",
       "icon": ""
     }

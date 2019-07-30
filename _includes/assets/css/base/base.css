@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: var(--color-dark-purple) !important;
+  background-color: var(--color-dark-purple);
   color: var(--color-white);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -66,9 +66,12 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
+  color: var(--primary-theme-background-color);
   margin-bottom: 0.25rem;
   margin-top: 0.45rem;
+
 }
 
 p {

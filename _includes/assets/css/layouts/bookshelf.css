@@ -3,15 +3,19 @@
  */
 
 .Bookshelf {
-  display: flex;
-  flex-direction: row;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.Bookshelf-content {
   display: grid;
+  flex-direction: row;
+  font-size: 0.875em;
   grid-gap: 1.5em;
   grid-template-columns: 1fr 1fr;
   grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
-  font-size: 0.875em;
-  margin-bottom: calc(1em + 2vw);
   line-height: 1.2;
+  margin-bottom: calc(1em + 2vw);
 }
 
 .Bookshelf-cover {
@@ -20,5 +24,4 @@
 
 .Bookshelf-art {
   display: block;
-
 }
