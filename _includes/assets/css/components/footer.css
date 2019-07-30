@@ -1,0 +1,10 @@
+.FooterMeta {
+  align-items: center;
+  display: flex;
+}
+
+@media (--md-viewport) {
+  .Grid--footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}

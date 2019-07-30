@@ -1,0 +1,132 @@
+:root {
+  --color-black: #232323;
+  --color-blue: #4eb4d9;
+  --color-purple: #9e80d1;
+  --color-dark-purple: #342a47;
+  --color-dark-purple-alt: #271f35;
+  --color-mint: #3ac7a7;
+  --color-turkey: #fff0eb;
+  --color-white: white;
+  --color-pink: #ff6393;
+  --color-green: #bbe187;
+}
+
+:root {
+  --primary-background-color: var(--color-dark-purple);
+  --primary-text-color: var(--color-white);
+  --primary-theme-background-color: var(--color-dark-purple);
+  --primary-theme-text-color: var(--color-white);
+  --font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/**
+ * Modular Scale
+ *
+ * @see http://www.modularscale.com/?1&em&1.2
+ * @see https://github.com/erikjung/postcss-modular-scale-unit
+ */
+
+:root {
+  --modular-scale: minorthird;
+}
+
+/**
+ * Typography
+ *
+ * @see https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/
+ */
+
+ :root {
+  --font-size-base: 16px;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+  --letter-spacing-loose: 0.15em;
+}
+
+/**
+ * Motion Duration
+ *
+ * Expressed as single-decimal-point numbers so that they always evenly divide
+ * the targeted 60 frames-per-second required for smooth animation.
+ */
+
+ :root {
+  --duration-instant: 0s;
+  --duration-immediate: 0.1s;
+  --duration-quick: 0.2s;
+  --duration-prompt: 0.3s;
+  --duration-slow: 0.4s;
+  --duration-glacial: 0.6s;
+}
+
+/**
+ * Motion Easing
+ *
+ * @see http://easings.net/
+ */
+
+:root {
+  --ease-normal: easeInOutQuart;
+  --ease-normal-in: easeInQuart;
+  --ease-normal-out: easeOutQuart;
+}
+
+/**
+ * Animations
+ */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**
+ * Box Properties
+ */
+
+:root {
+  --border-radius-sm: calc(2 / 16 * 1em);
+  --border-radius-md: calc(3 / 16 * 1em);
+  --border-width-sm: 1px;
+  --border-width-md: 2px;
+  --border-width-lg: 3px;
+}
+
+/**
+ * Page Layout Properties
+ */
+
+:root {
+  --max-width-page: 64rem;
+}
+
+/**
+ * Selectors
+ */
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--enter :hover, :focus;
+@custom-selector :--text-inputs [type="text"], [type="search"], [type="email"], [type="url"];
+@custom-selector :--table-cells th, td;
+@custom-selector :--table-sets thead, tbody, tfoot;
+
+/**
+ * Viewports
+ */
+
+@custom-media --sm-viewport (width >= 30em);
+@custom-media --md-viewport (width >= 47em);
+@custom-media --lg-viewport (width >= 64em);
+
+@custom-media --until-sm-viewport (width < 30em);
+@custom-media --until-md-viewport (width < 47em);
+@custom-media --until-lg-viewport (width < 64em);
+
+@custom-media --sm-to-md-viewport (30em < width < 47em);
+@custom-media --md-to-lg-viewport (47em < width < 64em);

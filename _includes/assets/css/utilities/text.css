@@ -2,6 +2,145 @@
  * @define utilities
  */
 
+/* @import "suitcss-utils-text"; */
+
+/**
+* Size and line-height
+*/
+
+/* stylelint-disable plugin/selector-bem-pattern */
+
+@define-mixin textSizeStep $value, $suffix, $prefix {
+  .u-$(prefix)text$(suffix) {
+    font-size: $(value) !important;
+  }
+}
+
+@define-mixin lineHeightStep $value, $suffix, $prefix {
+  .u-$(prefix)lineHeight$(suffix) {
+    line-height: $(value) !important;
+  }
+}
+
+@define-mixin makeTextSizeUtilities $prefix {
+  @mixin textSizeStep calc(-1msu * 1rem), Size01, $prefix;
+  @mixin textSizeStep calc(0msu * 1rem), Size, $prefix;
+  @mixin lineHeightStep 0msu, , $prefix;
+
+  @for $step from 1 to 6 {
+    @mixin textSizeStep calc($(step)msu * 1rem), Size$(step), $prefix;
+  }
+
+  @for $step from 6 to 1 {
+    @mixin textSizeStep calc(-$(step)msu * 1em), Shrink$(step), $prefix;
+  }
+
+  @mixin textSizeStep calc(0msu * 1em), Shrink, $prefix;
+  @mixin textSizeStep calc(0msu * 1em), Grow, $prefix;
+
+  @for $step from 1 to 6 {
+    @mixin textSizeStep calc($(step)msu * 1em), Grow$(step), $prefix;
+  }
+
+  @for $step from 1 to 2 {
+    @mixin lineHeightStep $(step)msu, $step, $prefix;
+  }
+}
+
+@mixin makeTextSizeUtilities;
+
+@media (--sm-viewport) {
+  @mixin makeTextSizeUtilities sm-;
+}
+
+@media (--md-viewport) {
+  @mixin makeTextSizeUtilities md-;
+}
+
+@media (--lg-viewport) {
+  @mixin makeTextSizeUtilities lg-;
+}
+
+/* stylelint-enable */
+
+/**
+* Alignment
+*/
+
+@media (--sm-viewport) {
+  .u-sm-textCenter {
+    text-align: center !important;
+  }
+
+  .u-sm-textLeft {
+    text-align: left !important;
+  }
+
+  .u-sm-textRight {
+    text-align: right !important;
+  }
+}
+
+@media (--md-viewport) {
+  .u-md-textCenter {
+    text-align: center !important;
+  }
+
+  .u-md-textLeft {
+    text-align: left !important;
+  }
+
+  .u-md-textRight {
+    text-align: right !important;
+  }
+}
+
+@media (--lg-viewport) {
+  .u-lg-textCenter {
+    text-align: center !important;
+  }
+
+  .u-lg-textLeft {
+    text-align: left !important;
+  }
+
+  .u-lg-textRight {
+    text-align: right !important;
+  }
+}
+
+/**
+* Weight
+*/
+
+.u-textNormal {
+  font-weight: var(--font-weight-normal) !important;
+}
+
+.u-textSemibold {
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+.u-textBold {
+  font-weight: var(--font-weight-bold) !important;
+}
+
+/**
+* Case
+*/
+
+.u-textCapitalize {
+  text-transform: capitalize !important;
+}
+
+.u-textUpper {
+  text-transform: uppercase !important;
+}
+
+/**
+ * Color
+ */
+
 .u-textWhite {
   color: var(--color-white) !important;
 }
@@ -16,4 +155,31 @@
 
 .u-textBlue {
   color: var(--color-blue) !important;
+}
+
+.u-textPink {
+  color: var(--color-pink) !important;
+}
+
+.u-textGreen {
+  color: var(--color-green) !important;
+}
+
+/*
+* Font
+*/
+
+/* .u-textSerif {
+  font-family: var(--font-family-serif) !important;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 100;
+} */
+
+/*
+* Spacing
+*/
+
+.u-textSpacingLoose {
+  letter-spacing: var(--letter-spacing-loose) !important;
 }

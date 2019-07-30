@@ -1,7 +1,7 @@
 /* Custom Header */
 
 :root {
-  --header-background-color: var(--primary-theme-background-color);
+  --header-background-color: var(--primary-background-color);
   --header-height: 80px;
 }
 
@@ -33,7 +33,7 @@
 
 .Header-link,
 .Header-link[href] {
-  color: var(--primary-theme-text-color);
+  color: var(--primary-theme-background-color);
 }
 
 /* Header Logo (style as h2) */

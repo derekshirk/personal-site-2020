@@ -1,0 +1,9 @@
+.Grid--home {
+  grid-gap: 5%;
+}
+
+@media (--md-viewport) {
+  .Grid--home {
+    grid-template-columns: 50% 45%;
+  }
+}

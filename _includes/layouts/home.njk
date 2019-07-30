@@ -3,7 +3,22 @@ layout: layouts/base.njk
 section: home
 ---
 
-<section class="ContentMain">
-  {{ layoutContent | safe }}
+<section class="ContentHome">
+
+  <div class="Grid Grid--home">
+    <div class="HomeWelcome">
+      <h1 class="u-textGreen">{{ title }}</h1>
+      <span class="u-textSize3 u-textPink">
+        {{ layoutContent | safe }}
+      </span>
+      {# <img src="/static/img/derek-shirk-silhouette.png" alt=""> #}
+    </div>
+    <div class="HomePosts">
+      <h4>Latest Articles</h4>
+      {% set postslist = collections.posts %}
+      {% include "components/postslist.njk" %}
+    </div>
+  </div>
+
 </section>
 

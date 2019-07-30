@@ -1,0 +1,27 @@
+:root {
+  --theme-switcher-border-color: rgba(250, 250, 250, 0.15);
+  --theme-switcher-size: 40px;
+}
+
+.ThemeSwitcher {
+  display: flex;
+
+}
+
+@media (--md-viewport) {
+  .ThemeSwitcher {
+    justify-content: flex-end;
+  }
+}
+
+.ThemeSwitcher-listElement {
+  display: inline-block;
+  margin-right: calc(1msu * 0.5em);
+}
+
+.ThemeSwitcher-item {
+  border: 2px solid var(--theme-switcher-border-color);
+  border-radius: 50%;
+  height: var(--theme-switcher-size);
+  width: var(--theme-switcher-size);
+}
