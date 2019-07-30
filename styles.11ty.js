@@ -4,13 +4,14 @@ const postcss = require('postcss');
 
 // the file name as an entry point for postcss compilation
 // also used to define the output filename in our output /css folder.
-const fileName = "styles.css";
+const inputFileName = "index.css";
+const outputFileName = "style.css";
 
 module.exports = class {
   async data () {
-    const rawFilepath = path.join(__dirname, `_includes/assets/css/${fileName}`);
+    const rawFilepath = path.join(__dirname, `_includes/assets/css/${inputFileName}`);
     return {
-      permalink: `/css/${fileName}`,
+      permalink: `/css/${outputFileName}`,
       rawFilepath,
       rawCss: await fs.readFileSync(rawFilepath)
     };
