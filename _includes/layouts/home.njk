@@ -1,24 +1,45 @@
 ---
 layout: layouts/base.njk
+class: home
 section: home
 ---
 
 <section class="ContentHome">
+  <div class="Container ContentProse u-padTop02">
 
-  <div class="Grid Grid--home">
-    <div class="HomeWelcome">
-      <h1 class="u-textGreen">{{ title }}</h1>
-      <span class="u-textSize3 u-textPink">
-        {{ layoutContent | safe }}
-      </span>
-      {# <img src="/static/img/derek-shirk-silhouette.png" alt=""> #}
+    <div class="Grid Grid--home">
+
+      <div>
+        <img src="/static/img/profile-artsy.png" alt="">
+        <ul class="u-textSize1 u-padLeft6">
+          {% for item in social.sites %}
+          <li class="u-padLeft06">
+            <a href="{{ item.url }}">
+              {{ item.name | capitalize }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="u-padTop">
+        <div class="HomeWelcome u-padTop">
+          <h1 class="u-textWhite">Hi. I'm {{ title }},</h1>
+          <span class="u-textSize3 u-textPink">
+            {{ layoutContent | safe }}
+          </span>
+          {# <img src="/static/img/derek-shirk-silhouette.png" alt=""> #}
+        </div>
+        <div class="HomePosts u-padTop4">
+          <h4 class="u-textSize3 u-textWhite u-spaceBottom">
+            Latest Articles
+          </h4>
+          {% set postslist = collections.featured %}
+          {% include "components/postslist.njk" %}
+        </div>
+      </div>
+
     </div>
-    <div class="HomePosts">
-      <h4>Latest Articles</h4>
-      {% set postslist = collections.posts %}
-      {% include "components/postslist.njk" %}
-    </div>
+
   </div>
-
 </section>
-

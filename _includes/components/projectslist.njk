@@ -15,11 +15,11 @@
           {{ project.data.summary }}
         </p>
       {% endif %}
-      <p>
+      {# <p>
         <time datetime="{{ project.date | machineDate }}">
           <small>{{ project.date | readableDate }} by {{ metadata.author.name }}</small>
         </time>
-      </p>
+      </p> #}
       {% if project.data.tags %}
         <p>
           {% for tag in project.data.tags %}
