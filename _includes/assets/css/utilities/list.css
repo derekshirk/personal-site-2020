@@ -1,0 +1,39 @@
+/**
+ * @define utilities
+ */
+
+/**
+ * Reset default list appearance.
+ */
+
+.u-listReset,
+.u-listInline {
+  list-style: none;
+  padding-left: 0;
+}
+
+/**
+ * Because the inline list use case is so simple, we're going to fudge our
+ * selector depth rule in favor of usability.
+ *
+ * Alternatively we could set flex display on the parent, but then the list
+ * wouldn't respect text alignment, which seems counter-intuitive for this
+ * particular case.
+ */
+
+/* stylelint-disable plugin/selector-bem-pattern */
+
+.u-listInline > * {
+  display: inline-block;
+}
+
+/**
+ * Gap between items. This favors left positioning, but because items are likely
+ * of varying lengths the differences will be hard to perceive.
+ */
+
+.u-listInline > *:not(:last-child) {
+  margin-right: calc(-3msu * 1em);
+}
+
+/* stylelint-enable */

@@ -1,3 +1,6 @@
-@import "bg.css";
+@import "bg";
+@import "display";
+@import "flex";
+@import "list";
 @import "text";
 @import "space";

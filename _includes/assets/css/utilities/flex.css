@@ -1,0 +1,51 @@
+/**
+ * @define utilities
+ */
+
+ @import "suitcss-utils-flex";
+
+ .u-flexExpandEnds {
+   margin-bottom: auto !important;
+   margin-top: auto !important;
+ }
+
+ .u-flexExpandSides {
+   margin-left: auto !important;
+   margin-right: auto !important;
+ }
+
+ @media (--sm-viewport) {
+   .u-sm-flexExpandEnds {
+     margin-bottom: auto !important;
+     margin-top: auto !important;
+   }
+
+   .u-sm-flexExpandSides {
+     margin-left: auto !important;
+     margin-right: auto !important;
+   }
+ }
+
+ @media (--md-viewport) {
+   .u-md-flexExpandEnds {
+     margin-bottom: auto !important;
+     margin-top: auto !important;
+   }
+
+   .u-md-flexExpandSides {
+     margin-left: auto !important;
+     margin-right: auto !important;
+   }
+ }
+
+ @media (--lg-viewport) {
+   .u-lg-flexExpandEnds {
+     margin-bottom: auto !important;
+     margin-top: auto !important;
+   }
+
+   .u-lg-flexExpandSides {
+     margin-left: auto !important;
+     margin-right: auto !important;
+   }
+ }

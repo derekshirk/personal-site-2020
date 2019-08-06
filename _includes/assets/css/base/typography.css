@@ -1,0 +1,28 @@
+/**
+ * These styles should be organized as typography styles
+ */
+
+p,
+pre,
+code {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-green);
+  margin-bottom: 0.25rem;
+  margin-top: 0.45rem;
+}
+
+a[href] {
+  color: var(--color-green);
+}
+
+a[href]:not(:hover) {
+  text-decoration: none;
+}

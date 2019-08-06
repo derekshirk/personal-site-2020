@@ -9,7 +9,7 @@ section: home
 
     <div class="Grid Grid--home">
 
-      <div>
+      <div class="u-hidden u-lg-block">
         <img src="/static/img/profile-artsy.png" alt="">
         <ul class="u-textSize1 u-padLeft6">
           {% for item in social.sites %}
@@ -22,10 +22,10 @@ section: home
         </ul>
       </div>
 
-      <div class="u-padTop">
-        <div class="HomeWelcome u-padTop">
+      <div class="u-md-padTop">
+        <div class="HomeWelcome u-md-padTop">
           <h1 class="u-textWhite">Hi. I'm {{ title }},</h1>
-          <span class="u-textSize3 u-textPink">
+          <span class="u-textSize2 u-md-textSize3 u-textPink">
             {{ layoutContent | safe }}
           </span>
           {# <img src="/static/img/derek-shirk-silhouette.png" alt=""> #}
