@@ -20,6 +20,7 @@ module.exports = class {
   async render ({ rawCss, rawFilepath }) {
     return await postcss([
       require('postcss-import'),
+      require('postcss-for'),
       require('postcss-mixins'),
       require('precss'),
       require('autoprefixer'),

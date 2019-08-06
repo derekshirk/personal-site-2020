@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import "suitcss-base";
 
 /**
  * Force body to always meet viewport height
@@ -40,50 +36,28 @@ svg {
   height: auto;
 }
 
-html,
-body {
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
+/**
+ * Tables
+ */
+
+/**
+ * 1. Prevent double borders
+ * 2. Without this, th elements won't inherit their alignment predictably in
+ *    Safari. Setting alignment here makes it easier to override on the
+ *    containing element (if desired).
+ */
+
+table {
+  border-collapse: collapse; /* 1 */
+  text-align: left; /* 2 */
 }
 
-body {
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
-  display: grid;
-  font-size: 1.1rem;
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
-}
+/**
+ * Make th alignment consistent with td alignment
+ */
 
-p,
-pre,
-code {
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primary-theme-background-color);
-  margin-bottom: 0.25rem;
-  margin-top: 0.45rem;
-
-}
-
-p {
-  margin: 0;
-}
-
-a[href] {
-  color: var(--primary-theme-background-color);
-}
-
-a[href]:not(:hover) {
-  text-decoration: none;
+th {
+  text-align: inherit;
 }
 
 main,
@@ -93,31 +67,4 @@ footer {
 
 main {
   padding-bottom: 2em;
-}
-
-main :first-child,
-main > article :first-child {
-  margin-top: 0;
-}
-
-figure {
-  margin: 0;
-}
-
-pre {
-  direction: ltr;
-  font-size: 14px;
-  hyphens: none;
-  margin: 0.5em 0;
-  padding: 1em;
-  tab-size: 2;
-  text-align: left;
-  white-space: pre;
-  word-break: normal;
-  word-spacing: normal;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
 }
