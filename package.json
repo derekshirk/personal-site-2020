@@ -46,6 +46,7 @@
     "suitcss-base": "^5.0.0",
     "suitcss-utils-display": "^1.0.2",
     "suitcss-utils-flex": "^2.0.1",
+    "suitcss-utils-text": "^1.0.0",
     "uglify-es": "^3.3.9"
   }
 }
