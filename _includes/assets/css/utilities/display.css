@@ -1,0 +1,52 @@
+/**
+ * @define utilities
+ */
+
+@import "suitcss-utils-display";
+
+/**
+ * Some display utilities are useful at specific breakpoints, so we recreate
+ * a few as a mixin to keep things consistent and DRY between the various
+ * media queries.
+ */
+
+/* stylelint-disable plugin/selector-bem-pattern */
+
+@define-mixin makeDisplayUtilities $prefix {
+  .u-$(prefix)block {
+    display: block !important;
+  }
+
+  .u-$(prefix)hidden {
+    display: none !important;
+  }
+
+  .u-$(prefix)inline {
+    display: inline !important;
+  }
+
+  /**
+   * 1. Fix for Firefox bug: an image styled `max-width:100%` within an
+   * inline-block will display at its default size, and not limit its width to
+   * 100% of an ancestral container.
+   */
+
+  .u-$(prefix)inlineBlock {
+    display: inline-block !important;
+    max-width: 100%; /* 1 */
+  }
+}
+
+/* stylelint-enable */
+
+@media (--sm-viewport) {
+  @mixin makeDisplayUtilities sm-;
+}
+
+@media (--md-viewport) {
+  @mixin makeDisplayUtilities md-;
+}
+
+@media (--lg-viewport) {
+  @mixin makeDisplayUtilities lg-;
+}
