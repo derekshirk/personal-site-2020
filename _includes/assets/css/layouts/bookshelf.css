@@ -34,12 +34,6 @@
   padding-bottom: 0;
 }
 
-@media (--md-viewport) {
-  .Bookshelf-item {
-    padding: 1rem;
-  }
-}
-
 @media (--lg-viewport) {
   .Bookshelf-item:first-of-type {
     grid-column: 1 / 3;
@@ -61,6 +55,12 @@
 
 @media (--md-viewport) {
   .Bookshelf-meta {
-    padding: 0;
+    padding: 1rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .Bookshelf-item:first-of-type .Bookshelf-itemTitle {
+    font-size: 200% !important;
   }
 }
