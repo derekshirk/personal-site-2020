@@ -3,10 +3,11 @@ title: Champion Power Equipment Dealer Portal
 client: Champion Power Equipment
 deliverable: ""
 agency: Cloud Four
+summary: lorem ipsum some client work and side projects that I've managed to capture images and words for.
 poster: ""
 date: 2019-07-01
 tags:
   - design system
 ---
 
-A project description will go here. 
+A project description will go here.

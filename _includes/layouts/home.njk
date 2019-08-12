@@ -10,11 +10,11 @@ section: home
     <div class="Grid Grid--home">
 
       <div class="u-hidden u-lg-block">
-        <img src="/static/img/profile-artsy.png" alt="">
+        <img src="/static/img/profile-artsy-2.png" alt="">
         <ul class="u-textSize1 u-padLeft6">
           {% for item in social.sites %}
-          <li class="u-padLeft06">
-            <a href="{{ item.url }}">
+          <li class="u-padLeft06 u-lineHeight2">
+            <a class="u-textBlue" href="{{ item.url }}">
               {{ item.name | capitalize }}
             </a>
           </li>

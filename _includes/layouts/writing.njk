@@ -4,12 +4,14 @@ section: blog
 permalink: /blog/index.html
 ---
 
-<div class="SectionIntro">
-  <h1>{{ title }}</h1>
-  <p>Brief thoughts that jump between the internet, design, music, film, self-development, and work culture.</p>
+<div class="Container ContainerProse u-padTop02">
+  <div class="SectionIntro">
+    <h1>{{ title }}</h1>
+    <p class="u-textPink">Brief thoughts that jump between the internet, design, music, film, self-development, and work culture.</p>
+  </div>
+
+  {{ layoutContent | safe }}
+
+  {% set postslist = collections.posts %}
+  {% include "components/postslist.njk" %}
 </div>
-
-{{ layoutContent | safe }}
-
-{% set postslist = collections.posts %}
-{% include "components/postslist.njk" %}

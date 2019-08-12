@@ -2,19 +2,35 @@
  * These styles should be organized as typography styles
  */
 
+body {
+  font-size: 1.25rem;
+}
+
+@media (--md-viewport) {
+  body {
+    font-size: 115%;
+  }
+}
+
+@media (--lg-viewport) {
+  body {
+    font-size: 130%;
+  }
+}
+
 p,
 pre,
 code {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-green);
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+:--headings {
+  color: var(--color-blue);
+  color: var(--primary-theme-background-color);
   margin-bottom: 0.25rem;
   margin-top: 0.45rem;
 }

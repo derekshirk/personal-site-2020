@@ -1,6 +1,12 @@
+:root {
+  --footer-height: 70px;
+}
+
+
 .FooterMeta {
   align-items: center;
   display: flex;
+  height: var(--footer-height);
 }
 
 @media (--md-viewport) {

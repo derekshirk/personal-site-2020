@@ -165,6 +165,10 @@
   color: var(--color-green) !important;
 }
 
+.u-textGray {
+  color: var(--color-gray) !important;
+}
+
 /*
 * Font
 */

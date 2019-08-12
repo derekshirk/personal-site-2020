@@ -4,9 +4,13 @@ section: bookshelf
 class: Bookshelf
 permalink: /bookshelf/index.html
 ---
-<h1>{{ title }}</h1>
+{# <h1>{{ title }}</h1>
+{{ layoutContent | safe }} #}
 
-{{ layoutContent | safe }}
+<div class="SectionIntro">
+  <h1>{{ title }}</h1>
+  <p class="u-textPink">A non-exhaustive list of books I've read.</p>
+</div>
 
 {% set bookslist = collections.books %}
 {% include "components/bookshelf.njk" %}
