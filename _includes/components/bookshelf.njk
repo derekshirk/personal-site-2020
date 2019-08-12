@@ -1,6 +1,6 @@
-<section class="Bookshelf-content">
+<section class="Bookshelf-content u-spaceTop">
   {% for book in bookslist | reverse %}
-    <article>
+    <article class="Bookshelf-item">
 
       {% if book.data.url %}
       <a href="{{ book.data.url }}">
@@ -16,33 +16,39 @@
       </a>
       {% endif %}
 
-      <h4>
-        {% if book.data.title %}
-          {{ book.data.title }}
-        {% else %}
-          Untitled
+      <div class="Bookshelf-meta u-padTop06">
+        <h4 class="u-textShrink1 u-md-textGrow1">
+          {% if book.data.title %}
+            {{ book.data.title }}
+          {% else %}
+            Untitled
+          {% endif %}
+        </h4>
+
+        {% if book.data.author %}
+          <p class="u-textShrink2 u-md-textShrink1">
+            {{ book.data.author }}
+          </p>
         {% endif %}
-      </h4>
 
-      {% if book.data.author %}
-        <p>{{ book.data.author }} </p>
-      {% endif %}
+        {% if book.data.summary %}
+          <p>
+            {{ book.data.summary }}
+          </p>
+        {% endif %}
 
-      {% if book.data.summary %}
-        <p>
-          {{ book.data.summary }}
-        </p>
-      {% endif %}
-
-      {% if book.data.tags %}
-        <p>
-          {% for tag in book.data.tags %}
-            {%- if tag != "book" -%}
-              <small>{{ tag }}</small>
-            {%- endif -%}
-          {% endfor %}
-        </p>
-      {% endif %}
+        {# {% if book.data.tags %}
+          <p>
+            {% for tag in book.data.tags %}
+              {%- if tag != "book" -%}
+                <small class="u-textGray">
+                  #{{ tag }}
+                </small>
+              {%- endif -%}
+            {% endfor %}
+          </p>
+        {% endif %} #}
+      </div>
 
     </article>
   {% endfor %}

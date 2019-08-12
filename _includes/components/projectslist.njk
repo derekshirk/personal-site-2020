@@ -20,7 +20,7 @@
           <small>{{ project.date | readableDate }} by {{ metadata.author.name }}</small>
         </time>
       </p> #}
-      {% if project.data.tags %}
+      {# {% if project.data.tags %}
         <p>
           {% for tag in project.data.tags %}
             {%- if tag != "project" -%}
@@ -29,7 +29,7 @@
             {%- endif -%}
           {% endfor %}
         </p>
-      {% endif %}
+      {% endif %} #}
     </article>
   {% endfor %}
 </section>
