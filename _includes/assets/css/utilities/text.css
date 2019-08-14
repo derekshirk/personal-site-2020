@@ -157,6 +157,10 @@
   color: var(--color-blue) !important;
 }
 
+.u-textGrape {
+  color: var(--color-grape) !important;
+}
+
 .u-textPink {
   color: var(--color-pink) !important;
 }

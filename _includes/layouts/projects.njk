@@ -4,15 +4,41 @@ section: projects
 permalink: /projects/index.html
 ---
 
-<div class="Container ContainerProse u-padTop02">
-  <div class="SectionIntro">
+<div class="Container u-padTop02">
+
+  <section class="SectionIntro">
     <h1>{{ title }}</h1>
-    <p class="u-textPink">Some client work and side projects that I've managed to capture images and words for.</p>
-  </div>
+    <p class="Callout u-textSize2 u-md-textSize3">Some projects that I've had the pleasure to work on</p>
+  </section>
 
+  <section class="u-padTop6">
+    {{ layoutContent | safe }}
+  </section>
 
-  {{ layoutContent | safe }}
-
-  {% set projectslist = collections.projects %}
+  {#
+    @todo
+    1. learn how to filter project list by tags #}
+  {% set projectslist = collections.featured %}
   {% include "components/projectslist.njk" %}
+
+  <section class="SectionIntro">
+    <h1>Side {{ title }}</h1>
+    <p class="Callout u-textSize2 u-md-textSize3">
+        Projects I worked on for fun
+    </p>
+  </section>
+
+  {% set projectslist = collections.personal %}
+  {% include "components/projectslist.njk" %}
+
+
+<section class="SectionIntro">
+  <h1>Contributions</h1>
+  <p class="Callout u-textSize2 u-md-textSize3">
+    Open source projects I've contributed to
+  </p>
+</section>
+
+
+
 </div>

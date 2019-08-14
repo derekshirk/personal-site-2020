@@ -3,7 +3,6 @@ title: I tied the knot
 summary: I went and done it - I got married.
 date: 2012-07-30
 tags:
-  - personal
   - post
 ---
 

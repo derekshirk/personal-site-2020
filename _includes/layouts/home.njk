@@ -5,7 +5,7 @@ section: home
 ---
 
 <section class="ContentHome">
-  <div class="Container ContentProse u-padTop02">
+  <article class="Container ContentProse u-padTop02">
 
     <div class="Grid Grid--home">
 
@@ -23,23 +23,25 @@ section: home
       </div>
 
       <div class="u-md-padTop">
-        <div class="HomeWelcome u-md-padTop">
-          <h1 class="u-textWhite">Hi. I'm {{ title }},</h1>
-          <span class="u-textSize2 u-md-textSize3 u-textPink">
+
+        <div class="u-md-padTop">
+          <h1>Hi. I'm {{ title }},</h1>
+          <span class="Callout u-textSize2 u-md-textSize3">
             {{ layoutContent | safe }}
           </span>
           {# <img src="/static/img/derek-shirk-silhouette.png" alt=""> #}
         </div>
         <div class="HomePosts u-padTop4">
-          <h4 class="u-textSize3 u-textWhite u-spaceBottom">
+          <h4 class="u-textSize3 u-spaceBottom">
             Latest Articles
           </h4>
-          {% set postslist = collections.featured %}
+          {% set postslist = collections.latest %}
           {% include "components/postslist.njk" %}
         </div>
+
       </div>
 
     </div>
 
-  </div>
+  </article>
 </section>

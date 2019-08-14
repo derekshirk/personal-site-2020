@@ -10,7 +10,7 @@
 }
 
 .ContainerProse {
-  max-width: 970px;
+  max-width: 40em;
   margin: 0 auto;
 }
 
@@ -19,7 +19,8 @@
 }
 
 .SectionIntro {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+  border-bottom: 1px solid var(--primary-theme-background-color);
+  border-bottom: 1px solid var(--primary-theme-heading-color);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }

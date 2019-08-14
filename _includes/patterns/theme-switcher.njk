@@ -1,43 +1,42 @@
+{#
+  @todo
+  1. consider `ThemeSwitcher-action` instead of `-item`
+  2. make css class name and js- class name consistent
+  3. add visually hidden class
+ #}
+
 <ul class="ThemeSwitcher">
+
   <li class="ThemeSwitcher-listElement">
     <button
       class="ThemeSwitcher-item
-             u-bgPurple u-textWhite
+             u-bgBlack u-textWhite
              js-theme-switcher"
-      data-bg-color="var(--color-purple)"
-      data-color="var(--color-white)"
+      data-accent-color="var(--color-blue)"
+      data-accent-alt-color="var(--color-pink)"
+      data-bg-color="var(--color-black)"
+      data-color="var(--color-silver)"
+      data-heading-color="var(--color-blue)"
+      data-link-color="var(--color-white)"
     >
+    <span class="u-hidden">Black</span>
     </button>
   </li>
-  </li>
+
   <li class="ThemeSwitcher-listElement">
     <button
       class="ThemeSwitcher-item
-              u-bgBlue u-textBlack
-              js-theme-switcher"
-      data-bg-color="var(--color-blue)"
-      data-color="var(--color-black)"
-    >
-    </button>
-  </li>
-  <li class="ThemeSwitcher-listElement">
-    <button
-      class="ThemeSwitcher-item
-              u-bgMint
-              js-theme-switcher"
-      data-bg-color="var(--color-mint)"
-      data-color="var(--color-black)"
-    >
-    </button>
-  </li>
-  <li class="ThemeSwitcher-listElement">
-    <button
-      class="ThemeSwitcher-item
-      u-bgGreen u-textWhite
+      u-bgWhite u-textBlack
       js-theme-switcher"
-      data-bg-color="var(--color-green)"
-      data-color="var(--color-white)"
+      data-accent-color="var(--color-blue-alt)"
+      data-accent-alt-color="var(--color-purple)"
+      data-bg-color="var(--color-white)"
+      data-color="var(--color-gray-666)"
+      data-heading-color="var(--color-black)"
+      data-link-color="var(--color-blue-alt)"
     >
+
+      <span class="u-hidden">White</span>
     </button>
   </li>
 <ul>

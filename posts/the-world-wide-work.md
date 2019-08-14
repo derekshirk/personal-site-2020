@@ -4,6 +4,7 @@ summary: Few talks I've watched have the lasting feeling of importance and pinpo
 date: 2019-06-15
 tags:
   - post
+  - latest
 ---
 
 Wow. Just wow. Thank you Ethan for sharing [this](https://vimeo.com/339383874) wonderful and important presentation with the world.

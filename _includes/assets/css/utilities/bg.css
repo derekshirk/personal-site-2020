@@ -14,6 +14,10 @@
   background-color: var(--color-dark-purple-alt) !important;
 }
 
+.u-bgGrape {
+  background-color: var(--color-dark-grape) !important;
+}
+
 .u-bgPink {
   background-color: var(--color-pink) !important;
 }
@@ -32,4 +36,8 @@
 
 .u-bgBlack {
   background-color: var(--color-black) !important;
+}
+
+.u-bgWhite {
+  background-color: var(--color-white) !important;
 }

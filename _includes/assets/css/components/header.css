@@ -1,14 +1,16 @@
 /* Custom Header */
 
 :root {
-  --header-background-color: var(--primary-background-color);
+  --header-background-color: var(--primary-theme-background-color);
   --header-height: 80px;
+  --header-box-shadow-color: rgba(150, 150, 150 ,0.2);
+  --header-logo-color: var(--primary-theme-heading-color);
 }
 
 .Header {
   align-items: center;
   background-color: var(--header-background-color);
-  box-shadow: 0 1px 1px rgba(150, 150, 150 ,0.2);
+  box-shadow: 0 1px 1px var(--header-box-shadow-color);
   display: flex;
   height: var(--header-height);
   justify-content: space-between;
@@ -23,7 +25,7 @@
 }
 
 .Header-logo {
-  color: var(--color-white);
+  color: var(--header-logo-color);
   max-width: 48px;
 }
 
@@ -33,7 +35,7 @@
 
 .Header-link,
 .Header-link[href] {
-  color: var(--primary-theme-background-color);
+  color: var(--primary-theme-text-color);
 }
 
 /* Header Logo (style as h2) */
@@ -42,8 +44,8 @@ header > em {
   display: block;
   font-size: 2em;
   margin: 0.67em 0;
-  font-weight: bold;
   font-style: normal;
+  font-weight: bold;
 }
 
 /* Header Nav */
@@ -58,6 +60,7 @@ header nav li {
 }
 
 header nav li a[href]:not(:hover) {
+  color: var(--header-logo-color);
   text-decoration: none;
 }
 
