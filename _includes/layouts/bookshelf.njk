@@ -9,8 +9,10 @@ permalink: /bookshelf/index.html
 
 <div class="SectionIntro">
   <h1>{{ title }}</h1>
-  <p class="u-textPink">A non-exhaustive list of books I've read.</p>
+  <p class="Callout u-textSize2 u-md-textSize3">A non-exhaustive list of books I've read.</p>
 </div>
 
-{% set bookslist = collections.books %}
-{% include "components/bookshelf.njk" %}
+<section class="u-padTop2">
+  {% set bookslist = collections.books %}
+  {% include "components/bookshelf.njk" %}
+</section>

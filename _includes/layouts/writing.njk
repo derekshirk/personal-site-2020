@@ -7,10 +7,14 @@ permalink: /blog/index.html
 <div class="Container ContainerProse u-padTop02">
   <div class="SectionIntro">
     <h1>{{ title }}</h1>
-    <p class="u-textPink">Brief thoughts that jump between the internet, design, music, film, self-development, and work culture.</p>
+    <p class="Callout u-textSize2 u-md-textSize3">Brief thoughts that jump between the internet, design, music, film, self-development, and work culture.</p>
   </div>
 
-  {{ layoutContent | safe }}
+  <section class="u-padTop6">
+    <h4>2019</h4>
+
+    {{ layoutContent | safe }}
+  </section>
 
   {% set postslist = collections.posts %}
   {% include "components/postslist.njk" %}

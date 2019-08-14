@@ -1,6 +1,6 @@
-<section class="ContentProjects Grid">
+<section class="Bookshelf-content Grid">
   {% for project in projectslist | reverse %}
-    <article{% if project.url == url %} data-current="current item"{% endif %}>
+    <article{% if project.url == url %} data-current="current item"{% endif %} class="Bookshelf-item">
       <h3>
         <a href="{{ project.url | url }}">
           {% if project.data.title %}

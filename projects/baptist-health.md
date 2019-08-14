@@ -9,6 +9,7 @@ date: 2019-07-01
 tags:
   - design
   - design system
+  - featured
 ---
 
 A project description will go here.

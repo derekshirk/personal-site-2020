@@ -1,8 +1,5 @@
-/**
- * These styles should be organized as typography styles
- */
-
 body {
+  color: var(--primary-theme-text-color);
   font-size: 1.25rem;
 }
 
@@ -29,16 +26,29 @@ p:not(:last-of-type) {
 }
 
 :--headings {
-  color: var(--color-blue);
-  color: var(--primary-theme-background-color);
+  color: var(--primary-theme-heading-color);
   margin-bottom: 0.25rem;
   margin-top: 0.45rem;
 }
 
-a[href] {
-  color: var(--color-green);
+.Callout {
+  color: var(--primary-theme-accent-alt-color);
 }
 
-a[href]:not(:hover) {
-  text-decoration: none;
+a[href] {
+  /* background-color: var(--primary-theme-accent-color); */
+  color: var(--primary-theme-link-color);
+  text-decoration: underline;
+  text-decoration-color: var(--primary-theme-link-color);
 }
+
+a[href]:hover {
+  /* text-decoration: none; */
+  color: var(--primary-theme-accent-alt-color);
+  text-decoration-color: var(--primary-theme-heading-color);
+}
+
+/* a[href]:not(:hover) {
+  text-decoration: none;
+  text-decoration-color: var(--primary-theme-accent-color);
+} */
