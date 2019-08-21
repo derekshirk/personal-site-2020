@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="679.71" height="689.03" viewBox="0 0 679.71 689.03">
+  <defs>
+    <clipPath id="a">
+      <circle cx="356.81" cy="353.49" r="300.62" style="fill:none"/>
+    </clipPath>
+  </defs>
+  <rect x="71.91" y="70.29" width="343.85" height="343.85" transform="translate(-96.15 292.55) rotate(-53.23)" style="fill:var(--primary-theme-accent-color)"/>
+  <rect x="338.16" y="472.3" width="191.94" height="191.94" transform="translate(-189.83 917.66) rotate(-81.87)" style="fill:var(--primary-theme-accent-color)"/>
+  <rect x="506.7" y="117.43" width="127.41" height="127.41" transform="translate(310.41 720.19) rotate(-81.87)" style="fill:var(--primary-theme-accent-color)"/>
+  <rect x="89.94" y="37.35" width="45.16" height="45.16" transform="translate(37.28 162.83) rotate(-81.87)" style="fill:var(--primary-theme-accent-color)"/>
+  <rect x="54.86" y="122.37" width="18.77" height="18.77" transform="translate(-76.93 92.29) rotate(-48.39)" style="fill:var(--primary-theme-accent-color)"/>
+  <rect x="324.04" y="607.57" width="65.55" height="65.55" transform="translate(-369.72 542.85) rotate(-53.23)" style="fill:var(--primary-theme-accent-color)"/>
+  <path d="M355.81,34.38c-175.13,0-317.11,142-317.11,317.11a316.19,316.19,0,0,0,97.06,228.32,58.19,58.19,0,0,0,97.1,64.07,316.09,316.09,0,0,0,123,24.73c175.14,0,317.12-142,317.12-317.12S531,34.38,355.81,34.38Z" style="fill:var(--primary-theme-accent-alt-color)"/>
+  <g style="clip-path:url(#a)">
+  <image width="800" height="532" transform="translate(-73.53 145.27)" xlink:href="book-covers/derek-shirk-2-silhouette.png"/>
+  </g>
+</svg>

@@ -37,9 +37,11 @@ p:not(:last-of-type) {
 
 a[href] {
   /* background-color: var(--primary-theme-accent-color); */
+  /* box-shadow: inset 0 -0.55em 0 var(--primary-theme-accent-color); */
   color: var(--primary-theme-link-color);
   text-decoration: underline;
   text-decoration-color: var(--primary-theme-link-color);
+  /* text-decoration: none; */
 }
 
 a[href]:hover {
@@ -52,3 +54,11 @@ a[href]:hover {
   text-decoration: none;
   text-decoration-color: var(--primary-theme-accent-color);
 } */
+
+.heading {
+  box-shadow: inset 0 -0.5em 0 var(--primary-theme-accent-color);
+  color: var(--primary-theme-heading-color);
+  line-height: 1.2;
+  position: relative;
+  text-decoration: none;
+}
