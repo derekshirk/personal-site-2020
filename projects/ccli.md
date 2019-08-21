@@ -8,7 +8,6 @@ poster: ""
 date: 2017-07-01
 tags:
   - WordPress Development
-  - featured
 ---
 
 A project description will go here.
