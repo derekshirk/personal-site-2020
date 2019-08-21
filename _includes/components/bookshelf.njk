@@ -17,8 +17,10 @@
       {% endif %}
 
       <div class="Bookshelf-meta u-padTop06">
-        <h4 class="Bookshelf-itemTitle">
+
+         <h4 class="Bookshelf-itemTitle">
           {% if book.data.title %}
+
             {{ book.data.title }}
           {% else %}
             Untitled
@@ -35,6 +37,15 @@
           <p>
             {{ book.data.summary }}
           </p>
+        {% endif %}
+
+        {% if loop.index == 1 %}
+        <p
+          class="u-textBlack u-textShrink1 u-padTop u-padBottomNone
+                 u-hidden u-lg-block"
+        >
+          Currently reading
+        </p>
         {% endif %}
 
         {# {% if book.data.tags %}
