@@ -1,6 +1,13 @@
 <section class="Bookshelf-content Grid">
   {% for project in projectslist | reverse %}
     <article{% if project.url == url %} data-current="current item"{% endif %} class="Bookshelf-item">
+
+    {# {% if loop.index == 1 %}
+      <img src="https://www.placehold.it/1920x1080" alt="">
+    {% endif %} #}
+
+    <img src="https://www.placehold.it/1920x1080" alt="">
+
       <h3>
         <a href="{{ project.url | url }}">
           {% if project.data.title %}
