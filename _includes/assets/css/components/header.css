@@ -4,7 +4,7 @@
   --header-background-color: var(--primary-theme-background-color);
   --header-height: 80px;
   --header-box-shadow-color: rgba(150, 150, 150 ,0.2);
-  --header-logo-color: var(--primary-theme-heading-color);
+  --header-logo-color: var(--primary-theme-link-color);
 }
 
 .Header {

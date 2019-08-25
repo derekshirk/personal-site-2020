@@ -1,7 +1,21 @@
+:root {
+  --grid-gap: 2vw;
+}
+
 .Grid {
   display: grid;
 }
 
 .Grid-about {
   grid-template-columns: 0.5fr 0.5fr;
+}
+
+.Grid--split {
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-gap: var(--grid-gap);
+}
+
+.Grid--equal {
+  grid-gap: var(--grid-gap);
+  grid-template-columns: repeat(auto-fit, minmax(20%, 0.5fr));
 }

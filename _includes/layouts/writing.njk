@@ -10,12 +10,10 @@ permalink: /blog/index.html
     <p class="Callout u-textSize2 u-md-textSize3">Brief thoughts that jump between the internet, design, music, film, self-development, and work culture.</p>
   </div>
 
-  <section class="u-padTop6">
-    <h4>2019</h4>
-
-    {{ layoutContent | safe }}
+  <section class="u-padTop6 u-staggerItems">
+    <h4 class="u-textSize2 heading">2019</h4>
+      {% set postslist = collections.posts %}
+      {% include "components/postslist.njk" %}
   </section>
 
-  {% set postslist = collections.posts %}
-  {% include "components/postslist.njk" %}
 </div>

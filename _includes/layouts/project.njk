@@ -4,14 +4,21 @@ section: project
 ---
 
 <article>
-  <h1>{{ title }}</h1>
-  <p>
+
+ <section class="SectionIntro">
+    <h1>{{ title }}</h1>
+    <p class="Callout u-textSize2 u-md-textSize3">
+      Some projects that I've had the pleasure to work on
+    </p>
+  </section>
+
+  {{ layoutContent | safe }}
+
+  {# <p>
     <small>
       <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
     </small>
-  </p>
-
-  {{ layoutContent | safe }}
+  </p> #}
 
   {% if tags %}
     <p>

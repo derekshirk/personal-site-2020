@@ -1,0 +1,17 @@
+{% for client in clientlist | reverse %}
+  <article{% if client.url == url %} data-current="current item"{% endif %} class="">
+
+    <img src="https://www.placehold.it/1920x1080" alt="">
+
+    <h3 class="u-textSize">
+      <a href="{{ client.url | url }}">
+        {% if client.data.title %}
+          {{ client.data.title }}
+        {% else %}
+          Untitled
+        {% endif %}
+      </a>
+    </h3>
+
+  </article>
+{% endfor %}
