@@ -4,41 +4,60 @@ section: projects
 permalink: /projects/index.html
 ---
 
-<div class="Container u-padTop02">
+<div class="u-padTop02 u-spaceItems6">
 
   <section class="SectionIntro">
     <h1>{{ title }}</h1>
-    <p class="Callout u-textSize2 u-md-textSize3">Some projects that I've had the pleasure to work on</p>
-  </section>
-
-  <section class="u-padTop6">
-    {{ layoutContent | safe }}
-  </section>
-
-  {#
-    @todo
-    1. learn how to filter project list by tags #}
-  {% set projectslist = collections.featured %}
-  {% include "components/projectslist.njk" %}
-
-  <section class="SectionIntro">
-    <h1>Side {{ title }}</h1>
     <p class="Callout u-textSize2 u-md-textSize3">
-        Projects I worked on for fun
+      Some projects that I've had the pleasure to work on
     </p>
   </section>
 
-  {% set projectslist = collections.personal %}
-  {% include "components/projectslist.njk" %}
+  <section class="Grid Grid--split">
+    {% set projectslist = collections.featured %}
+    {% include "components/projectslist.njk" %}
+  </section>
 
+  <section class="SectionIntro u-size1of2">
+    <h1>Companies I've helped</h1>
+    <p class="Callout u-textSize2 u-md-textSize3">
+      I'm proud to have worked with nice people at some great companies
+    </p>
+  </section>
 
-<section class="SectionIntro">
-  <h1>Contributions</h1>
-  <p class="Callout u-textSize2 u-md-textSize3">
-    Open source projects I've contributed to
-  </p>
-</section>
+  <section class="Grid Grid--equal">
+    {% set clientlist = collections.clients %}
+    {% include "components/clientlist.njk" %}
+  </section>
 
+  <div class="Grid Grid--split">
 
+    <div class="u-size1of2">
+      <section class="SectionIntro">
+        <h1>Side {{ title }}</h1>
+        <p class="Callout u-textSize2 u-md-textSize3">
+            Projects I worked on for fun
+        </p>
+      </section>
+      <div class="u-padTop">
+        {% set projectslist = collections.sideProjects %}
+        {% include "components/projectslist.njk" %}
+      </div>
+    </div>
+
+    <div class="u-size1of2">
+      <section class="SectionIntro u-size1of2">
+        <h1>Contributions</h1>
+        <p class="Callout u-textSize2 u-md-textSize3">
+          Open source projects I've contributed to
+        </p>
+      </section>
+      <div class="u-padTop">
+        {% set projectslist = collections.openSource %}
+        {% include "components/projectslist.njk" %}
+      </div>
+    </div>
+
+  </div>
 
 </div>

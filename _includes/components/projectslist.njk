@@ -1,42 +1,32 @@
-<section class="Bookshelf-content Grid">
-  {% for project in projectslist | reverse %}
-    <article{% if project.url == url %} data-current="current item"{% endif %} class="Bookshelf-item">
+{% for project in projectslist | reverse %}
 
-    {# {% if loop.index == 1 %}
-      <img src="https://www.placehold.it/1920x1080" alt="">
+{% if project.data.tags.indexOf("side-project") > -1 %}
+  {% set arrow = "→" %}
+{% elseif project.data.tags.indexOf("openSource") > -1 %}
+  {% set arrow = "→" %}
+{% endif %}
+
+  <article{% if project.url == url %} data-current="current item"{% endif %} class="">
+
+  {% if project.data.tags.indexOf("featured") > -1 %}
+    <img src="https://www.placehold.it/1920x1080" alt="">
+  {% endif %}
+
+    <h3 class="u-textSize1">
+      {{ arrow }}
+      <a href="{{ project.url | url }}">
+        {% if project.data.title %}
+          {{ project.data.title }}
+        {% else %}
+          Untitled
+        {% endif %}
+      </a>
+    </h3>
+    {# {% if project.data.summary %}
+      <p>
+        {{ project.data.summary }}
+      </p>
     {% endif %} #}
 
-    <img src="https://www.placehold.it/1920x1080" alt="">
-
-      <h3>
-        <a href="{{ project.url | url }}">
-          {% if project.data.title %}
-            {{ project.data.title }}
-          {% else %}
-            Untitled
-          {% endif %}
-        </a>
-      </h3>
-      {% if project.data.summary %}
-        <p>
-          {{ project.data.summary }}
-        </p>
-      {% endif %}
-      {# <p>
-        <time datetime="{{ project.date | machineDate }}">
-          <small>{{ project.date | readableDate }} by {{ metadata.author.name }}</small>
-        </time>
-      </p> #}
-      {# {% if project.data.tags %}
-        <p>
-          {% for tag in project.data.tags %}
-            {%- if tag != "project" -%}
-              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-            {%- endif -%}
-          {% endfor %}
-        </p>
-      {% endif %} #}
-    </article>
-  {% endfor %}
-</section>
+  </article>
+{% endfor %}

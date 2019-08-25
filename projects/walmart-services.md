@@ -12,4 +12,4 @@ tags:
   - featured
 ---
 
-A project description will go here.
+Walmart Services project description

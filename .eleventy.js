@@ -62,9 +62,21 @@ module.exports = function(eleventyConfig) {
   });
 
   // only content in the `projects/` directory
-   eleventyConfig.addCollection("projects", function(collection) {
+  eleventyConfig.addCollection("projects", function(collection) {
     return collection.getAllSorted().filter(function(item) {
       return item.inputPath.match(/^\.\/projects\//) !== null;
+    });
+  });
+
+  // Get only content that matches a tag
+  eleventyConfig.addCollection("sideProjects", function(collection) {
+    return collection.getFilteredByTag("side-project");
+  });
+
+  // only content in the `clients/` directory
+  eleventyConfig.addCollection("clients", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.inputPath.match(/^\.\/partners\//) !== null;
     });
   });
 
