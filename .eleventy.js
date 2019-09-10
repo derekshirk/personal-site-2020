@@ -77,16 +77,8 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("side-project");
   });
 
-  // only content in the `clients/` directory
-  eleventyConfig.addCollection("clients", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/partners\//) !== null;
-    });
-  });
-
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
-  eleventyConfig.addPassthroughCopy("static/client-logos");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
