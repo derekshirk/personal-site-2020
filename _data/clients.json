@@ -1,0 +1,36 @@
+{
+  "companies": [
+    {
+      "name": "Walmart",
+      "logo": "clients/walmart.svg"
+    },
+    {
+      "name": "Trimet",
+      "logo": "clients/trimet.svg"
+    },
+    {
+      "name": "The Portland Trail Blazers",
+      "logo": "clients/trail-blazers-simple.svg"
+    },
+    {
+      "name": "Portland Community College",
+      "logo": "clients/portland-community-college.svg"
+    },
+    {
+      "name": "Nike",
+      "logo": "clients/nike.svg"
+    },
+    {
+      "name": "Leonisa",
+      "logo": "clients/leonisa.svg"
+    },
+    {
+      "name": "Oregon Food Bank",
+      "logo": "clients/oregon-food-bank.svg"
+    },
+    {
+      "name": "Whole Foods",
+      "logo": "clients/whole-foods.svg"
+    }
+  ]
+}
