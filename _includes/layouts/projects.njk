@@ -26,8 +26,12 @@ permalink: /projects/index.html
   </section>
 
   <section class="Grid Grid--equal">
-    {% set clientlist = collections.clients %}
-    {% include "components/clientlist.njk" %}
+      {% for client in clients.companies %}
+      <div class="u-pad6">
+        {% include client.logo ignore missing %}
+        {# {{client.name}} #}
+      </div>
+      {% endfor %}
   </section>
 
   <div class="Grid Grid--split">

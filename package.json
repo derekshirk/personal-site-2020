@@ -23,6 +23,7 @@
   "homepage": "https://github.com/derekshirk/personal-site-2019",
   "devDependencies": {
     "@11ty/eleventy": "^0.8.2",
+    "eleventy-plugin-svg-contents": "^0.5.1",
     "luxon": "^1.12.1",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.0.2",

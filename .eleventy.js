@@ -2,8 +2,12 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addPlugin(svgContents);
+
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   // Date formatting (human readable)
@@ -73,13 +77,6 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("side-project");
   });
 
-  // only content in the `clients/` directory
-  eleventyConfig.addCollection("clients", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/partners\//) !== null;
-    });
-  });
-
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
@@ -102,7 +99,7 @@ module.exports = function(eleventyConfig) {
   );
 
   return {
-    templateFormats: ["md", "njk", "html", "11ty.js"],
+    templateFormats: ["md", "njk", "html", "11ty.js", "svg"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
