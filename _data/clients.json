@@ -1,6 +1,10 @@
 {
   "companies": [
     {
+      "name": "Whole Foods",
+      "logo": "clients/whole-foods.svg"
+    },
+    {
       "name": "Walmart",
       "logo": "clients/walmart.svg"
     },
@@ -27,10 +31,6 @@
     {
       "name": "Oregon Food Bank",
       "logo": "clients/oregon-food-bank.svg"
-    },
-    {
-      "name": "Whole Foods",
-      "logo": "clients/whole-foods.svg"
     }
   ]
 }
