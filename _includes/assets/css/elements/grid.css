@@ -1,21 +1,77 @@
+
 :root {
   --grid-gap: 2vw;
 }
+
+/**
+ * Most of this file is a dumpster fire. This file was created to prototyle
+ * layouts and should be improved for production. 
+ */
 
 .Grid {
   display: grid;
 }
 
 .Grid-about {
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Grid--projects {
+  grid-template-columns: 1fr;
+}
+
+@media (--md-viewport) {
+  .Grid--projects {
+     grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--grid-gap);
+  }
 }
 
 .Grid--split {
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: 1fr;
   grid-gap: var(--grid-gap);
+}
+
+@media (--lg-viewport) {
+  .Grid--split {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--grid-gap);
+  }
 }
 
 .Grid--equal {
   grid-gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(20%, 0.5fr));
+}
+
+
+.ClientLogos {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.Grid--clientLogos {
+  display: grid;
+  grid-auto-columns: calc(45% - var(--grid-gap) * 2);
+  grid-auto-flow: column;
+}
+
+@media (--md-viewport) {
+  .ClientLogos {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+.Grid--clientLogos::before,
+.Grid--clientLogos::after {
+  content: ‘’;
+  width: 10px;
+}
+
+@media (--md-viewport) {
+  .Grid--clientLogos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: inherit;
+  }
 }

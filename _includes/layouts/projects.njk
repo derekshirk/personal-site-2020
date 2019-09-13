@@ -13,7 +13,7 @@ permalink: /projects/index.html
     </p>
   </section>
 
-  <section class="Grid Grid--split">
+  <section class="Grid Grid--projects">
     {% set projectslist = collections.featured %}
     {% include "components/projectslist.njk" %}
   </section>
@@ -21,26 +21,28 @@ permalink: /projects/index.html
   <section class="SectionIntro u-size1of2">
     <h1>Companies I've helped</h1>
     <p class="Callout u-textSize2 u-md-textSize3">
-      I'm proud to have worked with nice people at some great companies
+      I'm proud to have worked with nice people at some great companies and organizations.
     </p>
   </section>
 
-  <section class="Grid Grid--equal">
+  <section class="ClientLogos">
+    <div class="Grid Grid--clientLogos">
       {% for client in clients.companies %}
-      <div class="u-pad6">
+      <div class="u-lg-pad3 u-flex u-flexAlignItemsCenter u-flexJustifyCenter">
         {% include client.logo ignore missing %}
         {# {{client.name}} #}
       </div>
       {% endfor %}
+    </div>
   </section>
 
   <div class="Grid Grid--split">
 
-    <div class="u-size1of2">
+    <div class="">
       <section class="SectionIntro">
-        <h1>Side {{ title }}</h1>
-        <p class="Callout u-textSize2 u-md-textSize3">
-            Projects I worked on for fun
+        <h1 class="u-textSize3">Side {{ title }}</h1>
+        <p class="Callout u-textSize1 u-lg-textSize2">
+            A few small things I've made on the side
         </p>
       </section>
       <div class="u-padTop">
@@ -49,10 +51,10 @@ permalink: /projects/index.html
       </div>
     </div>
 
-    <div class="u-size1of2">
+    <div class="">
       <section class="SectionIntro u-size1of2">
-        <h1>Contributions</h1>
-        <p class="Callout u-textSize2 u-md-textSize3">
+        <h1 class="u-textSize3">Contributions</h1>
+        <p class="Callout u-textSize1 u-lg-textSize2">
           Open source projects I've contributed to
         </p>
       </section>
