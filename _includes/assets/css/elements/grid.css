@@ -4,8 +4,8 @@
 }
 
 /**
- * Most of this file is a dumpster fire. This file was created to prototyle
- * layouts and should be improved for production. 
+ * Most of this file is a dumpster fire. This file was created to prototype
+ * layouts and should be improved for production.
  */
 
 .Grid {
@@ -22,20 +22,21 @@
 
 @media (--md-viewport) {
   .Grid--projects {
-     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--grid-gap);
+    grid-template-columns: repeat(2, 1fr);
+
   }
 }
 
 .Grid--split {
-  grid-template-columns: 1fr;
   grid-gap: var(--grid-gap);
+  grid-template-columns: 1fr;
 }
 
 @media (--lg-viewport) {
   .Grid--split {
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--grid-gap);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -43,7 +44,6 @@
   grid-gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(20%, 0.5fr));
 }
-
 
 .ClientLogos {
   width: 100%;
@@ -58,8 +58,8 @@
 
 @media (--md-viewport) {
   .ClientLogos {
-    width: 100%;
     overflow-x: hidden;
+    width: 100%;
   }
 }
 
@@ -71,7 +71,7 @@
 
 @media (--md-viewport) {
   .Grid--clientLogos {
-    grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: inherit;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
