@@ -1,9 +1,49 @@
+.ContentHome-inner {
+  max-width: 1860px;
+  margin: 0 auto;
+}
+
 .Grid--home {
-  grid-gap: 5%;
+  /* grid-gap: 5%; */
 }
 
 @media (--lg-viewport) {
   .Grid--home {
-    grid-template-columns: 20% 65%;
+    grid-template-columns: 40% 60%;
   }
+}
+
+.HomeIntro {
+  position: relative;
+}
+
+.HomeIntro-inner {
+  left: 3vw;
+  max-width: 900px;
+  padding-bottom: 8vh;
+  position: absolute;
+  width: 45vw;
+  z-index: 1;
+}
+
+.home-illustration {
+  width: 100%;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  to {
+    transform: translate(0, -5px);
+  }
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }

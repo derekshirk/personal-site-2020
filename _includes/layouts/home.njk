@@ -4,18 +4,56 @@ class: home
 section: home
 ---
 
-<section class="ContentHome">
-  <article class="Container ContentProse u-padTop02">
+<section class="ContentHome u-lg-padTop06">
+  <article class="ContentHome-inner u-padTop02">
 
     <div class="Grid Grid--home">
 
-      <div class="u-hidden u-lg-block">
+      <div
+        class="HomeIntro
+               u-flex u-flexAlignItemsCenter u-flexJustifyCenter"
+      >
+        <div class="HomeIntro-inner">
+          <h1>Hi. I'm {{ title }},</h1>
+          <span class="Callout u-textSize2 u-md-textSize3">
+            {{ layoutContent | safe }}
+          </span>
+        </div>
+      </div>
 
+      <div class="u-padRight6 u-lg-padTop06">
+        {% include "svg/home-illustration-02.svg" %}
+      </div>
+
+    </div>
+
+    <div class="Grid u-spaceTop6 u-padTop6">
+
+      <div class="HomePosts">
+        <h3 class="u-textSize3 u-spaceBottom2">
+          Latest articles
+        </h3>
+        {% set postslist = collections.latest %}
+        {% include "components/postslist.njk" %}
+      </div>
+
+      <ul class="u-textSize1 u-spaceItems04">
+        <h4 class="u-textSize2 u-spaceBottom">Find me here</h4>
+        {% for item in social.sites %}
+        <li>
+          <a class="u-textSize1" href="{{ item.url }}">
+            {{ item.name | capitalize }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+
+      {# <div class="u-hidden u-lg-block">
         <div class="ProfilePhoto u-padBottom6 u-spaceBottom">
           {% include "patterns/profile-image.njk" %}
         </div>
-
-
         <ul class="u-textSize1 u-padLeft6 u-spaceItems04">
           <h4 class="u-textSize2 u-spaceBottom">Find me here</h4>
           {% for item in social.sites %}
@@ -26,16 +64,14 @@ section: home
           </li>
           {% endfor %}
         </ul>
-      </div>
+      </div> #}
 
-      <div class="">
-
-        <div class="">
+      {# <div>
+        <div>
           <h1>Hi. I'm {{ title }},</h1>
           <span class="Callout u-textSize2 u-md-textSize3">
             {{ layoutContent | safe }}
           </span>
-          {# <img src="/static/img/derek-shirk-silhouette.png" alt=""> #}
         </div>
         <div class="HomePosts u-padTop4">
           <h3 class="u-textSize3 u-spaceBottom2">
@@ -44,10 +80,9 @@ section: home
           {% set postslist = collections.latest %}
           {% include "components/postslist.njk" %}
         </div>
-
-      </div>
-
-    </div>
+      </div> #}
 
   </article>
+
+
 </section>
