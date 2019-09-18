@@ -7,7 +7,7 @@ section: home
 <section class="ContentHome u-lg-padTop06">
   <article class="ContentHome-inner u-padTop02">
 
-    <div class="Grid Grid--home">
+    <div class="Grid Grid--homeHero">
 
       <div
         class="HomeIntro
@@ -21,17 +21,27 @@ section: home
         </div>
       </div>
 
-      <div class="u-padRight6 u-lg-padTop06">
+      <div class="u-padRight6 u-lg-padTop06 u-hidden u-md-block">
         {% include "svg/home-illustration-02.svg" %}
       </div>
 
     </div>
 
-    <div class="Grid u-spaceTop6 u-padTop6">
+    <div class="Grid Grid--homeShowcase u-lg-spaceTop6 u-padTop6">
 
+      <div class="HomeProjects">
+        <h3 class="u-textSize3 u-spaceBottom2">
+          Some things I've made
+        </h3>
+        <div class="Grid Grid--split">
+          <img src="/static/img/ghost-of-work-past.jpg" alt="">
+          <img src="/static/img/nike-air-max-pen.jpg" alt="">
+        </div>
+      </div>
+          
       <div class="HomePosts">
         <h3 class="u-textSize3 u-spaceBottom2">
-          Latest articles
+          Selected writings
         </h3>
         {% set postslist = collections.latest %}
         {% include "components/postslist.njk" %}

@@ -1,14 +1,14 @@
 .ContentHome-inner {
-  max-width: 1860px;
   margin: 0 auto;
+  max-width: 1860px;
 }
 
-.Grid--home {
+.Grid--homeHero {
   /* grid-gap: 5%; */
 }
 
 @media (--lg-viewport) {
-  .Grid--home {
+  .Grid--homeHero {
     grid-template-columns: 40% 60%;
   }
 }
@@ -17,18 +17,33 @@
   position: relative;
 }
 
-.HomeIntro-inner {
-  left: 3vw;
-  max-width: 900px;
-  padding-bottom: 8vh;
-  position: absolute;
-  width: 45vw;
-  z-index: 1;
+@media (--lg-viewport) {
+  .HomeIntro-inner {
+    left: 3vw;
+    max-width: 900px;
+    padding-bottom: 8vh;
+    position: absolute;
+    width: 45vw;
+    z-index: 1;
+  }
 }
 
 .home-illustration {
   width: 100%;
 }
+
+@media (--lg-viewport) {
+  .Grid--homeShowcase {
+    grid-gap: 5%;
+    grid-template-columns: 1.5fr 2fr;
+  }
+}
+
+/**
+ *  @Todo
+ *  1. Move to animation file.
+ *  2. Add stylelint disable for keyframe animation block
+ */
 
 @keyframes floating {
   from {
@@ -41,9 +56,10 @@
     transform: translate(0, -5px);
   }
 }
+
 .floating {
-  animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-name: floating;
   animation-timing-function: ease-in-out;
 }
