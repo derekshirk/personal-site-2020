@@ -17,13 +17,14 @@
   position: relative;
 }
 
+
 @media (--lg-viewport) {
   .HomeIntro-inner {
     left: 3vw;
-    max-width: 900px;
+    max-width: 960px;
     padding-bottom: 8vh;
     position: absolute;
-    width: 45vw;
+    width: 48vw;
     z-index: 1;
   }
 }
@@ -36,6 +37,13 @@
   .Grid--homeShowcase {
     grid-gap: 5%;
     grid-template-columns: 1.5fr 2fr;
+  }
+}
+
+@media (--lg-viewport) {
+  .Grid--4Col {
+    grid-gap: 2%;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -62,4 +70,37 @@
   animation-iteration-count: infinite;
   animation-name: floating;
   animation-timing-function: ease-in-out;
+}
+
+.bg-fancy-topography {
+  background-image: url('/static/img/pattern-falling-triangles.svg');
+  background-image: url('/static/img/pattern-topography.svg');
+  background-image: url('/static/img/pattern-tic-tac-toe.svg');
+  background-image: url('/static/img/pattern-wiggle.svg');
+  background-image: url('/static/img/pattern-bank-note.svg');
+  background-size: 200px;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+.ImageFrame {
+  background: var(--color-white);
+  padding: 0.5vw;
+}
+
+.t-fill-colorMain {
+  fill: var(--primary-theme-heading-color);
+}
+
+.u-extendFull {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }
