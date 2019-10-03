@@ -4,6 +4,7 @@ summary: I didn't grow up playing video games but I might grow old playing them 
 date: 2019-07-30
 tags:
   - post
+  - latest
 ---
 
 I didn't grow up playing video games but I might grow old playing them now.

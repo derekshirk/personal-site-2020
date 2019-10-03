@@ -1,7 +1,9 @@
 :root {
   --color-black: #232323;
+  --color-black-alt: #353F44;
   --color-blue: #4eb4d9;
   --color-blue-alt: #4484ce;
+  --color-cool-blue: #F3FBFE;
   --color-purple: #9e80d1;
   --color-dark-purple: #342a47;
   --color-dark-purple-alt: #271f35;
@@ -22,13 +24,13 @@
 
 :root {
   --primary-accent-color: var(--color-blue);
-  --primary-background-color: var(--color-black);
+  --primary-background-color: var(--color-black-alt);
   --primary-text-color: var(--color-white);
   --primary-heading-color: var(--color-pink);
 
   --primary-theme-accent-color: var(--color-blue);
   --primary-theme-accent-alt-color: var(--color-pink);
-  --primary-theme-background-color: var(--color-dark-black);
+  --primary-theme-background-color: var(--color-black-alt);
   --primary-theme-text-color: var(--color-white);
   --primary-theme-heading-color: var(--color-pink);
 
