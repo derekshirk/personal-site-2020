@@ -62,14 +62,9 @@ th {
 
 main {
   min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
-  padding: 1em;
 }
 
 footer {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-main {
-  padding-bottom: 2em;
 }

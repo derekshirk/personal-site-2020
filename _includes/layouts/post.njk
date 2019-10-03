@@ -4,13 +4,17 @@ section: post
 ---
 
 <article>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}
-      </time>
-    </small>
-  </p>
+
+  <div class="PageTopper u-extendFull">
+    <div class="PageTopper-label ContainerProse">
+      <h1>{{ title }}</h1>
+      <p class="Callout u-textSize2 u-md-textSize3">
+        <time datetime="{{ date | machineDate }}">
+          {{ date | readableDate }}
+        </time>
+      </p>
+    </div>
+  </div>
 
   {{ layoutContent | safe }}
 
