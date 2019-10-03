@@ -7,12 +7,21 @@ permalink: /bookshelf/index.html
 {# <h1>{{ title }}</h1>
 {{ layoutContent | safe }} #}
 
-<div class="SectionIntro">
+{# <div class="SectionIntro">
   <h1>{{ title }}</h1>
   <p class="Callout u-textSize2 u-md-textSize3">A non-exhaustive list of books I've read.</p>
-</div>
+</div> #}
 
-<section class="u-padTop2">
+  <div class="PageTopper u-extendFull">
+    <div class="PageTopper-label ContainerProse">
+      <h1>{{ title }}</h1>
+      <p class="Callout u-textSize2 u-md-textSize3">
+        A non-exhaustive list of books I've read.
+      </p>
+    </div>
+  </div>
+
+<section class="Container u-padTop2">
   {% set bookslist = collections.books %}
   {% include "components/bookshelf.njk" %}
 </section>

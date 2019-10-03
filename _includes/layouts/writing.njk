@@ -4,16 +4,29 @@ section: blog
 permalink: /blog/index.html
 ---
 
-<div class="Container ContainerProse u-padTop02">
-  <div class="SectionIntro">
+<div class="PageTopper u-extendFull">
+  <div class="PageTopper-label ContainerProse">
     <h1>{{ title }}</h1>
-    <p class="Callout u-textSize2 u-md-textSize3">Brief thoughts that jump between the internet, design, music, film, self-development, and work culture.</p>
+    <p class="Callout u-textSize2 u-md-textSize3">👋️ Welcome to my blog.</p>
   </div>
+</div>
 
-  <section class="u-padTop6 u-staggerItems">
-    <h4 class="u-textSize2 heading">2019</h4>
+<div class="Container u-padTop02">
+
+  <section class="Grid Grid--writing u-padTop6">
+    <h4 class="ArticleSectionTitle">2019</h4>
+    <div class="u-padRight2 u-spaceItems">
       {% set postslist = collections.posts %}
       {% include "components/postslist.njk" %}
+    </div>
   </section>
+
+  <section class="Grid Grid--writing u-padTop6">
+      <h4 class="ArticleSectionTitle">2018</h4>
+      <div class="u-padRight2 u-spaceItems">
+        {% set postslist = collections.posts %}
+        {% include "components/postslist.njk" %}
+      </div>
+    </section>
 
 </div>

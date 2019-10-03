@@ -28,7 +28,7 @@ p:not(:last-of-type) {
 :--headings {
   color: var(--primary-theme-heading-color);
   margin-bottom: 0.25rem;
-  margin-top: 0.45rem;
+  /* margin-top: 0.45rem; */
 }
 
 .Callout {
