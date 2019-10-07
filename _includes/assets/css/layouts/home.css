@@ -3,10 +3,6 @@
   max-width: 1860px;
 }
 
-.Grid--homeHero {
-  /* grid-gap: 5%; */
-}
-
 @media (--lg-viewport) {
   .Grid--homeHero {
     grid-template-columns: 40% 60%;
@@ -16,7 +12,6 @@
 .HomeIntro {
   position: relative;
 }
-
 
 @media (--lg-viewport) {
   .HomeIntro-inner {
@@ -45,26 +40,4 @@
     grid-gap: 2%;
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-.HomeProjects {
-  padding: 4rem 4rem;
-}
-
-.ImageFrame {
-  background: var(--color-white);
-  padding: 0.5vw;
-}
-
-.t-fill-colorMain {
-  fill: var(--primary-theme-heading-color);
-}
-
-.u-extendFull {
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
 }
