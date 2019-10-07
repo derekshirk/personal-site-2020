@@ -51,35 +51,6 @@
   padding: 4rem 4rem;
 }
 
-.bgFancy {
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-}
-
-.bgFancy--topography {
-  background-image: url('/static/img/pattern-topography.svg');
-}
-
-.bgFancy--triangles {
-  background-image: url('/static/img/pattern-falling-triangles.svg');
-}
-
-.bgFancy--tic-tac-toe {
-  background-image: url('/static/img/pattern-tic-tac-toe.svg');
-}
-
-.bgFancy--wiggle {
-  background-image: url('/static/img/pattern-wiggle.svg');
-}
-
-.bgFancy--bank-note {
-  background-image: url('/static/img/pattern-bank-note.svg');
-}
-
 .ImageFrame {
   background: var(--color-white);
   padding: 0.5vw;

@@ -2,6 +2,10 @@
  * @Define utilities
  */
 
+/**
+ * Background Color
+ */
+
 .u-bgPurple {
   background-color: var(--color-purple) !important;
 }
@@ -40,4 +44,37 @@
 
 .u-bgWhite {
   background-color: var(--color-white) !important;
+}
+
+/**
+ * Background Fancy
+ */
+
+ .u-bgFancy {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+.u-bgFancy--topography {
+  background-image: url('/static/img/pattern-topography.svg');
+}
+
+.u-bgFancy--triangles {
+  background-image: url('/static/img/pattern-falling-triangles.svg');
+}
+
+.u-bgFancy--tic-tac-toe {
+  background-image: url('/static/img/pattern-tic-tac-toe.svg');
+}
+
+.u-bgFancy--wiggle {
+  background-image: url('/static/img/pattern-wiggle.svg');
+}
+
+.u-bgFancy--bank-note {
+  background-image: url('/static/img/pattern-bank-note.svg');
 }
