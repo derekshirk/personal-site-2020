@@ -2,14 +2,11 @@
 layout: layouts/base.njk
 section: blog
 permalink: /blog/index.html
+subtitle: "👋️ Welcome to my blog"
 ---
 
-<div class="PageTopper u-extendFull">
-  <div class="PageTopper-label ContainerProse">
-    <h1>{{ title }}</h1>
-    <p class="Callout u-textSize2 u-md-textSize3">👋️ Welcome to my blog.</p>
-  </div>
-</div>
+{% set class = "bgFancy--bank-note" %}
+{% include 'components/page-topper.njk' %}
 
 <div class="Container u-padTop02">
 

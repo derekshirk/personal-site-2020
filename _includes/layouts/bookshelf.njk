@@ -3,23 +3,11 @@ layout: layouts/base.njk
 section: bookshelf
 class: Bookshelf
 permalink: /bookshelf/index.html
+subtitle: "A non-exhaustive list of books I've read."
 ---
-{# <h1>{{ title }}</h1>
-{{ layoutContent | safe }} #}
 
-{# <div class="SectionIntro">
-  <h1>{{ title }}</h1>
-  <p class="Callout u-textSize2 u-md-textSize3">A non-exhaustive list of books I've read.</p>
-</div> #}
-
-  <div class="PageTopper u-extendFull">
-    <div class="PageTopper-label ContainerProse">
-      <h1>{{ title }}</h1>
-      <p class="Callout u-textSize2 u-md-textSize3">
-        A non-exhaustive list of books I've read.
-      </p>
-    </div>
-  </div>
+{% set class = "bgFancy--wiggle" %}
+{% include 'components/page-topper.njk' %}
 
 <section class="Container u-padTop2">
   {% set bookslist = collections.books %}
