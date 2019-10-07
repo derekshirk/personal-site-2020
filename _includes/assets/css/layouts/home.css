@@ -3,10 +3,6 @@
   max-width: 1860px;
 }
 
-.Grid--homeHero {
-  /* grid-gap: 5%; */
-}
-
 @media (--lg-viewport) {
   .Grid--homeHero {
     grid-template-columns: 40% 60%;
@@ -16,7 +12,6 @@
 .HomeIntro {
   position: relative;
 }
-
 
 @media (--lg-viewport) {
   .HomeIntro-inner {
@@ -45,80 +40,4 @@
     grid-gap: 2%;
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-/**
- *  @Todo
- *  1. Move to animation file.
- *  2. Add stylelint disable for keyframe animation block
- */
-
-@keyframes floating {
-  from {
-    transform: translate(0, -5px);
-  }
-  50% {
-    transform: translate(0, 5px);
-  }
-  to {
-    transform: translate(0, -5px);
-  }
-}
-
-.floating {
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-name: floating;
-  animation-timing-function: ease-in-out;
-}
-
-.HomeProjects {
-  padding: 4rem 4rem;
-}
-
-.bgFancy {
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-}
-
-.bgFancy--topography {
-  background-image: url('/static/img/pattern-topography.svg');
-}
-
-.bgFancy--triangles {
-  background-image: url('/static/img/pattern-falling-triangles.svg');
-}
-
-.bgFancy--tic-tac-toe {
-  background-image: url('/static/img/pattern-tic-tac-toe.svg');
-}
-
-.bgFancy--wiggle {
-  background-image: url('/static/img/pattern-wiggle.svg');
-}
-
-.bgFancy--bank-note {
-  background-image: url('/static/img/pattern-bank-note.svg');
-}
-
-.ImageFrame {
-  background: var(--color-white);
-  padding: 0.5vw;
-}
-
-.t-fill-colorMain {
-  fill: var(--primary-theme-heading-color);
-}
-
-.u-extendFull {
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
 }

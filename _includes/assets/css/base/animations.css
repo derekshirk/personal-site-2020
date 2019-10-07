@@ -1,0 +1,25 @@
+:root {
+  --animation-duration-slow: 3s;
+  --animation-easing-default: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, -5px);
+  }
+
+  50% {
+    transform: translate(0, 5px);
+  }
+
+  to {
+    transform: translate(0, -5px);
+  }
+}
+
+.floating {
+  animation-duration: var(--animation-duration-slow);
+  animation-iteration-count: infinite;
+  animation-name: floating;
+  animation-timing-function: var(--animation-easing-default);
+}
