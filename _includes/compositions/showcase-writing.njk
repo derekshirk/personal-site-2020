@@ -1,0 +1,21 @@
+<div
+  class="Grid Grid--split
+         u-padTop6 u-lg-spaceBottom6 u-padBottom6 u-padSides
+         u-spaceTop6"
+>
+
+  <div class="bg-t-accent-alt-color u-pad">
+    <h3 class="u-textSize6 u-spaceBottom2 u-textWhite">
+      Selected writings
+    </h3>
+    <p class="u-textSize3 u-textWhite">
+      Words.<br>Written by me.<br>Sometimes coherent.<br>Always with kindness in mind.
+    </p>
+  </div>
+
+  <div class="HomePosts">
+    {% set postslist = collections.latest %}
+    {% include "components/postslist.njk" %}
+  </div>
+
+</div>

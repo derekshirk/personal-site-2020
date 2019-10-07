@@ -3,6 +3,7 @@
 :root {
   --header-background-color: var(--primary-theme-background-color);
   --header-height: 80px;
+  --header-box-shadow: 0 1px 1px;
   --header-box-shadow-color: rgba(150, 150, 150 ,0.2);
   --header-logo-color: var(--primary-theme-link-color);
 }
@@ -10,7 +11,6 @@
 .Header {
   align-items: center;
   background-color: var(--header-background-color);
-  /* box-shadow: 0 1px 1px var(--header-box-shadow-color); */
   display: flex;
   height: var(--header-height);
   justify-content: space-between;
