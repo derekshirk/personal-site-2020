@@ -78,3 +78,17 @@
 .u-bgFancy--bank-note {
   background-image: url('/static/img/pattern-bank-note.svg');
 }
+
+.u-bgFancy--hippo {
+  background-image: url(/static/img/hippo.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 32vh;
+}
+
+@media (--lg-viewport) {
+  .u-bgFancy--hippo {
+    height: 34vh;
+  }
+}
