@@ -1,23 +1,27 @@
-<div class="Grid Grid--homeHero">
+<div class="Container Grid Grid--homeHero">
 
   <div
     class="HomeIntro
-            u-flex u-flexAlignItemsCenter u-flexJustifyCenter"
+           u-flex u-flexAlignItemsCenter u-flexJustifyCenter"
   >
-    <div class="HomeIntro-inner">
-      <h1 class="u-lg-textSize6">
+    <div class="HomeIntro-innerZZZ">
+      <h1 class="u-lg-textSize5">
         👋️ Hi. I'm {{ title }},
       </h1>
       <span
         class="Callout
-                u-textSize2 u-md-textSize3 u-lg-textSize5">
+               u-textSize2 u-md-textSize3 u-lg-textSize4">
         {{ layoutContent | safe }}
       </span>
     </div>
   </div>
 
-  <div class="u-padRight6 u-lg-padTop06 u-hidden u-md-block">
-    {% include "svg/home-illustration-06.svg" %}
+  <div class="">
+    {% include "svg/home-illustration-whale.svg" %}
   </div>
 
+</div>
+
+<div class="u-padTop">
+  {% include "svg/wavy-line.svg" %}
 </div>

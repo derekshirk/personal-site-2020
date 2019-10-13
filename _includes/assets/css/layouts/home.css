@@ -3,9 +3,14 @@
   max-width: 1860px;
 }
 
+.Grid--homeHero {
+  justify-content: space-between;
+}
+
 @media (--lg-viewport) {
   .Grid--homeHero {
-    grid-template-columns: 40% 60%;
+    /* grid-template-columns: 40% 60%; */
+    grid-template-columns: 53% 43%;
   }
 }
 
@@ -21,6 +26,14 @@
     position: absolute;
     width: 48vw;
     z-index: 1;
+
+    left: 4vw;
+    /* max-width: 930px; */
+    padding-bottom: 8vh;
+    position: absolute;
+    width: 43vw;
+    z-index: 1;
+    top: 13%;
   }
 }
 
