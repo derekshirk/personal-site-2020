@@ -16,14 +16,18 @@
   padding: calc(2msu * 1em);
 }
 
+.Grid--writing {
+  /* grid-gap: 10%; */
+}
+
 @media (--md-viewport) {
   .Grid--writing {
     /* display: grid;
     grid-gap: 11vw;
     grid-template-columns: .43fr 1.43fr; */
     display: grid;
+    grid-gap: 4vw;
 
-grid-gap: 4vw;
 
 grid-template-columns: .25fr .8fr;
   }

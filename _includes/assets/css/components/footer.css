@@ -2,6 +2,17 @@
   --footer-height: 70px;
 }
 
+.FooterCard {
+  border-top: 1px solid #dceaea;
+  height: 33vh;
+  padding-top: 6rem;
+}
+
+.FooterCard-contact {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
 .FooterMeta {
   align-items: center;
   display: flex;
