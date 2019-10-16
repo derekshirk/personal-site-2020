@@ -10,7 +10,11 @@
 @media (--lg-viewport) {
   .Grid--homeHero {
     /* grid-template-columns: 40% 60%; */
-    grid-template-columns: 53% 43%;
+    /* grid-template-columns: 53% 43%; */
+
+    gap: 3vw;
+    grid-template-columns: 52% 43%;
+
   }
 }
 

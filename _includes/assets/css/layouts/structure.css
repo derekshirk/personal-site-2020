@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1420px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0 1em;
 }
 
@@ -11,8 +11,12 @@
 }
 
 .ContainerProse {
-  max-width: 40em;
   margin: 0 auto;
+  max-width: 40em;
+}
+
+.ContainerProse--extra {
+  max-width: 60em;
 }
 
 .ContentProse p {
@@ -24,4 +28,26 @@
   border-bottom: 1px solid var(--primary-theme-heading-color);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+}
+
+.Grid--smallThenBig {
+  grid-gap: 10%;
+}
+
+@media (--lg-viewport) {
+  .Grid--smallThenBig {
+    grid-gap: 10%;
+    grid-template-columns: 30% 60%;
+  }
+}
+
+.Grid--contact {
+  grid-gap: 2vw;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (--lg-viewport) {
+  .Grid--contact {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

@@ -2,15 +2,16 @@
 
   <div
     class="HomeIntro
+           u-spaceTop u-md-spaceTopNone
            u-flex u-flexAlignItemsCenter u-flexJustifyCenter"
   >
     <div class="HomeIntro-innerZZZ">
-      <h1 class="u-lg-textSize5">
+      <h1 class="u-textSize3 u-lg-textSize5">
         👋️ Hi. I'm {{ title }},
       </h1>
       <span
         class="Callout
-               u-textSize2 u-md-textSize3 u-lg-textSize4">
+               u-textSize1 u-md-textSize3 u-lg-textSize4">
         {{ layoutContent | safe }}
       </span>
     </div>
@@ -22,6 +23,6 @@
 
 </div>
 
-<div>
+<div class="Container u-textCenter u-padSidesNone">
   {% include "svg/wavy-line.svg" %}
 </div>

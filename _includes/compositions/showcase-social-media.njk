@@ -1,10 +1,11 @@
-<ul class="u-textSize1 u-spaceItems04">
-  <h4 class="u-textSize2 u-spaceBottom">Find me here</h4>
-  {% for item in social.sites %}
-  <li>
-    <a class="u-textSize1" href="{{ item.url }}">
-      {{ item.name | capitalize }}
-    </a>
-  </li>
-  {% endfor %}
+<ul class="u-textSize1 u-spaceItems04 u-spaceEnds6">
+  <div class="FooterCard-contact Grid Grid--contact">
+    {% for item in social.sites %}
+    <div>
+      <a class="u-textSize5" href="{{ item.url }}">
+        {{ item.name | capitalize }}
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </ul>
