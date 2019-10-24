@@ -191,3 +191,11 @@
 .u-textSpacingLoose {
   letter-spacing: var(--letter-spacing-loose) !important;
 }
+
+/**
+ * Theme colors
+ */
+
+.u-textThemeHeading {
+  color: var(--primary-theme-heading-color);
+}
