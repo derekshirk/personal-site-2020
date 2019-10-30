@@ -8,76 +8,95 @@ subtitle: "Some projects that I've had the pleasure to work on"
 {# {% set customClass = "u-bgFancy--tic-tac-toe" %}
 {% include 'components/page-topper.njk' %} #}
 
-{# <div class="u-padTop02 u-spaceItems6"> #}
+<div class="Container">
 
-  <div class="Container">
+  <section class="Grid-wrapper">
 
-    <section class="Grid-wrapper">
-
-      <div
-        class="grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl
-               padding-thinn
-               u-padTop6">
+    <header
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl
+              u-flex u-flexWrap u-flexAlignContentBetween
+              u-padTop u-lg-padEnds6"
+    >
+      <div>
         <h2
-          class="t-eyebrow t-thiccfont@xs t-thiccfont@s t-thiccfont@m
-                 t-thiccfont@l t-thiccfont@xl u-textShrink1">
+          class="u-textShrink1">
           Abridged Works
         </h2>
         <p
-          class="t-black t-thiccfont@xs t-thiccfont@s t-chonkfont@m t-chonkfont@l t-chonkfont@xl t-serifweight t-height-tight
-          u-textGrow6 u-textBold u-textBlack">
+          class="u-textGrow3 u-md-textGrow4 u-lg-textGrow6 Callout u-lineHeight1">
           Design, art direction, concepting.
         </p>
       </div>
-
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl">
-        <h3 class="t-eyebrow-line">
-          Web Design
-          </h3>
-        <p class="u-textShrink1">
-          @cloudfour
-        </p>
-        <p class="">
-          Decathlon
-        </p>
-        <p>In collaboration with <a class="t-link-accent-blue" href="https://decathlon.com">Decathlon.com</a>, a innovative sports retailers</p>
-        <a href="https://decathlon.com" class="t-link-accent-blue t-ltr-stretch t-babyfont" rel="noopener noreferrer">Visit decathlon.com</a>
+      <div class="Container u-textCenter u-padSidesNone">
+        {% include "svg/hippo.svg" %}
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl align-self-center">
-        <img src="/static/img/project-decathlon-01.png" alt="The Diff logo">
+    </header>
+
+    <article
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+    >
+
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l
+               grid-half@xl
+               u-staggerItems
+               u-padTop u-lg-padEnds6"
+      >
+        <h3>Web Design</h3>
+        <p class="u-textShrink1">@cloudfour</p>
+        <p>Decathlon</p>
+        <div class="u-textShrink1 u-spaceItems">
+          <p>In collaboration with <a class="" href="https://decathlon.com">Decathlon.com</a>, a innovative sports retailers</p>
+          <a class="u-block" href="https://decathlon.com" rel="noopener noreferrer">Visit decathlon.com</a>
+        </div>
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl">
-        <h3 class="t-eyebrow-line">
+      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
+        <img src="/static/img/project-decathlon-01.jpg" alt="The Diff logo">
+      </div>
+
+    </article>
+
+    <article
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+    >
+      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
+        <h3>
           Design System
         </h3>
         <p class="u-textShrink1">
           @cloudfour
         </p>
-        <p class="t-black t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl">Decathlon</p>
+        <p class="">Decathlon</p>
         <p>A new, more vibrant design system for the accessibility community resource.</p>
         <p class="t-ltr-stretch t-babyfont">Work in progress</p>
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl align-self-center">
+      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
         <img
-          src="/static/img/project-decathlon-02.png"
+          src="/static/img/project-decathlon-02.jpg"
           alt=""
         />
       </div>
+    </article>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl">
-        <h3 class="t-eyebrow-line">Design</h3>
+    <article
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+    >
+      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
+        <h3>Design</h3>
         <p class="u-textShrink1">
           @cloudfour
         </p>
         <p class="t-black t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl">Walmart Services</p>
         <p>A new, more vibrant design system for the accessibility community resource.</p>
-        <p class="t-ltr-stretch t-babyfont">Work in progress</p>
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl gradient-fire padding-thinn@xs padding-normie@s padding-thicc@m padding-thicc@l padding-thicc@xl align-self-center">
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l
+               grid-half@xl u-padTop u-lg-padEnds6"
+      >
         <picture>
             {# <source sizes="(max-width: 667px) 100vw, 667px" srcset="
             ../img/lovelust_tee,w_200.webp 200w,
@@ -95,261 +114,154 @@ subtitle: "Some projects that I've had the pleasure to work on"
         </picture>
 
       </div>
+    </article>
 
-      <!-- The Butcher's Brother -->
-            <div class="grid-whole@xs grid-whole@s grid-twothirds@m grid-twothirds@l grid-twothirds@xl Grid-wrapper">
+    <!-- The Butcher's Brother -->
+    <article
+      class="grid-whole@xs grid-whole@s grid-whole@m grid-whole@l Grid-wrapper"
+    >
 
-              <div class="span-row-two@s span-row-two@m span-row-two@l span-row-two@xl grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl">
+      <div class="grid-whole@xs grid-whole@s grid-twothirds@m grid-twothirds@l grid-twothirds@xl Grid-wrapper u-padTop u-lg-padEnds6">
 
-               <img src="/static/img/project-butchers-brother-01.png" alt="Hand holding tin mirror with reflection of necklace" />
+        <div
+          class="span-row-two@s span-row-two@m span-row-two@l span-row-two@xl grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl"
+        >
+          <img src="/static/img/project-butchers-brother-01.png" alt="" />
+        </div>
 
-
-                  <picture>
-                        {# <source sizes="(max-width: 750px) 100vw, 750px"
-                        srcset="
-                        ../img/teocali-reflection,w_200.webp 200w,
-                        ../img/teocali-reflection,w_588.webp 588w,
-                        ../img/teocali-reflection,w_750.webp 750w" type="image/webp">
-
-                        <source sizes="(max-width: 750px) 100vw, 750px"
-                        srcset="
-                        ../img/teocali-reflection,w_200.jpg 200w,
-                        ../img/teocali-reflection,w_528.jpg 576w,
-                        ../img/teocali-reflection,w_750.jpg 750w" type="image/jpeg"> #}
-
-                        {# <img src="/static/img/project-butchers-brother-01.png" alt="Hand holding tin mirror with reflection of necklace" /> #}
-
-                    </picture>
-
-                </div>
-                <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl align-self-center">
-                    <picture>
-                        {# <source sizes="(max-width: 905px) 100vw, 905px"
-                        srcset="
-                        ../img/teocali-laying,w_200.webp 200w,
-                        ../img/teocali-laying,w_905.webp 905w" type="image/webp">
-
-                        <source sizes="(max-width: 1200px) 100vw, 1200px"
-                        srcset="
-                        ../img/teocali-laying,w_200.jpg 200w,
-                        ../img/teocali-laying,w_735.jpg 735w,
-                        ../img/teocali-laying,w_1200.jpg 1200w" type="image/jpeg"> #}
-
-                        <img src="https://derekshirk.com/wp-content/uploads/2015/01/130313-BB-07-2000px-1500x998.jpg" alt="Aerial view of woman napping with hat over face">
-
-                    </picture>
-
-                </div>
-                <div class="grid-whole@xs grid-quarter@s grid-quarter@m grid-quarter@l grid-quarter@xl padding-thinn@m padding-thinn@l padding-thinn@xl ">
-                    <picture>
-                        {# <source sizes="(max-width: 1067px) 100vw, 864px"
-                        srcset="
-                        ../img/teocali-flatlay,w_200.webp 200w,
-                        ../img/teocali-flatlay,w_419.webp 419w,
-                        ../img/teocali-flatlay,w_586.webp 586w,
-                        ../img/teocali-flatlay,w_737.webp 737w,
-                        ../img/teocali-flatlay,w_864.webp 864w" type="image/webp">
-
-                        <source sizes="(max-width: 1067px) 100vw, 888px"
-                        srcset="
-                        ../img/teocali-flatlay,w_200.jpg 200w,
-                        ../img/teocali-flatlay,w_294.jpg 294w,
-                        ../img/teocali-flatlay,w_369.jpg 369w,
-                        ../img/teocali-flatlay,w_434.jpg 434w,
-                        ../img/teocali-flatlay,../img/teocali-flatlay,w_702.jpg 702w,
-                        ../img/teocali-flatlay,w_795.jpg 795w,
-                        ../img/teocali-flatlay,w_888.jpg 888w" type="image/jpeg"> #}
-
-                        <img
-                          src="/static/img/project-butchers-brother-03.png" alt=""
-                        />
-
-                    </picture>
-
-                </div>
-                <div class="span-row-two@m span-row-two@l span-row-two@xl grid-whole@xs grid-quarter@s grid-quarter@m grid-quarter@l grid-quarter@xl">
-                    <picture>
-                        {# <source sizes="(max-width: 800px) 100vw, 800px"
-                        srcset="
-                        ../img/teocali-teaser-hands,w_200.webp 200w,
-                        ../img/teocali-teaser-hands,w_452.webp 452w,
-                        ../img/teocali-teaser-hands,w_641.webp 641w,
-                        ../img/teocali-teaser-hands,w_793.webp 793w,
-                        ../img/teocali-teaser-hands,w_800.webp 800w" type="image/webp">
-
-                        <source sizes="(max-width: 800px) 100vw, 800px"
-                        srcset="
-                        ../img/teocali-teaser-hands,w_200.jpg 200w,
-                        ../img/teocali-teaser-hands,w_303.jpg 303w,
-                        ../img/teocali-teaser-hands,w_386.jpg 386w,
-                        ../img/teocali-teaser-hands,w_457.jpg 457w,
-                        ../img/teocali-teaser-hands,w_523.jpg 523w,
-                        ../img/teocali-teaser-hands,w_583.jpg 583w,
-                        ../img/teocali-teaser-hands,w_645.jpg 645w,
-                        ../img/teocali-teaser-hands,w_696.jpg 696w,
-                        ../img/teocali-teaser-hands,w_800.jpg 800w" type="image/jpeg"> #}
-
-                        <img
-                          src="/static/img/project-butchers-brother-04.png"
-                          alt=""
-                        />
-
-                    </picture>
-
-                </div>
-            </div>
-            <div class="grid-whole@xs grid-whole@s grid-third@m grid-third@l grid-third@xl padding-thinn">
-                <h3 class="t-eyebrow-line">
-                  Concepting & Art Direction
-                </h3>
-                <h4 class="t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl ">
-                  Whole Foods
-                </h4>
-                <p>Concepted, photographed and art directed seasonal, on-location photoshoots for an accessory- and lifestyle-brand.</p>
-            </div>
+        <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl align-self-center">
+          <img
+            src="https://derekshirk.com/wp-content/uploads/2015/01/130313-BB-07-2000px-1500x998.jpg"
+            alt=""
+          />
+        </div>
 
 
-      <!-- Fun Things to Ask Alexa -->
-      <div class="span-row-two grid-whole@xs grid-quarter@s grid-quarter@m grid-quarter@l grid-quarter@xl gradient-fire align-self-center ">
-        <picture>
-            {# <source sizes="(max-width: 720px) 100vw, 720px"
-            srcset="
-            ../img/ucx-comp,w_200.webp 200w,
-            ../img/ucx-comp,w_720.webp 720w" type="image/webp">
+        <div
+          class="grid-whole@xs grid-quarter@s grid-quarter@m grid-quarter@l
+                 grid-quarter@xl"
+        >
+          <img
+            src="/static/img/project-butchers-brother-03.png" alt=""/>
+        </div>
 
-            <source sizes="(max-width: 720px) 100vw, 720px"
-            srcset="
-            ../img/ucx-comp,w_200.jpg 200w,
-            img/ucx-comp,w_425.jpg 425w,
-            ../img/ucx-comp,w_617.jpg 617w,
-            ../img/ucx-comp,w_720.jpg 720w" type="image/jpeg"> #}
+        <div
+          class="span-row-two@m span-row-two@l span-row-two@xl grid-whole@xs
+                 grid-quarter@s grid-quarter@m grid-quarter@l grid-quarter@xl"
+        >
+          <img
+            src="/static/img/project-butchers-brother-04.png" alt="" />
+        </div>
 
-            <img
-              src="/static/img/fun-things-to-ask.jpg"
-              alt=""
-            />
-        </picture>
       </div>
 
-            <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl padding-thinn ">
-              <h3 class="t-eyebrow-line">Interactive</h3>
-              <p class="t-black t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl">
-                Fun Things to Ask Alexa
-              </p>
-              <p>Website to help articulate the breadth of Cisco products. Designed a conceptual journey to show how products ushered retailers through sales cycle.</p>
-              <p class="comingsoon">Ask Alexa version 2 in progress</p>
-              <a  href="https://funthingstoaskalexa.com" >View fun things</a>
-            </div>
-            <!-- SALON DOUX-->
-            <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl align-self-center padding-thicc@xs padding-thicc@s padding-thicc@m padding-thicc@l padding-thicc@xl">
-            <picture>
-                {# <source sizes="(max-width: 400px) 100vw, 400px"
-                srcset="
-                ../img/salondoux-comp,w_200.webp 200w,
-                ../img/salondoux-comp,w_400.webp 400w" type="image/webp">
-
-                <source sizes="(max-width: 400px) 100vw, 400px"
-                srcset="
-                ../img/salondoux-comp,w_200.png 200w,
-                ../img/salondoux-comp,w_227.png 227w,
-                ../img/salondoux-comp,w_247.png 247w,
-                ../img/salondoux-comp,w_400.png 400w" type="image/jpeg"> #}
-
-                <img class="dropshadow-grey"
-                src="/static/img/ghost-of-work-past.jpg" alt="Salon Doux website in iPhone" />
-            </picture>
-            </div>
-            <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl padding-thinn ">
-                <h3 class="t-eyebrow-line">Interactive</h3>
-                <p class="t-black t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl">Salon Doux</p>
-                <p>Design and development of website for Seattle-based salon.</p>
-                <p class="comingsoon">Case Study In Development</p>
-                <a class="t-link-accent-blue t-ltr-stretch t-babyfont" href="http://www.salondoux.com/"  rel="noopener noreferrer">Visit the site</a>
-            </div>
+      <div class="grid-whole@xs grid-whole@s grid-third@m grid-third@l grid-third@xl u-padTop u-lg-padEnds6">
+          <h3>
+            Concepting & Art Direction
+          </h3>
+          <h4 class="t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl ">
+            Whole Foods
+          </h4>
+          <p>Concepted, photographed and art directed seasonal, on-location photoshoots for an accessory- and lifestyle-brand.</p>
+      </div>
+    </article>
 
 
+    <!-- Fun Things to Ask Alexa -->
+    <article
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+    >
 
+      <div
+        class="span-row-two grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
+      >
+        <img
+          src="/static/img/fun-things-to-ask.jpg"
+          alt=""
+        />
+      </div>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl gradient-softlight align-self-center">
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
+      >
+        <h3>Interactive</h3>
+        <p>Fun Things to Ask Alexa</p>
+        <p>Website to help articulate the breadth of Cisco products. Designed a conceptual journey to show how products ushered retailers through sales cycle.</p>
+        <p>Ask Alexa version 2 in progress</p>
+        <a  href="https://funthingstoaskalexa.com" >View fun things</a>
+      </div>
+    </article>
+
+    <!-- Project Placeholder-->
+    <article
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+    >
+
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
+      >
+        <img class="dropshadow-grey"
+            src="/static/img/ghost-of-work-past.jpg" alt="Salon Doux website in iPhone"
+        />
+      </div>
+
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
+      >
+        <h3>Interactive</h3>
+        <p class="">Salon Doux</p>
+        <p>Design and development of website for Seattle-based salon.</p>
+        <p class="">Case Study In Development</p>
+        <a class="t-link-accent-blue t-ltr-stretch t-babyfont" href="http://www.salondoux.com/"  rel="noopener noreferrer">Visit the site</a>
+      </div>
+
+    </article>
+
+    <article
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+    >
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l
+               grid-half@xl u-padTop u-lg-padEnds6"
+      >
         <img src="/static/img/pen-themeing-content.jpg" alt="">
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl padding-thinn ">
-        <h3 class="t-eyebrow-line">Branding</h3>
-        <p class="t-black t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl">Microsoft Azure Developer Tour</p>
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l
+               grid-half@xl u-padTop u-lg-padEnds6"
+      >
+        <h3 class="">Branding</h3>
+        <p class="">Microsoft Azure Developer Tour</p>
         <p>Branded collateral for a seven-city dev advocate tour. Each city had its own butterfly, cityscape and pattern.</p>
-        <p class="comingsoon">Case Study In Development</p>
+        <p class="">Case Study In Development</p>
       </div>
+    </article>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl gradient-softlight align-self-center">
+    <article
+      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+    >
+
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-padTop u-lg-padEnds6"
+      >
         <img src="/static/img/nike-air-max-pen.jpg" alt="">
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-quarter@m grid-quarter@l grid-quarter@xl padding-thinn ">
-        <h3 class="t-eyebrow-line">Branding</h3>
-        <p class="t-black t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl">Microsoft Azure Developer Tour</p>
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-padTop u-lg-padEnds6"
+      >
+        <h3 class="">Branding</h3>
+        <p class="">Microsoft Azure Developer Tour</p>
         <p>Branded collateral for a seven-city dev advocate tour. Each city had its own butterfly, cityscape and pattern.</p>
-        <p class="comingsoon">Case Study In Development</p>
+        <p class="">Case Study In Development</p>
       </div>
 
+    </article>
 
 
+  </section>
 
-    </section>
-
-    {# <section class="Grid Grid--projects">
-      {% set projectslist = collections.featured %}
-      {% include "components/projectslist.njk" %}
-    </section> #}
-
-    {# <section class="SectionIntro u-size1of2">
-      <h1>Companies I've helped</h1>
-      <p class="Callout u-textSize2 u-md-textSize3">
-        I'm proud to have worked with nice people at some great companies and organizations.
-      </p>
-    </section> #}
-
-    {# <section class="ClientLogos">
-      <div class="Grid Grid--clientLogos">
-        {% for client in clients.companies %}
-        <div class="u-lg-pad3 u-flex u-flexAlignItemsCenter u-flexJustifyCenter">
-          {% include client.logo ignore missing %}
-          {{client.name}}
-        </div>
-        {% endfor %}
-      </div>
-    </section> #}
-
-    {# <div class="Grid Grid--split">
-
-      <div class="">
-        <section class="SectionIntro">
-          <h1 class="u-textSize3">Side {{ title }}</h1>
-          <p class="Callout u-textSize1 u-lg-textSize2">
-              A few small things I've made on the side
-          </p>
-        </section>
-        <div class="u-padTop">
-          {% set projectslist = collections.sideProjects %}
-          {% include "components/projectslist.njk" %}
-        </div>
-      </div>
-
-      <div class="">
-        <section class="SectionIntro u-size1of2">
-          <h1 class="u-textSize3">Contributions</h1>
-          <p class="Callout u-textSize1 u-lg-textSize2">
-            Open source projects I've contributed to
-          </p>
-        </section>
-        <div class="u-padTop">
-          {% set projectslist = collections.openSource %}
-          {% include "components/projectslist.njk" %}
-        </div>
-      </div>
-
-    </div> #}
-
-  </div>
-
-{# </div> #}
+</div>

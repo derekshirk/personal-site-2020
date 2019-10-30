@@ -3,7 +3,7 @@ body {
   font-size: 1.25rem;
 }
 
-@media (--md-viewport) {
+/* @media (--md-viewport) {
   body {
     font-size: 115%;
   }
@@ -13,7 +13,7 @@ body {
   body {
     font-size: 130%;
   }
-}
+} */
 
 p,
 pre,
