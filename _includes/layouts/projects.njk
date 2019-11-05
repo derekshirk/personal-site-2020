@@ -5,8 +5,14 @@ permalink: /projects/index.html
 subtitle: "Some projects that I've had the pleasure to work on"
 ---
 
-{# {% set customClass = "u-bgFancy--tic-tac-toe" %}
-{% include 'components/page-topper.njk' %} #}
+<!--
+  @TODO
+  1. Improve responsive images markup
+  2. Set up JSON data loops
+  3. Improve accessability wherever possible, one step at a time
+  4. Should images get wrapped in figure elements?
+  4. ...
+ -->
 
 <div class="Container">
 
@@ -14,8 +20,8 @@ subtitle: "Some projects that I've had the pleasure to work on"
 
     <header
       class="grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl
-              u-flex u-flexWrap u-flexAlignContentBetween
-              u-padTop u-lg-padEnds6"
+             u-flex u-flexWrap u-flexAlignContentBetween
+             u-padTop u-lg-padEnds6"
     >
       <div>
         <h2
@@ -33,71 +39,87 @@ subtitle: "Some projects that I've had the pleasure to work on"
 
     </header>
 
+    <!-- This could be loop One -->
     <article
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+      class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l"
     >
-
       <div
-        class="grid-whole@xs grid-half@s grid-half@m grid-half@l
-               grid-half@xl
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
                u-staggerItems
-               u-padTop u-lg-padEnds6"
+               u-padTop u-lg-padEnds6 u-padRight2"
       >
-        <h3>Web Design</h3>
-        <p class="u-textShrink1">@cloudfour</p>
-        <p>Decathlon</p>
-        <div class="u-textShrink1 u-spaceItems">
-          <p>In collaboration with <a class="" href="https://decathlon.com">Decathlon.com</a>, a innovative sports retailers</p>
-          <a class="u-block" href="https://decathlon.com" rel="noopener noreferrer">Visit decathlon.com</a>
+        <h3 class="u-underline">Web Design</h3>
+        <p class="u-textShrink1">@cloudfour → Decathlon</p>
+        <div class="u-spaceItems">
+          <p class="u-textShrink1">In collaboration with <a class="" href="https://decathlon.com">Decathlon.com</a>, a innovative sports retailers</p>
+          <p class="u-textShrink1">
+            <i>Work in progress</i>
+          </p>
         </div>
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
-        <img src="/static/img/project-decathlon-01.jpg" alt="The Diff logo">
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-padTop u-lg-padEnds6"
+      >
+        <figure class="FeaturedImage FeaturedImage--project">
+          <img src="/static/img/project-decathlon-01.jpg" alt="The Diff logo">
+        </figure>
       </div>
 
     </article>
 
     <article
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+      class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l"
     >
-      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
-        <h3>
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-staggerItems
+               u-padTop u-lg-padEnds6 u-padRight2"
+      >
+        <h3 class="u-underline">
           Design System
         </h3>
+        <p class="u-textShrink1">@cloudfour → Decathlon</p>
+        <p class="u-textShrink1">A new, more vibrant design system for the accessibility community resource.</p>
         <p class="u-textShrink1">
-          @cloudfour
+          <i>Work in progress</i>
         </p>
-        <p class="">Decathlon</p>
-        <p>A new, more vibrant design system for the accessibility community resource.</p>
-        <p class="t-ltr-stretch t-babyfont">Work in progress</p>
       </div>
 
-      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
-        <img
-          src="/static/img/project-decathlon-02.jpg"
-          alt=""
-        />
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-staggerItems
+               u-padTop u-lg-padEnds6"
+      >
+        <figure class="FeaturedImage FeaturedImage--project">
+          <img
+            src="/static/img/project-decathlon-02.jpg"
+            alt=""
+          />
+        </figure>
       </div>
     </article>
 
     <article
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+      class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l"
     >
-      <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6">
-        <h3>Design</h3>
-        <p class="u-textShrink1">
-          @cloudfour
-        </p>
-        <p class="t-black t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl">Walmart Services</p>
-        <p>A new, more vibrant design system for the accessibility community resource.</p>
+      <div
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-padTop u-lg-padEnds6 u-padRight2
+               u-staggerItems"
+      >
+        <h3 class="u-underline">Design</h3>
+        <p class="u-textShrink1">@cloudfour → Walmart Services</p>
+        <p class="u-textShrink1">A new, more vibrant design system for the accessibility community resource.</p>
       </div>
 
       <div
         class="grid-whole@xs grid-half@s grid-half@m grid-half@l
                grid-half@xl u-padTop u-lg-padEnds6"
       >
-        <picture>
+        <figure class="FeaturedImage FeaturedImage--project">
+          <picture>
             {# <source sizes="(max-width: 667px) 100vw, 667px" srcset="
             ../img/lovelust_tee,w_200.webp 200w,
             ../img/lovelust_tee,w_667.webp 667w" type="image/webp">
@@ -112,10 +134,12 @@ subtitle: "Some projects that I've had the pleasure to work on"
               alt=""
             />
         </picture>
-
+        </figure>
       </div>
     </article>
+    <!-- End Loop One -->
 
+    <!-- Featured/Unique Layout -->
     <!-- The Butcher's Brother -->
     <article
       class="grid-whole@xs grid-whole@s grid-whole@m grid-whole@l Grid-wrapper"
@@ -155,70 +179,85 @@ subtitle: "Some projects that I've had the pleasure to work on"
 
       </div>
 
-      <div class="grid-whole@xs grid-whole@s grid-third@m grid-third@l grid-third@xl u-padTop u-lg-padEnds6">
-          <h3>
+      <div
+        class="grid-whole@xs grid-whole@s grid-third@m grid-third@l
+               grid-third@xl
+               u-padTop u-lg-padEnds6
+               u-staggerItems"
+      >
+          <h3 class="u-underline">
             Concepting & Art Direction
           </h3>
-          <h4 class="t-serifweight t-slimmfont@xs t-slimmfont@s t-slimmfont@m t-slimmfont@l t-slimmfont@xl ">
-            Whole Foods
-          </h4>
-          <p>Concepted, photographed and art directed seasonal, on-location photoshoots for an accessory- and lifestyle-brand.</p>
+          <div class="u-spaceItems">
+            <p class="u-textShrink1">Whole Foods</p>
+            <p class="u-textShrink1">Concepted, photographed and art directed seasonal, on-location photoshoots for an accessory- and lifestyle-brand.</p>
+            <a href="" class="u-block u-textShrink1" rel="nofollow">
+              Visit the Bridgeport Village Whole Foods
+            </a>
+          </div>
       </div>
     </article>
 
 
+    <!-- This could be loop Three -->
     <!-- Fun Things to Ask Alexa -->
     <article
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+      class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l"
     >
 
       <div
-        class="span-row-two grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
+        class="span-row-two grid-whole@xs grid-half@s grid-half@m grid-half@l
+               grid-half@xl
+               u-padTop u-lg-padEnds6"
       >
         <img
-          src="/static/img/fun-things-to-ask.jpg"
+          src="/static/img/pen-themeing-content.jpg"
           alt=""
         />
       </div>
 
       <div
-        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-padTop u-lg-padEnds6
+               u-staggerItems"
       >
-        <h3>Interactive</h3>
-        <p>Fun Things to Ask Alexa</p>
-        <p>Website to help articulate the breadth of Cisco products. Designed a conceptual journey to show how products ushered retailers through sales cycle.</p>
-        <p>Ask Alexa version 2 in progress</p>
-        <a  href="https://funthingstoaskalexa.com" >View fun things</a>
+        <h3 class="u-underline">Interactive</h3>
+        <p class="u-textShrink1">Fun Things to Ask Alexa</p>
+        <p class="u-textShrink1">Website to help articulate the breadth of Cisco products. Designed a conceptual journey to show how products ushered retailers through sales cycle.</p>
+        <p class="u-textShrink1">Ask Alexa version 2 in progress</p>
+        <a class="u-textShrink1"  href="https://funthingstoaskalexa.com" >View fun things</a>
       </div>
     </article>
 
     <!-- Project Placeholder-->
     <article
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+      class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l"
     >
 
       <div
         class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
       >
         <img class="dropshadow-grey"
-            src="/static/img/ghost-of-work-past.jpg" alt="Salon Doux website in iPhone"
+            src="/static/img/pen-themeing-content.jpg" alt="Salon Doux website in iPhone"
         />
       </div>
 
       <div
-        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padTop u-lg-padEnds6"
+        class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
+               u-padTop u-lg-padEnds6
+               u-staggerItems"
       >
-        <h3>Interactive</h3>
-        <p class="">Salon Doux</p>
-        <p>Design and development of website for Seattle-based salon.</p>
-        <p class="">Case Study In Development</p>
-        <a class="t-link-accent-blue t-ltr-stretch t-babyfont" href="http://www.salondoux.com/"  rel="noopener noreferrer">Visit the site</a>
+        <h3 class="u-underline">Interactive</h3>
+        <p class="u-textShrink1">Salon Doux</p>
+        <p class="u-textShrink1">Design and development of website for Seattle-based salon.</p>
+        <p class="u-textShrink1">Case Study In Development</p>
+        <a class="u-textShrink1" href="http://www.salondoux.com"  rel="noopener noreferrer">Visit the site</a>
       </div>
 
     </article>
 
     <article
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+      class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l"
     >
       <div
         class="grid-whole@xs grid-half@s grid-half@m grid-half@l
@@ -229,38 +268,41 @@ subtitle: "Some projects that I've had the pleasure to work on"
 
       <div
         class="grid-whole@xs grid-half@s grid-half@m grid-half@l
-               grid-half@xl u-padTop u-lg-padEnds6"
+               grid-half@xl
+               u-padTop u-lg-padEnds6
+               u-staggerItems"
       >
-        <h3 class="">Branding</h3>
-        <p class="">Microsoft Azure Developer Tour</p>
-        <p>Branded collateral for a seven-city dev advocate tour. Each city had its own butterfly, cityscape and pattern.</p>
-        <p class="">Case Study In Development</p>
+        <h3 class="u-underline">Branding</h3>
+        <p class="u-textShrink1">Microsoft Azure Developer Tour</p>
+        <p class="u-textShrink1">Branded collateral for a seven-city dev advocate tour. Each city had its own butterfly, cityscape and pattern.</p>
+        <p class="u-textShrink1">Case Study In Development</p>
       </div>
     </article>
 
     <article
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l Grid-wrapper"
+      class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l"
     >
 
       <div
         class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
                u-padTop u-lg-padEnds6"
       >
-        <img src="/static/img/nike-air-max-pen.jpg" alt="">
+        <img src="/static/img/pen-themeing-content.jpg" alt="">
       </div>
 
       <div
         class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl
-               u-padTop u-lg-padEnds6"
+               u-padTop u-lg-padEnds6
+               u-staggerItems"
       >
-        <h3 class="">Branding</h3>
-        <p class="">Microsoft Azure Developer Tour</p>
-        <p>Branded collateral for a seven-city dev advocate tour. Each city had its own butterfly, cityscape and pattern.</p>
-        <p class="">Case Study In Development</p>
+        <h3 class="u-underline">Branding</h3>
+        <p class="u-textShrink1">Microsoft Azure Developer Tour</p>
+        <p class="u-textShrink1">Branded collateral for a seven-city dev advocate tour. Each city had its own butterfly, cityscape and pattern.</p>
+        <p class="u-textShrink1">Case Study In Development</p>
       </div>
 
     </article>
-
+    <!-- End possible Loop Three  -->
 
   </section>
 
