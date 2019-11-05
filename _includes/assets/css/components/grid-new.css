@@ -1,3 +1,9 @@
+/**
+ * @TODO
+ * 1. Check if the `@` symbols are needed
+ */
+
+
 .Grid-wrapper {
   display: grid;
   grid-column-gap: 2vw;

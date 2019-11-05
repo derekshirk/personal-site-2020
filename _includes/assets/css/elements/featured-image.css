@@ -1,0 +1,36 @@
+.FeaturedImage {
+  position: relative;
+  z-index: 2;
+}
+
+@media (--md-viewport) {
+  .FeaturedImage--project::after {
+    /* background-color: var(--color-white); */
+    border: 10px solid var(--primary-theme-accent-alt-color);
+    content: "";
+    display: block;
+    height: 90%;
+    position: absolute;
+    right: 39px;
+    top: 72px;
+    width: 100%;
+    z-index: -1;
+    /* display: none; */
+  }
+}
+
+.u-underline {
+  display: inline-block;
+  position: relative;
+}
+
+.u-underline::after {
+  background-color: var(--primary-theme-accent-alt-color);
+  bottom: -1px;
+  content: '';
+  height: 6px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
