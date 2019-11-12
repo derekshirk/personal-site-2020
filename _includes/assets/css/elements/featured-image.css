@@ -15,7 +15,7 @@
     top: 72px;
     width: 100%;
     z-index: -1;
-    /* display: none; */
+    display: none;
   }
 }
 
@@ -33,4 +33,22 @@
   position: absolute;
   width: 100%;
   z-index: -1;
+}
+
+.u-overline {
+  display: inline-block;
+  padding-top: 1em;
+  position: relative;
+}
+
+
+.u-overline::after {
+  background-color: var(--primary-theme-accent-alt-color);
+  content: '';
+  position: absolute;
+  height: 5px;
+  left: 0;
+  top: 0;
+  width: 100px;
+
 }
