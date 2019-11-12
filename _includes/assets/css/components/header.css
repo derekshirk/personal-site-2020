@@ -36,6 +36,8 @@
 .Header-link,
 .Header-link[href] {
   color: var(--primary-theme-text-color);
+  font-family: 'Barlow';
+  font-variation-settings: "wght" 150, "wdth" 500;
 }
 
 /* Header Logo (style as h2) */
@@ -62,6 +64,10 @@ header nav li {
 header nav li a[href]:not(:hover) {
   color: var(--header-logo-color);
   text-decoration: none;
+}
+
+.Header-link[data-current="current item"] {
+  color: var(--primary-theme-accent-alt-color) !important;
 }
 
 header nav li a[data-current="current item"] {

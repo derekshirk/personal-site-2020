@@ -1,5 +1,7 @@
 body {
   color: var(--primary-theme-text-color);
+  font-family: 'Source Sans Pro';
+  font-weight: 460;
   font-size: 1.25rem;
 }
 
@@ -27,12 +29,17 @@ p:not(:last-of-type) {
 
 :--headings {
   color: var(--primary-theme-heading-color);
+  font-family: 'Barlow';
+  font-weight: 150;
+  font-variation-settings: "wght" 150, "wdth" 500;
   margin-bottom: 0.25rem;
   /* margin-top: 0.45rem; */
 }
 
 .Callout {
   color: var(--primary-theme-accent-alt-color);
+  font-family: 'Source Sans Pro';
+  font-variation-settings: "wght" 450;
 }
 
 /* @TODO organize me please */
@@ -68,4 +75,23 @@ a[href]:hover {
   line-height: 1.2;
   position: relative;
   text-decoration: none;
+}
+
+@font-face {
+  font-family: 'League Spartan Variable';
+  src: url('/static/fonts/league-spartan/LeagueSpartanVariable.woff2') format('woff2-variations');
+  font-weight: 200 900;
+}
+
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/static/fonts/barlow/BarlowGX.woff2') format('woff2-variations');
+}
+
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/static/fonts/source-sans-pro/SourceSansVariable-Roman.ttf.woff2') format('woff2-variations');
+  font-weight: 200 900;
 }
