@@ -40,6 +40,18 @@ p:not(:last-of-type) {
   color: var(--primary-theme-accent-alt-color);
   font-family: 'Source Sans Pro';
   font-variation-settings: "wght" 450;
+  font-family: 'Barlow';
+  font-variation-settings: "wght" 80,"wdth" 300;
+}
+
+.Tag {
+  font-family: Barlow;
+  font-variation-settings: "wght" 110,"wdth" 420;
+}
+
+.Tag-link {
+  color: var(--primary-theme-accent-color) !important;
+  text-decoration: none !important;
 }
 
 /* @TODO organize me please */
