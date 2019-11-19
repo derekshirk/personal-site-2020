@@ -45,13 +45,17 @@ p:not(:last-of-type) {
 }
 
 .Tag {
-  font-family: Barlow;
-  font-variation-settings: "wght" 110,"wdth" 420;
+  font-family: Source Sans Pro;
+  font-variation-settings: "wght" 500;
+  margin-top: .75em;
 }
 
 .Tag-link {
   color: var(--primary-theme-accent-color) !important;
+  color: white !important;
   text-decoration: none !important;
+  background-color: var(--primary-theme-accent-alt-color) !important;
+  padding: 0.25em 0.5em;
 }
 
 /* @TODO organize me please */
