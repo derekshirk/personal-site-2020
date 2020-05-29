@@ -28,7 +28,7 @@
     "markdown-it": "11.0.0",
     "markdown-it-anchor": "5.3.0",
     "stylelint": "13.5.0",
-    "stylelint-config-cloudfour-suit": "1.0.1"
+    "stylelint-config-cloudfour-suit": "3.0.0"
   },
   "dependencies": {
     "autoprefixer": "9.8.0",
