@@ -20,7 +20,7 @@
   @media (--md-viewport) {
     display: grid;
     grid-gap: 4vw;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
