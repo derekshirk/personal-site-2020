@@ -3,8 +3,7 @@
  */
 
 .Bookshelf {
-  /* background-color: var(--color-silver); */
-  color: var(--color-black);
+
 }
 
 .Bookshelf-content {
@@ -12,7 +11,7 @@
   flex-direction: row;
   font-size: 0.875em;
   grid-gap: 1.5em;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   line-height: 1.2;
   margin-bottom: calc(1em + 2vw);
 }
@@ -30,8 +29,14 @@
 }
 
 .Bookshelf-item {
-  background-color: var(--color-white);
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 24vw 76vw;
   padding-bottom: 0;
+
+  @media (--md-viewport) {
+    display: block;
+  }
 }
 
 @media (--lg-viewport) {
@@ -42,7 +47,6 @@
 }
 
 .Bookshelf-cover {
-  border: 1px solid #f3f3f3;
 }
 
 .Bookshelf-art {
@@ -50,13 +54,18 @@
 }
 
 .Bookshelf-meta {
-  padding: 0.75rem;
+  padding: 0.335rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-theme-text-color);
 }
 
 @media (--md-viewport) {
   .Bookshelf-meta {
-    padding: 1rem;
+    padding: 0.335rem 0.75rem 0.75rem 0;
   }
+}
+
+.Bookshelf-itemTitle {
+  color: inherit;
 }
 
 @media (--lg-viewport) {
