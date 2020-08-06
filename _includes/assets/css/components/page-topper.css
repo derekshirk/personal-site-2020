@@ -17,19 +17,10 @@
 }
 
 .Grid--writing {
-  /* grid-gap: 10%; */
-}
-
-@media (--md-viewport) {
-  .Grid--writing {
-    /* display: grid;
-    grid-gap: 11vw;
-    grid-template-columns: .43fr 1.43fr; */
+  @media (--md-viewport) {
     display: grid;
     grid-gap: 4vw;
-
-
-grid-template-columns: .25fr .8fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 
