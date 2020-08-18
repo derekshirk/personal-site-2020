@@ -1,21 +1,9 @@
 body {
   color: var(--primary-theme-text-color);
-  font-family: 'Source Sans Pro';
+  font-family: 'Inter';
   font-weight: 460;
   font-size: 1.25rem;
 }
-
-/* @media (--md-viewport) {
-  body {
-    font-size: 115%;
-  }
-}
-
-@media (--lg-viewport) {
-  body {
-    font-size: 130%;
-  }
-} */
 
 p,
 pre,
@@ -29,32 +17,28 @@ p:not(:last-of-type) {
 
 :--headings {
   color: var(--primary-theme-heading-color);
-  font-family: 'Barlow';
-  font-weight: 150;
-  font-variation-settings: "wght" 150, "wdth" 500;
+  font-family: 'Inter';
+  font-variation-settings: "wght" 800, "wdth" 700;
   margin-bottom: 0.25rem;
-  /* margin-top: 0.45rem; */
 }
 
 .Callout {
   color: var(--primary-theme-accent-alt-color);
-  font-family: 'Source Sans Pro';
-  font-variation-settings: "wght" 450;
-  font-family: 'Barlow';
-  font-variation-settings: "wght" 80,"wdth" 300;
+  font-family: 'Inter';
+  font-variation-settings: "wght" 420,"wdth" 200;
 }
 
 .Tag {
-  font-family: Source Sans Pro;
-  font-variation-settings: "wght" 500;
+  font-family: 'Inter';
+  font-variation-settings: "wght" 420;
   margin-top: .75em;
 }
 
 .Tag-link {
-  color: var(--primary-theme-accent-color) !important;
+  background-color: var(--primary-theme-accent-alt-color) !important;
+  /* color: var(--primary-theme-accent-color) !important; */
   color: white !important;
   text-decoration: none !important;
-  background-color: var(--primary-theme-accent-alt-color) !important;
   padding: 0.25em 0.5em;
 }
 
@@ -65,16 +49,12 @@ p:not(:last-of-type) {
 }
 
 a[href] {
-  /* background-color: var(--primary-theme-accent-color); */
-  /* box-shadow: inset 0 -0.55em 0 var(--primary-theme-accent-color); */
   color: var(--primary-theme-link-color);
   text-decoration: underline;
   text-decoration-color: var(--primary-theme-link-color);
-  /* text-decoration: none; */
 }
 
 a[href]:hover {
-  /* text-decoration: none; */
   color: var(--primary-theme-accent-alt-color);
   text-decoration-color: var(--primary-theme-heading-color);
 }
@@ -94,20 +74,7 @@ a[href]:hover {
 }
 
 @font-face {
-  font-family: 'League Spartan Variable';
-  src: url('/static/fonts/league-spartan/LeagueSpartanVariable.woff2') format('woff2-variations');
-  font-weight: 200 900;
-}
-
-
-@font-face {
-  font-family: 'Barlow';
-  src: url('/static/fonts/barlow/BarlowGX.woff2') format('woff2-variations');
-}
-
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url('/static/fonts/source-sans-pro/SourceSansVariable-Roman.ttf.woff2') format('woff2-variations');
-  font-weight: 200 900;
+  font-family: 'Inter';
+  src: url('/static/fonts/inter/inter.otf') format('opentype');
+  font-weight: 100 900;
 }
