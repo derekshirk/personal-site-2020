@@ -29,8 +29,8 @@ p:not(:last-of-type) {
 }
 
 .Tag {
-  font-family: Source Sans Pro;
-  font-variation-settings: "wght" 500;
+  font-family: 'Inter';
+  font-variation-settings: "wght" 420;
   margin-top: .75em;
 }
 
