@@ -36,8 +36,8 @@
 .Header-link,
 .Header-link[href] {
   color: var(--primary-theme-text-color);
-  font-family: 'Barlow';
-  font-variation-settings: "wght" 150, "wdth" 500;
+  font-family: 'Inter';
+  font-variation-settings: "wght" 750, "wdth" 500;
 }
 
 /* Header Logo (style as h2) */
