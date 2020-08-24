@@ -100,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function() {
         '--primary-theme-accent-color': accentColor,
         '--primary-theme-accent-alt-color': accentAltColor,
         '--primary-theme-background-color': bgColor,
-        '--primary-theme-text-color': color,
         '--primary-theme-heading-color': headingColor,
         '--primary-theme-link-color': linkColor,
+        '--primary-theme-text-color': color,
       });
 
       // Favicon
