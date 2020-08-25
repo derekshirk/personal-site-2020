@@ -23,7 +23,7 @@ p:not(:last-of-type) {
 }
 
 .Callout {
-  color: var(--primary-theme-accent-alt-color);
+  color: var(--primary-theme-text-color);
   font-family: 'Inter';
   font-variation-settings: "wght" 420,"wdth" 200;
 }
@@ -36,7 +36,6 @@ p:not(:last-of-type) {
 
 .Tag-link {
   background-color: var(--primary-theme-accent-alt-color) !important;
-  /* color: var(--primary-theme-accent-color) !important; */
   color: white !important;
   text-decoration: none !important;
   padding: 0.25em 0.5em;
@@ -51,7 +50,8 @@ p:not(:last-of-type) {
 a[href] {
   color: var(--primary-theme-link-color);
   text-decoration: underline;
-  text-decoration-color: var(--primary-theme-link-color);
+  /* text-decoration-color: var(--primary-theme-link-color); */
+  text-decoration-color: inherit;
 }
 
 a[href]:hover {

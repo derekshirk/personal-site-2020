@@ -6,4 +6,4 @@ permalink: /
 navtitle: Home
 ---
 
-a Senior [Front-end Designer](https://cloudfour.com/thinks/were-hiring-front-end-designer/) at [Cloud Four](https://cloudfour.com) where I design web interfaces, mostly with code.
+I am a cross-functional problem solver, strategist and designer with a fervor for creating digital interfaces. 

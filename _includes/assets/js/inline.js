@@ -45,15 +45,19 @@ document.querySelector("link[rel*='icon']").href = localStorage.getItem("userThe
 
 
 document.addEventListener("DOMContentLoaded", function() {
+  console.log('DOMContentLoaded fired');
 
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
 
    // Favicon
+   // TODO: any javascript related to switching favicon can likely be removed
+   // if/once `prefers-color-scheme` media queries are implemented
    const changeFavicon = link => {
     let $favicon = document.querySelector('link[rel="icon"]')
     // If a <link rel="icon"> element already exists,
     // change its href to the given link.
     if ($favicon !== null) {
+      console.log('favicon is not empty');
       $favicon.href = link
     // Otherwise, create a new element and append it to <head>.
     } else {
@@ -98,9 +102,9 @@ document.addEventListener("DOMContentLoaded", function() {
         '--primary-theme-accent-color': accentColor,
         '--primary-theme-accent-alt-color': accentAltColor,
         '--primary-theme-background-color': bgColor,
-        '--primary-theme-text-color': color,
         '--primary-theme-heading-color': headingColor,
         '--primary-theme-link-color': linkColor,
+        '--primary-theme-text-color': color,
       });
 
       // Favicon
@@ -115,7 +119,5 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem("userLinkColor", linkColor);
       localStorage.setItem("userThemeFavicon", themeFavicon);
     });
-
   });
-
 });
