@@ -9,12 +9,11 @@
 
 @media (--lg-viewport) {
   .Grid--homeHero {
-    /* grid-template-columns: 40% 60%; */
-    /* grid-template-columns: 53% 43%; */
-
-    gap: 3vw;
-    grid-template-columns: 52% 43%;
-
+    /* gap: 5vw; */
+    grid-template-columns: 50% 45%;
+    min-height: 56vh;
+    max-width: 95vw;
+    
   }
 }
 
@@ -22,22 +21,53 @@
   position: relative;
 }
 
-@media (--lg-viewport) {
-  .HomeIntro-inner {
-    left: 3vw;
-    max-width: 960px;
-    padding-bottom: 8vh;
-    position: absolute;
-    width: 48vw;
-    z-index: 1;
+.HomeIntro-hello {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
 
-    left: 4vw;
-    /* max-width: 930px; */
-    padding-bottom: 8vh;
-    position: absolute;
-    width: 43vw;
-    z-index: 1;
-    top: 13%;
+@media (--lg-viewport) {
+  .HomeIntro-hello {
+    font-size: 1.2rem;
+  }
+}
+
+.HomeIntro-statement {
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+@media (--md-viewport) {
+  .HomeIntro-statement {
+    font-size: 2.6rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .HomeIntro-statement {
+    font-size: 2.8rem;
+  }
+}
+
+@media (--xl-viewport) {
+  .HomeIntro-statement {
+    font-size: 3rem;
+  }
+}
+
+@media (--xxl-viewport) {
+  .HomeIntro-statement {
+    font-size: 4.3rem;
+  }
+}
+
+.HomeIntro-callout {
+  font-size: 1.2rem;
+}
+
+@media (--lg-viewport) {
+  .HomeIntro-callout {
+    font-size: 1.4rem;
   }
 }
 

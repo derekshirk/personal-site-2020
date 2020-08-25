@@ -177,6 +177,8 @@
 @custom-media --sm-viewport (width >= 30em);
 @custom-media --md-viewport (width >= 47em);
 @custom-media --lg-viewport (width >= 64em);
+@custom-media --xl-viewport (width >= 80em);
+@custom-media --xxl-viewport (width >= 100em);
 
 @custom-media --until-sm-viewport (width < 30em);
 @custom-media --until-md-viewport (width < 47em);

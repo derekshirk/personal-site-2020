@@ -6,4 +6,4 @@ permalink: /
 navtitle: Home
 ---
 
-I am a cross-functional problem solver, strategist and designer with a fervor for creating digital interfaces. 
+**I'm currently seeking work!** Browse past [projects](/projects), enjoy some [writing](/writing) or witness my obsession with smooties bowls on [Twitter](https://twitter.com/derek_shirk).  

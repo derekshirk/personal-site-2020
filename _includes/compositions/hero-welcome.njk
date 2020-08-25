@@ -1,23 +1,24 @@
 <div class="Container Grid Grid--homeHero">
 
   <div
-    class="HomeIntro
-           u-spaceTop u-md-spaceTopNone
+    class="u-spaceTop u-md-spaceTopNone
            u-flex u-flexAlignItemsCenter u-flexJustifyCenter"
   >
-    <div class="HomeIntro-innerZZZ">
-      <h1 class="u-textSize5">
-        👋️ Hi. I'm {{ title }},
+    <div class="HomeIntro">
+      <h1 class="HomeIntro-hello">
+        Hello, my name is Derek
       </h1>
-      <span
-        class="Callout
-               u-textSize1 u-md-textSize3">
+      <h2 class="HomeIntro-statement">
+        I help make awesome user interfaces for&nbsp;screens.
+      </h2>
+      <div
+        class="HomeIntro-callout u-spaceTop">
         {{ layoutContent | safe }}
-      </span>
+      </div>
     </div>
   </div>
 
-  <div class="u-pad6 u-padBottomNone u-lg-padNone">
+  <div class="u-flex u-spaceTop6 u-md-spaceTop4 u-lg-spaceTopNone">
     {% include "svg/home-illustration-whale.svg" %}
   </div>
 
