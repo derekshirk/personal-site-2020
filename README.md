@@ -14,13 +14,13 @@ proudly hosted and deployed with [Netlify](https://www.netlify.com).
 ### 1. Clone this repository:
 
 ```
-git clone https://github.com/derekshirk/personal-site-2019.git
+git clone https://github.com/derekshirk/personal-site-2020.git
 ```
 
 ### 2. Navigate to the directory
 
 ```
-cd personal-site-2019
+cd personal-site-2020
 ```
 
 Specifically have a look at `.eleventy.js` to see if you want to configure any 
@@ -59,4 +59,4 @@ Feel free to submit a PR for feature requests or create an Issue to report bugs.
 
 ## Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/derekshirk/personal-site-2019&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/derekshirk/personal-site-2020&stack=cms)
