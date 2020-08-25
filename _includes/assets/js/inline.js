@@ -43,7 +43,6 @@ document.querySelector("link[rel*='icon']").href = localStorage.getItem("userThe
 // Yank theme textColor from localStorage and use it.
 // changeFavicon(localStorage.getItem("userThemeFavicon"));
 
-
 document.addEventListener("DOMContentLoaded", function() {
   console.log('DOMContentLoaded fired');
 

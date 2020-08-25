@@ -4,19 +4,16 @@
 
 .FooterCard {
   border-top: 1px solid #dceaea;
-  height: 33vh;
-  padding-top: 6rem;
 }
 
 .FooterCard-contact {
-  /* display: flex; */
-  justify-content: space-between;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .FooterMeta {
-  align-items: center;
-  display: flex;
-  height: var(--footer-height);
+
 }
 
 @media (--md-viewport) {
