@@ -46,8 +46,14 @@
 }
 
 .Grid--contact {
-  grid-gap: 2vw;
-  grid-template-columns: repeat(2, 1fr);
+  
+}
+
+@media (--md-viewport) {
+  .Grid--contact {
+    grid-gap: 2vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (--lg-viewport) {
