@@ -9,7 +9,7 @@ subtitle: "Some projects that I've had the pleasure to work on"
   @TODO
   1. Improve responsive images markup
   2. Set up JSON data loops
-  3. Improve accessability wherever possible, one step at a time
+  3. Improve accessability wherever possible — one step at a time
   4. Should images get wrapped in figure elements?
   4. ...
  -->
@@ -19,24 +19,22 @@ subtitle: "Some projects that I've had the pleasure to work on"
   <section class="Grid-wrapper">
 
     <header
-      class="grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl
-             u-flex u-flexWrap u-flexAlignContentBetween
-             u-padTop u-lg-padEnds6"
+      class="Banner-projects grid-whole@xs grid-whole@s       
+             grid-half@m grid-half@l grid-half@xl
+             u-lg-padEnds6 u-flex u-flexWrap u-flexAlignContentBetween"
     >
-      <div>
-        <h2
-          class="u-textShrink1">
-          Abridged Works
+      <div class="Banner">
+        <h1 class="Banner-label">
+          Abridged projects
+        </h1>
+        <h2 class="Banner-title">
+          Selected work from multiple disciplines
         </h2>
-        <p
-          class="u-textGrow3 u-md-textGrow4 u-lg-textGrow6 Callout u-lineHeight1">
-          Design, art direction, concepting.
-        </p>
+        <div
+          class="Banner-subtitle u-spaceTop">
+          {{ layoutContent | safe }}
+        </div>
       </div>
-      <div class="Container u-textCenter u-padSidesNone">
-        {% include "svg/hippo.svg" %}
-      </div>
-
     </header>
 
     <!-- This could be loop One -->

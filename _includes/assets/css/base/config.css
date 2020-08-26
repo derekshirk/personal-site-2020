@@ -8,6 +8,7 @@
   --color-blue: #4eb4d9;
   --color-blue-alt: #4484ce;
   --color-cool-blue: #F3FBFE;
+  --color-blue-gray: #dfecf1;
   --color-purple: #8a6cbd;
   --color-dark-purple: #342a47;
   --color-dark-purple-alt: #271f35;
@@ -20,17 +21,17 @@
   --color-silver: #f3f3f3;
   --color-gray: #888;
   --color-gray-666: #666;
+  --color-gray-dark: #2d3438;
 }
 
 /**
  * Theme
- * TODO
- * 1. Consider updating variable names to reflect light and dark themes
  */
 
 :root {
   --theme-color-background: var(--color-cool-blue);
-  --theme-color-accent: var(--color-purple);
+  --theme-color-accent-primary: var(--color-purple);
+  --theme-color-accent-primary-secondary: (--color-blue-gray);
   --theme-color-text: var(--color-gray-666);
   --theme-color-max-contrast: var(--color-black);
 }

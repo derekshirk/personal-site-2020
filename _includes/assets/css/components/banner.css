@@ -1,0 +1,54 @@
+.Banner {
+  position: relative;
+}
+
+.Banner-label {
+  color: var(--theme-color-accent-primary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+@media (--lg-viewport) {
+  .Banner-label {
+    font-size: 1.2rem;
+  }
+}
+
+.Banner-title {
+  font-size: 2rem;
+  color: var(--theme-color-max-contrast);
+}
+
+@media (--md-viewport) {
+  .Banner-title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (--xl-viewport) {
+  .Banner-title {
+    font-size: 3rem;
+  }
+}
+
+@media (--xxl-viewport) {
+  .Banner-title {
+    font-size: 4.3rem;
+  }
+}
+
+.Banner-subtitle {
+  font-size: 1.2rem;
+}
+
+@media (--lg-viewport) {
+  .Banner-subtitle {
+    font-size: 1.4rem;
+  }
+}

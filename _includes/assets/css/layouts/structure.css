@@ -24,7 +24,7 @@
 
 .SectionIntro {
   border-bottom: 1px solid var(--theme-color-background);
-  border-bottom: 1px solid var(--theme-color-accent);
+  border-bottom: 1px solid var(--theme-color-accent-primary);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }

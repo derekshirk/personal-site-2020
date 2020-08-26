@@ -9,66 +9,10 @@
 
 @media (--lg-viewport) {
   .Grid--homeHero {
-    /* gap: 5vw; */
     grid-template-columns: 50% 45%;
     min-height: 56vh;
     max-width: 95vw;
     
-  }
-}
-
-.HomeIntro {
-  position: relative;
-}
-
-.HomeIntro-hello {
-  color: var(--theme-color-accent);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-
-@media (--lg-viewport) {
-  .HomeIntro-hello {
-    font-size: 1.2rem;
-  }
-}
-
-.HomeIntro-statement {
-  font-size: 2rem;
-  color: var(--theme-color-max-contrast);
-}
-
-@media (--md-viewport) {
-  .HomeIntro-statement {
-    font-size: 2.6rem;
-  }
-}
-
-@media (--lg-viewport) {
-  .HomeIntro-statement {
-    font-size: 2.8rem;
-  }
-}
-
-@media (--xl-viewport) {
-  .HomeIntro-statement {
-    font-size: 3rem;
-  }
-}
-
-@media (--xxl-viewport) {
-  .HomeIntro-statement {
-    font-size: 4.3rem;
-  }
-}
-
-.HomeIntro-callout {
-  font-size: 1.2rem;
-}
-
-@media (--lg-viewport) {
-  .HomeIntro-callout {
-    font-size: 1.4rem;
   }
 }
 
