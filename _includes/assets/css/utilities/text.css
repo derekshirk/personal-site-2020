@@ -187,5 +187,5 @@
  */
 
 .u-textThemeHeading {
-  color: var(--theme-color-accent);
+  color: var(--theme-color-accent-primary);
 }

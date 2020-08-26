@@ -1,0 +1,22 @@
+.Banner-projects {
+  background-color: var(--theme-color-accent-secondary);
+  padding: 1rem;
+}
+
+@media (--md-viewport) {
+  .Banner-projects {
+    padding: 2rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner-projects {
+    margin-left: 10vw;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner-projects .Banner {
+    transform: translateX(-10vw);
+  }
+}

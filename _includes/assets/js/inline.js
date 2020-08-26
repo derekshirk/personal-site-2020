@@ -25,7 +25,12 @@ document.documentElement.style.setProperty(
 
 // Yank theme textColor from localStorage and use it.
 document.documentElement.style.setProperty(
-  "--theme-color-accent", localStorage.getItem("userColorAccent")
+  "--theme-color-accent-primary", localStorage.getItem("usercolorAccentPrimary")
+);
+
+// Yank theme textColor from localStorage and use it.
+document.documentElement.style.setProperty(
+  "--theme-color-accent-secondary", localStorage.getItem("usercolorAccentSecondary")
 );
 
 // Yank theme textColor from localStorage and use it.
@@ -39,7 +44,6 @@ document.documentElement.style.setProperty(
 );
 
 document.addEventListener("DOMContentLoaded", function() {
-  console.log('DOMContentLoaded fired');
 
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
 
@@ -72,7 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
       const color = e.target.getAttribute('data-color');
-      const colorAccent = e.target.getAttribute('data-color-accent')
+      const colorAccentPrimary = e.target.getAttribute('data-color-accent-primary');
+      const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary')
       const colorBackground = e.target.getAttribute('data-color-background');
       const colorMaxContrast = e.target.getAttribute('data-color-max-contrast');
       const themeFavicon = e.target.getAttribute('data-favicon');
@@ -80,7 +85,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // testing
       console.log(
         color,
-        colorAccent,
+        colorAccentPrimary,
+        colorAccentSecondary,
         colorBackground,
         colorMaxContrast,
         themeFavicon
@@ -88,7 +94,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       // Update theme styles
       handleThemeUpdate({
-        '--theme-color-accent': colorAccent,
+        '--theme-color-accent-primary': colorAccentPrimary,
+        '--theme-color-accent-secondary': colorAccentSecondary,
         '--theme-color-background': colorBackground,
         '--theme-color-max-contrast': colorMaxContrast,
         '--theme-color-text': color,
@@ -100,7 +107,8 @@ document.addEventListener("DOMContentLoaded", function() {
       // Save the value for next time page is visited.
       localStorage.setItem("userThemeColor", colorBackground);
       localStorage.setItem("userTextColor", color);
-      localStorage.setItem("userColorAccent", colorAccent);
+      localStorage.setItem("usercolorAccentPrimary", colorAccentPrimary);
+      localStorage.setItem("usercolorAccentSecondary", colorAccentSecondary);
       localStorage.setItem("userColorMaxContrast", colorMaxContrast);
       localStorage.setItem("userThemeFavicon", themeFavicon);
     });
