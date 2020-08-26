@@ -6,7 +6,7 @@
 @media (--md-viewport) {
   .FeaturedImage--project::after {
     /* background-color: var(--color-white); */
-    border: 10px solid var(--primary-theme-accent-alt-color);
+    border: 10px solid var(--primary-theme-accent-color);
     content: "";
     display: block;
     height: 90%;
@@ -25,7 +25,7 @@
 }
 
 .u-underline::after {
-  background-color: var(--primary-theme-accent-alt-color);
+  background-color: var(--primary-theme-accent-color);
   bottom: -1px;
   content: '';
   height: 6px;
@@ -43,7 +43,7 @@
 
 
 .u-overline::after {
-  background-color: var(--primary-theme-accent-alt-color);
+  background-color: var(--primary-theme-accent-color);
   content: '';
   position: absolute;
   height: 5px;

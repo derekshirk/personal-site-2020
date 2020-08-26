@@ -18,19 +18,14 @@ if (localStorage.getItem("userThemeFavicon") !== null) {
   document.querySelector("link[rel*='icon']").href = localStorage.getItem("userThemeFavicon");
 }
 
-// Yank theme textColor from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--primary-theme-accent-color", localStorage.getItem("userAccentColor")
-);
-
-// Yank theme textColor from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--primary-theme-accent-alt-color", localStorage.getItem("userAccentAltColor")
-);
-
 // Yank theme bgColor from localStorage and use it.
 document.documentElement.style.setProperty(
   "--primary-theme-background-color", localStorage.getItem("userThemeColor")
+);
+
+// Yank theme textColor from localStorage and use it.
+document.documentElement.style.setProperty(
+  "--primary-theme-accent-color", localStorage.getItem("userAccentColor")
 );
 
 // Yank theme textColor from localStorage and use it.
@@ -40,13 +35,18 @@ document.documentElement.style.setProperty(
 
 // Yank theme textColor from localStorage and use it.
 document.documentElement.style.setProperty(
-  "--primary-theme-heading-color", localStorage.getItem("userHeadingColor")
+  "--primary-theme-link-color", localStorage.getItem("userLinkColor")
 );
 
 // Yank theme textColor from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--primary-theme-link-color", localStorage.getItem("userLinkColor")
-);
+// document.documentElement.style.setProperty(
+//   "--primary-theme-accent-color", localStorage.getItem("userAccentAltColor")
+// );
+
+// Yank theme textColor from localStorage and use it.
+// document.documentElement.style.setProperty(
+//   "--primary-theme-accent-color", localStorage.getItem("userHeadingColor")
+// );
 
 document.addEventListener("DOMContentLoaded", function() {
   console.log('DOMContentLoaded fired');
@@ -82,20 +82,16 @@ document.addEventListener("DOMContentLoaded", function() {
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
       const accentColor = e.target.getAttribute('data-accent-color')
-      const accentAltColor = e.target.getAttribute('data-accent-alt-color');
       const bgColor = e.target.getAttribute('data-bg-color');
       const color = e.target.getAttribute('data-color');
-      const headingColor = e.target.getAttribute('data-heading-color');
       const linkColor = e.target.getAttribute('data-link-color');
       const themeFavicon = e.target.getAttribute('data-favicon');
 
       // testing
       console.log(
         accentColor,
-        accentAltColor,
         bgColor,
         color,
-        headingColor,
         linkColor,
         themeFavicon
       );
@@ -103,9 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Update theme styles
       handleThemeUpdate({
         '--primary-theme-accent-color': accentColor,
-        '--primary-theme-accent-alt-color': accentAltColor,
         '--primary-theme-background-color': bgColor,
-        '--primary-theme-heading-color': headingColor,
         '--primary-theme-link-color': linkColor,
         '--primary-theme-text-color': color,
       });
@@ -117,8 +111,6 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem("userThemeColor", bgColor);
       localStorage.setItem("userTextColor", color);
       localStorage.setItem("userAccentColor", accentColor);
-      localStorage.setItem("userAccentAltColor", accentAltColor);
-      localStorage.setItem("userHeadingColor", headingColor);
       localStorage.setItem("userLinkColor", linkColor);
       localStorage.setItem("userThemeFavicon", themeFavicon);
     });
