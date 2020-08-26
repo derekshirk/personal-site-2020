@@ -64,10 +64,6 @@
   }
 }
 
-.Bookshelf-itemTitle {
-  color: inherit;
-}
-
 @media (--lg-viewport) {
   .Bookshelf-item:first-of-type .Bookshelf-itemTitle {
     font-size: 200% !important;
