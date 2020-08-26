@@ -38,16 +38,6 @@ document.documentElement.style.setProperty(
   "--theme-color-max-contrast", localStorage.getItem("userColorMaxContrast")
 );
 
-// Yank theme textColor from localStorage and use it.
-// document.documentElement.style.setProperty(
-//   "--theme-color-accent", localStorage.getItem("userAccentAltColor")
-// );
-
-// Yank theme textColor from localStorage and use it.
-// document.documentElement.style.setProperty(
-//   "--theme-color-accent", localStorage.getItem("userHeadingColor")
-// );
-
 document.addEventListener("DOMContentLoaded", function() {
   console.log('DOMContentLoaded fired');
 
@@ -81,9 +71,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
+      const color = e.target.getAttribute('data-color');
       const colorAccent = e.target.getAttribute('data-color-accent')
       const colorBackground = e.target.getAttribute('data-color-background');
-      const color = e.target.getAttribute('data-color');
       const colorMaxContrast = e.target.getAttribute('data-color-max-contrast');
       const themeFavicon = e.target.getAttribute('data-favicon');
 
