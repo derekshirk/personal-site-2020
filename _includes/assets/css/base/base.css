@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-theme-background-color);
+  background-color: var(--theme-color-background);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-height: 100%;

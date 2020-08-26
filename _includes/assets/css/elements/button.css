@@ -1,6 +1,6 @@
 button {
-  background-color: var(--primary-theme-background-color);
+  background-color: var(--theme-color-background);
   border: 1px solid transparent;
-  color: var(--primary-theme-text-color);
+  color: var(--theme-color-text);
   cursor: pointer;
 }

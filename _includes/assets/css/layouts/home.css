@@ -22,6 +22,7 @@
 }
 
 .HomeIntro-hello {
+  color: var(--theme-color-accent);
   font-size: 0.9rem;
   text-transform: uppercase;
 }
@@ -34,7 +35,7 @@
 
 .HomeIntro-statement {
   font-size: 2rem;
-  color: var(--color-black);
+  color: var(--theme-color-max-contrast);
 }
 
 @media (--md-viewport) {
