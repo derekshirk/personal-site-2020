@@ -8,6 +8,16 @@ if (window.netlifyIdentity) {
   });
 }
 
+// 1. Check to see if a theme specific favicon is saved in local storage
+// 2. If it is, use it.
+// 3. If not, do nothing (defaults to using whatever favicon is defined in `<head>`).
+// 4. If this conditional is not used, no favicon will be displayed on an initial
+//    page load when nothing is saved to local storage.
+
+if (localStorage.getItem("userThemeFavicon") !== null) {
+  document.querySelector("link[rel*='icon']").href = localStorage.getItem("userThemeFavicon");
+}
+
 // Yank theme textColor from localStorage and use it.
 document.documentElement.style.setProperty(
   "--primary-theme-accent-color", localStorage.getItem("userAccentColor")
@@ -38,25 +48,19 @@ document.documentElement.style.setProperty(
   "--primary-theme-link-color", localStorage.getItem("userLinkColor")
 );
 
-document.querySelector("link[rel*='icon']").href = localStorage.getItem("userThemeFavicon");
-
-// Yank theme textColor from localStorage and use it.
-// changeFavicon(localStorage.getItem("userThemeFavicon"));
-
 document.addEventListener("DOMContentLoaded", function() {
   console.log('DOMContentLoaded fired');
 
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
 
    // Favicon
-   // TODO: any javascript related to switching favicon can likely be removed
-   // if/once `prefers-color-scheme` media queries are implemented
+   // TODO: Determine if javascript related to switching favicon can be removed
+   //       if/once `prefers-color-scheme` media queries are implemented
    const changeFavicon = link => {
     let $favicon = document.querySelector('link[rel="icon"]')
     // If a <link rel="icon"> element already exists,
     // change its href to the given link.
     if ($favicon !== null) {
-      console.log('favicon is not empty');
       $favicon.href = link
     // Otherwise, create a new element and append it to <head>.
     } else {
