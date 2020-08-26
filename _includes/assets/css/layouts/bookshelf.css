@@ -55,17 +55,13 @@
 
 .Bookshelf-meta {
   padding: 0.335rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-theme-text-color);
+  color: var(--theme-color-text);
 }
 
 @media (--md-viewport) {
   .Bookshelf-meta {
     padding: 0.335rem 0.75rem 0.75rem 0;
   }
-}
-
-.Bookshelf-itemTitle {
-  color: inherit;
 }
 
 @media (--lg-viewport) {
