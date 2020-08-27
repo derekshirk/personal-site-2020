@@ -11,12 +11,12 @@
 
 @media (--lg-viewport) {
   .Banner-projects {
-    margin-left: 10vw;
+    margin-left: 8vw;
   }
 }
 
 @media (--lg-viewport) {
   .Banner-projects .Banner {
-    transform: translateX(-10vw);
+    transform: translateX(-8vw);
   }
 }

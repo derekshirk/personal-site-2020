@@ -1,0 +1,18 @@
+/**
+ * This utility is somewhat of a hack which is being used while the
+ * markup for the "projects" page is under development. Ideally, this
+ * utility class can be deleted when that markup is improved. 
+ */
+
+.u-objectFitCover {
+  display: flex;
+}
+
+.u-objectFitCover figure {
+  display: flex;
+  height: 100%;
+}
+
+.u-objectFitCover img {
+  object-fit: cover;
+}
