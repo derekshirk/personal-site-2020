@@ -31,7 +31,7 @@
 :root {
   --theme-color-background: var(--color-cool-blue);
   --theme-color-accent-primary: var(--color-purple);
-  --theme-color-accent-primary-secondary: (--color-blue-gray);
+  --theme-color-accent-secondary: var(--color-blue-gray);
   --theme-color-text: var(--color-gray-666);
   --theme-color-max-contrast: var(--color-black);
 }
