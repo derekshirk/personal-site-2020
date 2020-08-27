@@ -48,8 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
 
    // Favicon
-   // TODO: Determine if javascript related to switching favicon can be removed
-   //       if/once `prefers-color-scheme` media queries are implemented
+   // TODO: Determine if javascript related to switching favicon can 
+   //       simplified or removed if/once `prefers-color-scheme` 
+   //       are implemented media queries 
    const changeFavicon = link => {
     let $favicon = document.querySelector('link[rel="icon"]')
     // If a <link rel="icon"> element already exists,

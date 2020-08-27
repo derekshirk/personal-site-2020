@@ -36,6 +36,16 @@
   --theme-color-max-contrast: var(--color-black);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color-background: var(--color-black-alt);
+    --theme-color-accent-primary: var(--color-pink);
+    --theme-color-accent-secondary: var(--color-gray-dark);
+    --theme-color-text: var(--color-silver);
+    --theme-color-max-contrast: var(--color-white);
+  }
+}
+
 /**
  * Fonts
  */
