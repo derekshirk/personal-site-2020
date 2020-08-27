@@ -1,3 +1,5 @@
+/* Currently unused as of 08.27.2020 */
+
 .FeaturedImage {
   position: relative;
   z-index: 2;
@@ -37,7 +39,7 @@
 
 .u-overline {
   display: inline-block;
-  padding-top: 1em;
+  padding-top: 1.5rem;
   position: relative;
 }
 

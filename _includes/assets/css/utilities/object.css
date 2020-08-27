@@ -1,0 +1,12 @@
+.u-objectFitCover {
+  display: flex;
+}
+
+.u-objectFitCover figure {
+  display: flex;
+  height: 100%;
+}
+
+.u-objectFitCover img {
+  object-fit: cover;
+}

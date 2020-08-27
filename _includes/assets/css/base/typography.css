@@ -1,6 +1,6 @@
 body {
   color: var(--theme-color-text);
-  font-family: 'Inter';
+  font-family: var(--font-family);
   font-weight: 460;
   font-size: 1.25rem;
 }
@@ -17,28 +17,28 @@ p:not(:last-of-type) {
 
 :--headings {
   color: var(--theme-color-max-contrast);
-  font-family: 'Inter';
+  font-family: var(--font-family);
   font-variation-settings: "wght" 800, "wdth" 700;
   margin-bottom: 0.25rem;
 }
 
 .Callout {
   color: var(--theme-color-text);
-  font-family: 'Inter';
+  font-family: var(--font-family);
   font-variation-settings: "wght" 420,"wdth" 200;
 }
 
-.Tag {
-  font-family: 'Inter';
-  font-variation-settings: "wght" 420;
+.Label {
+  background-color: var(--theme-color-accent-primary);
+  color: white;
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: 0.75em;
+  font-variation-settings: "wght" 750,"wdth" 500;
   margin-top: .75em;
-}
-
-.Tag-link {
-  background-color: var(--theme-color-accent-primary) !important;
-  color: white !important;
-  text-decoration: none !important;
   padding: 0.25em 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* @TODO organize me please */
@@ -74,7 +74,7 @@ a[href]:hover {
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: var(--font-family);
   src: url('/static/fonts/inter/inter.otf') format('opentype');
   font-weight: 100 900;
 }

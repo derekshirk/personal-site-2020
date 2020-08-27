@@ -54,7 +54,7 @@ header nav li:last-of-type {
 
 .Header-link[href] {
   color: var(--theme-color-max-contrast);
-  font-family: 'Inter';
+  font-family: var(--font-family);
   font-size: 1rem;
   font-variation-settings: "wght" 750, "wdth" 500;
   text-decoration: none;
