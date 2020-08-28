@@ -157,4 +157,8 @@
   @mixin makeSpaceUtilities lg-;
 }
 
+@media (--xl-viewport) {
+  @mixin makeSpaceUtilities xl-;
+}
+
 /* stylelint-enable */

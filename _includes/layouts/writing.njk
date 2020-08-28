@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 section: blog
-permalink: /blog/index.html
+permalink: /writes/index.html
 subtitle: "👋️ Welcome to my blog"
 ---
 
@@ -11,34 +11,58 @@ subtitle: "👋️ Welcome to my blog"
   </div>
 </div>
 
+{# 
+ TODO
+ 1. Improve overall grid layout and code quality and efficiency
+ 2. Make loops
+ 3. Learn how to output posts by date
+ #}
+
 <div class="Container ContainerProse--extra u-padTop6">
 
-  <section class="Grid Grid--writing u-md-padTop5 u-lg-padTop6">
-    <h3
-      class="u-textSize5 ArticleSectionTitle u-spaceBottom3 u-lg-spaceBottomNone"
+  <section class="Grid Grid--writing u-md-padTop5 u-lg-padTop6 u-spaceItems">
+    
+    <h3 class="ArticleSectionLabel">2020</h3>
+    {% set postslist = collections.2020Posts %}
+    {% include "components/postslist.njk" %}
+    
+    <h3 class="ArticleSectionLabel">2019</h3>
+    <div class="u-padRight2 u-spaceItems">
+      {% set postslist = collections.2019Posts %}
+      {% include "components/postslist.njk" %}
+    </div>
+
+    <h3 class="ArticleSectionLabel">2018</h3>
+    <div class="u-padRight2 u-spaceItems">
+      {% set postslist = collections.2019Posts %}
+      {% include "components/postslist.njk" %}
+    </div>
+    
+    {# <h3
+      class="u-textSize5 ArticleSectionLabel u-spaceBottom3 u-lg-spaceBottomNone"
     >
       2020
     </h3>
     <div class="u-padRight2 u-spaceItems">
       {% set postslist = collections.posts %}
       {% include "components/postslist.njk" %}
-    </div>
+    </div> #}
 
-     <h3
-      class="u-textSize5 ArticleSectionTitle u-spaceBottom3 u-lg-spaceBottomNone"
+     {# <h3
+      class="u-textSize5 ArticleSectionLabel u-spaceBottom3 u-lg-spaceBottomNone"
     >
       2019
     </h3>
     <div class="u-padRight2 u-spaceItems">
       {% set postslist = collections.posts %}
       {% include "components/postslist.njk" %}
-    </div>
+    </div> #}
 
   </section>
 
-  <section class="Grid Grid--writing u-padTop6">
+  {# <section class="Grid Grid--writing u-padTop6">
       <h3
-        class="u-textSize5 ArticleSectionTitle u-spaceBottom3 u-lg-spaceBottomNone"
+        class="u-textSize5 ArticleSectionLabel u-spaceBottom3 u-lg-spaceBottomNone"
       >
         2018
       </h3>
@@ -46,6 +70,6 @@ subtitle: "👋️ Welcome to my blog"
         {% set postslist = collections.posts %}
         {% include "components/postslist.njk" %}
       </div>
-    </section>
+    </section> #}
 
 </div>

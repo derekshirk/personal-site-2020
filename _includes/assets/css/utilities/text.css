@@ -61,6 +61,10 @@
   @mixin makeTextSizeUtilities lg-;
 }
 
+@media (--xl-viewport) {
+  @mixin makeTextSizeUtilities xl-;
+}
+
 /* stylelint-enable */
 
 /**
