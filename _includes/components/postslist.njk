@@ -3,16 +3,19 @@
     <article
       {% if post.url == url %} data-current="current item"{% endif %}>
       <h3 class="u-textSize2 u-md-textSize3">
-        <a href="{{ post.url | url }}">
+        <a class="u-flex " href="{{ post.url | url }}">
           {% if post.data.title %}
-            {{ post.data.title }}
+            <span class="u-spaceRight02">{{ post.data.title }}</span>
+             {% if post.data.link %}
+              {% include "svg/link-icon.svg" %}
+             {% endif %}
           {% else %}
             Untitled
           {% endif %}
         </a>
       </h3>
       {% if post.data.summary %}
-        <p>
+        <p class="u-textSize1">
           {{ post.data.summary }}
         </p>
       {% endif %}

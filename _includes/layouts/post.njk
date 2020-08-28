@@ -4,48 +4,45 @@ section: post
 ---
 
 {# {% include 'components/page-topper.njk' %} #}
-
-  <div class="Container ContainerProse u-padTop02">
-
-    <section class="Grid-wrapper u-lg-padEnds2">
-      <header
-        class="Banner-projects Banner-writing grid-whole@xs 
-               grid-whole@s       
-               grid-whole@m grid-whole@l grid-whole@xl
-               u-lg-padEnds6 u-flex u-flexWrap u-flexAlignContentBetween"
-      >
-        <div class="Banner">
-          <h1 class="Banner-label">
-            {{ date | readableDate }}
-          </h1>
-          <h1 class="Banner-title">
-            {{ title }}
-          </h1>
-        </div>
-      </header>
-    </section>
-
-    <article>
-
-      {{ layoutContent | safe }}
-
-      {% if tags %}
-        <p>
-        {% for tag in tags %}
-          {%- if tag != "post" -%}
-            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-          {%- endif -%}
-        {% endfor %}
-        </p>
-      {% endif %}
-
-    </article>
-
-    <nav>
-      <a href="{{ '/blog/' | url }}">← Post index</a>
-    </nav>
-
+  <div class="Illustration-hippo">
+    {% include "svg/hippo.svg" %}
   </div>
 
 
+<article class="Container ContainerProse u-padTop1 u-md-padTop3 u-spaceItems u-textSize1">
+
+  <header class="u-lg-padTop6">
+    <h4 class="Banner-label">{{ date | readableDate }}</h4>
+    <h1 class="u-textSize6">{{ title }}</h1>
+  </header>
+
+  {# <h1 class="u-textSize6">{{ title }}</h1> #}
+  {{ layoutContent | safe }}
+
+  {% if link %}
+    <div class="u-flex">
+      <span class="u-spaceRight03">
+        {% include "svg/link-icon-alt.svg" %}
+      </span>
+      <a href="{{link}}">Read article</a>
+    </div>
+  {% endif %}
+
+  {# <a href="{{link}}">Read article</a> #}
+
+  {# {% if tags %}
+    <p>
+    {% for tag in tags %}
+      {%- if tag != "post" -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+    </p>
+  {% endif %} #}
+
+{# <nav>
+  <a href="{{ '/writes/' | url }}">← Post index</a>
+</nav> #}
+
+</article>

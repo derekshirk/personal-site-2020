@@ -18,9 +18,9 @@ subtitle: "👋️ Welcome to my blog"
  3. Learn how to output posts by date
  #}
 
-<div class="Container ContainerProse--extra u-padTop6">
+<div class="Container ContainerProse--extra u-padTop1 u-md-padTop3">
 
-  <section class="Grid Grid--writing u-md-padTop5 u-lg-padTop6 u-spaceItems">
+  <section class="Grid Grid--writing u-lg-padTop6 u-spaceItems">
     
     <h3 class="ArticleSectionLabel">2020</h3>
     {% set postslist = collections.2020Posts %}
@@ -34,42 +34,9 @@ subtitle: "👋️ Welcome to my blog"
 
     <h3 class="ArticleSectionLabel">2018</h3>
     <div class="u-padRight2 u-spaceItems">
-      {% set postslist = collections.2019Posts %}
+      {% set postslist = collections.2018Posts %}
       {% include "components/postslist.njk" %}
     </div>
     
-    {# <h3
-      class="u-textSize5 ArticleSectionLabel u-spaceBottom3 u-lg-spaceBottomNone"
-    >
-      2020
-    </h3>
-    <div class="u-padRight2 u-spaceItems">
-      {% set postslist = collections.posts %}
-      {% include "components/postslist.njk" %}
-    </div> #}
-
-     {# <h3
-      class="u-textSize5 ArticleSectionLabel u-spaceBottom3 u-lg-spaceBottomNone"
-    >
-      2019
-    </h3>
-    <div class="u-padRight2 u-spaceItems">
-      {% set postslist = collections.posts %}
-      {% include "components/postslist.njk" %}
-    </div> #}
-
   </section>
-
-  {# <section class="Grid Grid--writing u-padTop6">
-      <h3
-        class="u-textSize5 ArticleSectionLabel u-spaceBottom3 u-lg-spaceBottomNone"
-      >
-        2018
-      </h3>
-      <div class="u-padRight2 u-spaceItems">
-        {% set postslist = collections.posts %}
-        {% include "components/postslist.njk" %}
-      </div>
-    </section> #}
-
 </div>

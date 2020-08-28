@@ -22,13 +22,19 @@
   }
 }
 
-.Grid--writing {
-  @media (--lg-viewport) {
+@media (--md-viewport) {
+  .Grid--writing {
     display: grid;
     grid-gap: 4vw;
     grid-template-columns: 0.5fr 1fr;
     padding: 0;
-    transform: translateX(-50px);
+    transform: translateX(-10vw);
+  }
+}
+
+@media (--lg-viewport) {
+  .Grid--writing {
+    transform: translateX(-4vw);
   }
 }
 
@@ -38,7 +44,7 @@
   margin-top: 1rem;
 }
 
-@media (--lg-viewport) {
+@media (--md-viewport) {
   .ArticleSectionLabel {
     text-align: right;
   }

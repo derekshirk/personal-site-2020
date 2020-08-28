@@ -2,7 +2,7 @@ body {
   color: var(--theme-color-text);
   font-family: var(--font-family);
   font-weight: 460;
-  font-size: 1.25rem;
+  font-size: 1em;
 }
 
 p,
@@ -73,8 +73,22 @@ a[href]:hover {
   text-decoration: none;
 }
 
+blockquote {
+  transform: translateX(-6vw);
+}
+
+blockquote p {
+  font-size: 2.3rem;
+  line-height: 1.3;
+  color: var(--theme-color-accent-primary);
+  font-weight: 400;
+  padding: 1.25rem;
+  width: 110%;
+}
+
 @font-face {
   font-family: var(--font-family);
   src: url('/static/fonts/inter/inter.otf') format('opentype');
   font-weight: 100 900;
 }
+

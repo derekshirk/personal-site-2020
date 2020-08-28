@@ -21,6 +21,12 @@
   }
 }
 
+@media (--lg-viewport) {
+  .Banner-writing .Banner {
+    transform: translateX(-6vw);
+  }
+}
+
 .Banner-writing {
   padding: 2rem;
 }
