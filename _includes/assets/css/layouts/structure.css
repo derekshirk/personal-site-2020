@@ -1,21 +1,21 @@
 .Container {
-  max-width: 3000px;
+  max-width: 2800px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.25rem;
   width: 100%;
 }
 
-.ContentMain {
+/* .ContentMain {
   max-width: 37.5em;
-}
+} */
 
 .ContainerProse {
   margin: 0 auto;
-  max-width: 40em;
+  max-width: 50rem;
 }
 
 .ContainerProse--extra {
-  max-width: 60em;
+  max-width: 60rem;
 }
 
 .ContentProse p {
@@ -36,12 +36,8 @@
 @media (--lg-viewport) {
   .Grid--smallThenBig {
     grid-gap: 10%;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 35% 55%;
   }
-}
-
-.Grid--contact {
-  
 }
 
 @media (--md-viewport) {

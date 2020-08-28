@@ -61,7 +61,7 @@ th {
 }
 
 main {
-  min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
+  min-height: calc(100vh - (var(--footer-height) - 2.986rem + var(--header-height)));
 }
 
 footer {

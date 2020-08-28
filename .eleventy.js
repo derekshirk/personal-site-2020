@@ -87,6 +87,11 @@ module.exports = function(eleventyConfig) {
     return collectionAPI.getFilteredByTag("2019");
   });
 
+   // Get only content that matches a tag
+   eleventyConfig.addCollection("2018Posts", function(collectionAPI) {
+    return collectionAPI.getFilteredByTag("2018");
+  });
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("static/fonts");

@@ -2,14 +2,9 @@
  * @define Bookshelf
  */
 
-.Bookshelf {
-
-}
-
 .Bookshelf-content {
   display: grid;
   flex-direction: row;
-  font-size: 0.875em;
   grid-gap: 1.5em;
   grid-template-columns: 1fr;
   line-height: 1.2;
@@ -31,7 +26,7 @@
 .Bookshelf-item {
   background-color: transparent;
   display: grid;
-  grid-template-columns: 24vw 76vw;
+  grid-template-columns: 0.25fr 0.75fr;
   padding-bottom: 0;
 
   @media (--md-viewport) {
