@@ -1,0 +1,6 @@
+@media (--lg-viewport) {
+  .Illustration-hippo {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}

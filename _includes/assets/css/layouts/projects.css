@@ -20,3 +20,13 @@
     transform: translateX(-8vw);
   }
 }
+
+.Banner-writing {
+  padding: 2rem;
+}
+
+@media (--lg-viewport) {
+  .Banner-writing {
+    margin-left: 6vw;
+  }
+}
