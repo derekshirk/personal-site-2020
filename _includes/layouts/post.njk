@@ -3,29 +3,49 @@ layout: layouts/base.njk
 section: post
 ---
 
-{% include 'components/page-topper.njk' %}
+{# {% include 'components/page-topper.njk' %} #}
 
-<div class="Container ContainerProse u-padTop02">
+  <div class="Container ContainerProse u-padTop02">
 
-  <article>
+    <section class="Grid-wrapper u-lg-padEnds2">
+      <header
+        class="Banner-projects Banner-writing grid-whole@xs 
+               grid-whole@s       
+               grid-whole@m grid-whole@l grid-whole@xl
+               u-lg-padEnds6 u-flex u-flexWrap u-flexAlignContentBetween"
+      >
+        <div class="Banner">
+          <h1 class="Banner-label">
+            {{ date | readableDate }}
+          </h1>
+          <h1 class="Banner-title">
+            {{ title }}
+          </h1>
+        </div>
+      </header>
+    </section>
 
-    {{ layoutContent | safe }}
+    <article>
 
-    {% if tags %}
-      <p>
-      {% for tag in tags %}
-        {%- if tag != "post" -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-      </p>
-    {% endif %}
+      {{ layoutContent | safe }}
 
-  </article>
+      {% if tags %}
+        <p>
+        {% for tag in tags %}
+          {%- if tag != "post" -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+        </p>
+      {% endif %}
 
-  <nav>
-    <a href="{{ '/blog/' | url }}">← Post index</a>
-  </nav>
+    </article>
 
-</div>
+    <nav>
+      <a href="{{ '/blog/' | url }}">← Post index</a>
+    </nav>
+
+  </div>
+
+

@@ -6,13 +6,25 @@ subtitle: "👋️ Welcome to my blog"
 ---
 
 <div class="Container">
-  {% include "svg/hippo.svg" %}
+  <div class="Illustration-hippo">
+    {% include "svg/hippo.svg" %}
+  </div>
 </div>
 
-<div class="Container u-padTop02">
+<div class="Container ContainerProse--extra u-padTop6">
 
   <section class="Grid Grid--writing u-md-padTop5 u-lg-padTop6">
     <h3
+      class="u-textSize5 ArticleSectionTitle u-spaceBottom3 u-lg-spaceBottomNone"
+    >
+      2020
+    </h3>
+    <div class="u-padRight2 u-spaceItems">
+      {% set postslist = collections.posts %}
+      {% include "components/postslist.njk" %}
+    </div>
+
+     <h3
       class="u-textSize5 ArticleSectionTitle u-spaceBottom3 u-lg-spaceBottomNone"
     >
       2019
@@ -21,6 +33,7 @@ subtitle: "👋️ Welcome to my blog"
       {% set postslist = collections.posts %}
       {% include "components/postslist.njk" %}
     </div>
+
   </section>
 
   <section class="Grid Grid--writing u-padTop6">

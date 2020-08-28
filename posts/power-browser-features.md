@@ -4,7 +4,6 @@ summary: I'd like to share some browser features that everyone, not only designe
 date: 2019-07-30
 tags:
   - post
-  - latest
 customClass: u-bgFancy--bank-note
 ---
 

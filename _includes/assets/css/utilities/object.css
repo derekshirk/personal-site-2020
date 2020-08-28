@@ -6,15 +6,14 @@
 
 .u-objectFitCover {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .u-objectFitCover figure {
-  display: flex;
   height: 100%;
-  align-items: center;
 }
 
 .u-objectFitCover img {
   object-fit: cover;
+  min-height: 100%;
 }
