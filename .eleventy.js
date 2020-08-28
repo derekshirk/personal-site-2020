@@ -77,6 +77,16 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("side-project");
   });
 
+  // Get only content that matches a tag
+  eleventyConfig.addCollection("2020Posts", function(collectionAPI) {
+    return collectionAPI.getFilteredByTag("2020");
+  });
+
+  // Get only content that matches a tag
+  eleventyConfig.addCollection("2019Posts", function(collectionAPI) {
+    return collectionAPI.getFilteredByTag("2019");
+  });
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("static/fonts");

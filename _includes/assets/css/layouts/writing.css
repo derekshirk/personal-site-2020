@@ -4,3 +4,9 @@
     margin: 0 auto;
   }
 }
+
+@media (--xl-viewport) {
+  .Illustration-hippo {
+    max-width: 60vw;
+  }
+}

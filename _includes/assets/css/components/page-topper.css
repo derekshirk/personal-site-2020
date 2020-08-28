@@ -16,8 +16,10 @@
   padding: calc(2msu * 1em);
 }
 
-.Grid--writing {
-  padding: 0 4rem;
+@media (--md-viewport) {
+  .Grid--writing {
+    padding: 0 4rem;
+  }
 }
 
 .Grid--writing {
@@ -30,12 +32,14 @@
   }
 }
 
-.ArticleSectionTitle {
-  font-size: calc(4msu * 1rem);
+.ArticleSectionLabel {
+  color: var(--theme-color-accent-primary);
+  font-size: 2rem;
+  margin-top: 1rem;
 }
 
 @media (--lg-viewport) {
-  .ArticleSectionTitle {
+  .ArticleSectionLabel {
     text-align: right;
   }
 }

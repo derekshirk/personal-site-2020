@@ -5,6 +5,6 @@ tags:
   - nav
 navtitle: Bookshelf
 date: 2019-07-03
-permalink: /bookshelf/index.html
+permalink: /reads/index.html
 ---
 
