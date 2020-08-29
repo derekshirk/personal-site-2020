@@ -1,23 +1,16 @@
-:root {
-  --footer-height: 195px;
+.Footer {
+  border-top: var(--border-width-sm) solid var(--theme-color-accent-secondary);
 }
 
-.FooterCard {
-  border-top: 1px solid #dceaea;
-}
-
-.FooterCard-contact {
+.Footer-socialList {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 1em;
 }
 
-.FooterMeta {
-
-}
-
-@media (--md-viewport) {
-  .Grid--footer {
-    grid-template-columns: 1fr 1fr;
+.Footer-socialLinks {
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  &:last-of-type {
+    margin-right: 0;
   }
 }

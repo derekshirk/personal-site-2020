@@ -27,15 +27,8 @@ body {
   flex: 1 0 auto;
 }
 
-/**
- * TODO
- * 1. padding properties are probably best added to a container  
- */
-
 footer {
   flex-shrink: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 /**
