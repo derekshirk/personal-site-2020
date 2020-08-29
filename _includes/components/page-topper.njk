@@ -1,8 +1,13 @@
+{# 
+ TODO
+ 1. [DELETE] this file is not in use as of 08.28.2020
+ #}
+
 <div class="PageTopper u-bgFancy {{ customClass }}">
   {% if title %}
     <div class="PageTopper-label ContainerProse">
       <h1>{{ title }}</h1>
-      <p class="Callout u-textSize2 u-md-textSize3">
+      <p class="u-textSize2 u-md-textSize3">
         {% if 'post' in tags %}
           <time datetime="{{ date | machineDate }}">
             {{ date | readableDate }}

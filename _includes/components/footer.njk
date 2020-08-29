@@ -1,19 +1,18 @@
-<footer class="FooterCard u-spaceTop6 u-padEnds2">
+<footer class="Footer u-spaceTop6 u-padEnds2">
   <div class="Container u-md-flex u-md-flexAlignItemsCenter u-md-flexJustifyBetween">
-    <div>
-      <div>
-        <h4 class="">Derek Shirk</h4>
-        {% include "compositions/showcase-social-media.njk" %}
-      </div>
-      <div class="FooterMeta">
-        <p class="u-textShrink2">
-          The personal site of Derek Shirk © <script type="text/javascript">document.write(new Date().getFullYear());</script>. Check out the <a href="{{ pkg.repository.url }}">Github repo</a>.
-        </p>
-      </div>
+    
+    <div class="u-staggerItems06">
+      <h4 class="">{{pkg.author.name}}</h4>
+      {% include "compositions/showcase-social-media.njk" %}
+      <p class="u-textShrink2">
+        The personal site of © <script type="text/javascript">document.write(new Date().getFullYear() + '&nbsp;');</script> {{pkg.author.name}}. Check out the <a href="{{ pkg.repository.url }}">Github repo</a>.
+      </p>
     </div>
+
     <div class="u-spaceTop4 u-md-spaceTopNone">
       <h5 class="u-spaceBottom01 u-md-spaceBottom03">Switch themes:</h5> 
       {% include "patterns/theme-switcher.njk" %}
     </div>
+
   </div>
 </footer>

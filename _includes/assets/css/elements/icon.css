@@ -1,0 +1,16 @@
+/**
+ TODO
+ 1. Add numerical comments explaining the important bits
+ */
+ 
+.icon {
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 0; 
+  flex: none; 
+  height: 1em;
+  max-width: none;
+  width: 1em;
+  position: relative;
+  top: 2px;
+}
