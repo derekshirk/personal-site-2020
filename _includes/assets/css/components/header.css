@@ -18,19 +18,6 @@
   z-index: 10;
 }
 
-.Header-linkLogo {
-  display: flex;
-}
-
-.Header-logo {
-  color: var(--header-logo-color);
-  max-width: 48px;
-}
-
-.Header-logoPath {
-  fill: currentColor;
-}
-
 /* Header Nav */
 
 header nav ul :first-child {
