@@ -4,7 +4,8 @@
 @import "flex";
 @import "list";
 @import "object";
-@import "text";
+@import "release";
 @import "size";
 @import "space";
+@import "text";
 @import "theme";

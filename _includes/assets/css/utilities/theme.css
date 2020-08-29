@@ -1,3 +1,8 @@
+/**
+ * TODO
+ * 1. Make utilities for all theme colors
+ */
+
 .u-theme-accentSecondary {
   background-color: var(--theme-color-accent-secondary);
 }
