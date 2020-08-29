@@ -12,5 +12,8 @@
   max-width: none;
   width: 1em;
   position: relative;
+}
+
+.icon--inline {
   top: 2px;
 }

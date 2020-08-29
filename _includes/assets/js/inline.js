@@ -76,12 +76,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
+      const lightModeBtn = document.getElementById('light-mode');
+      const darkModeBtn = document.getElementById('dark-mode');
       const color = e.target.getAttribute('data-color');
       const colorAccentPrimary = e.target.getAttribute('data-color-accent-primary');
       const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary')
       const colorBackground = e.target.getAttribute('data-color-background');
       const colorMaxContrast = e.target.getAttribute('data-color-max-contrast');
       const themeFavicon = e.target.getAttribute('data-favicon');
+      // console.log(lightModeBtn);
+      if (e.target.id == 'light-mode') {
+        // console.log('clicked light mode');
+        darkModeBtn.classList.remove('is-active');
+        item.classList.toggle('is-active');
+      }
+      else {
+        // console.log('clicked dark mode')
+        lightModeBtn.classList.remove('is-active');
+        item.classList.toggle('is-active');
+      }
+      
 
       // testing
       console.log(
