@@ -10,12 +10,19 @@
 .Header {
   align-items: center;
   display: flex;
-  height: var(--header-height);
+  min-height: var(--header-height);
   justify-content: space-between;
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
   z-index: 10;
+}
+
+@media (max-width: 319px) {
+  .Header {
+    padding-top: 0.25em;
+    flex-wrap: wrap;
+  }
 }
 
 /* Header Nav */
