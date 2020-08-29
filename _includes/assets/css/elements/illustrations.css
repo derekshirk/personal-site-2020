@@ -1,0 +1,29 @@
+.Illustration-whale {
+  max-width: 84vw;
+  margin: 0 auto;
+}
+
+@media (--md-viewport) {
+  .Illustration-whale {
+    max-width: 76vw;
+  }
+}
+
+@media (--lg-viewport) {
+  .Illustration-whale {
+    max-width: 100%;
+  }
+}
+
+@media (--lg-viewport) {
+  .Illustration-hippo {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .Illustration-hippo {
+    max-width: 60vw;
+  }
+}

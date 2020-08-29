@@ -1,15 +1,7 @@
-@media (--lg-viewport) {
-  .Illustration-hippo {
-    max-width: 80vw;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1500px) {
-  .Illustration-hippo {
-    max-width: 60vw;
-  }
-}
+/**
+ * TODO
+ 1. Convert these to actual utility assets
+ */
 
 .u-releaseFull {
   margin-left: calc(-50vw + 50%);
