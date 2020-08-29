@@ -6,25 +6,9 @@
  #}
 
 <ul class="ThemeSwitcher">
-
   <li class="ThemeSwitcher-listElement">
     <button
-      class="ThemeSwitcher-item
-             u-bgBlack u-textWhite
-             js-theme-switcher"
-      data-color="var(--color-silver)"
-      data-color-accent-primary="var(--color-pink)"
-      data-color-accent-secondary="var(--color-gray-dark)"
-      data-color-background="var(--color-black-alt)"
-      data-color-max-contrast="var(--color-white)"
-      data-favicon="/static/img/favicon-pink.png"
-    >
-    <span class="u-hidden">Black</span>
-    </button>
-  </li>
-
-  <li class="ThemeSwitcher-listElement">
-    <button
+      id="light-mode"
       class="ThemeSwitcher-item
       u-bgWhite u-textBlack
       js-theme-switcher"
@@ -35,7 +19,25 @@
       data-color-max-contrast="var(--color-black)"
       data-favicon="/static/img/favicon-purple.png"
     >
-      <span class="u-hidden">White</span>
+      {% include "svg/sun.svg" %}
+      <span class="u-hidden">Theme: light mode</span>
+    </button>
+  </li>
+  <li class="ThemeSwitcher-listElement">
+    <button
+      id="dark-mode"
+      class="ThemeSwitcher-item
+             u-bgBlack u-textWhite
+             js-theme-switcher"
+      data-color="var(--color-silver)"
+      data-color-accent-primary="var(--color-pink)"
+      data-color-accent-secondary="var(--color-gray-dark)"
+      data-color-background="var(--color-black-alt)"
+      data-color-max-contrast="var(--color-white)"
+      data-favicon="/static/img/favicon-pink.png"
+    >
+    {% include "svg/moon.svg" %}
+    <span class="u-hidden">Theme: dark mode</span>
     </button>
   </li>
 <ul>
