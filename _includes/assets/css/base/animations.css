@@ -23,3 +23,9 @@
   animation-name: floating;
   animation-timing-function: var(--animation-easing-default);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .floating {
+    animation: none;
+  }
+}
