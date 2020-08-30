@@ -4,7 +4,7 @@
 
 :root {
   --theme-switcher-border-color: var(--theme-color-text);
-  --theme-switcher-size: 40px;
+  --theme-switcher-size: 48px;
 }
 
 .ThemeSwitcher {
@@ -31,6 +31,8 @@
   font-size: 1.5em;
   height: var(--theme-switcher-size);
   justify-content: center;
+  margin: 0;
+  padding: 0;
   width: var(--theme-switcher-size);
 
   svg {
