@@ -1,5 +1,5 @@
 ---
-title: Hooray! I redesigned my website.
+title: Hooray! I redesigned my website
 summary: A few notes on my goals, the process, tools, and techniques I used along the way. 
 date: 2020-08-27
 tags:
@@ -14,7 +14,8 @@ I'm very excited to share this redesign with you and an overview of my goals, th
 
 ## Design objectives
 
-- My primary design goals were:
+My primary design goals were:
+
 - Keep it (seemingly) simple
 - Less serious, more fun and whimsical
 - Increase whitespace
@@ -28,6 +29,8 @@ Overall I'm pleased with the results, and I was able to address each of my objec
 My initial concepts started in [Sketch](https://www.sketch.com/), but as soon as I began to identify a direction that I felt met my objectives, I shifted to designing in-browser. From there, I continued to experiment and iterate.
 
 I'm attracted to portfolio sites that incorporate illustration and thought adding my own would make my website feel more fun and approachable. I found two drawings in my sketchbook that I thought would be good candidates and set about redrawing them in Illustrator.
+
+![whale sketch](/static/img/posts/whale-sketch.jpg)
 
 My previous site was predominantly purple (which I liked), and I wanted to carry over that primary "brand color" to some extent, yet in a more subtle "tip-of-the-hat" fashion. From there, I continued to refine my color selections and devise pallets for a light and dark theme.
 
