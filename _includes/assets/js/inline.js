@@ -8,57 +8,58 @@ if (window.netlifyIdentity) {
   });
 }
 
-// 1. Check to see if a theme specific favicon is saved in local storage
-// 2. If it is, use it.
-// 3. If not, do nothing (defaults to using whatever favicon is defined in `<head>`).
-// 4. If this conditional is not used, no favicon will be displayed on an initial
-//    page load when nothing is saved to local storage.
-
 if (localStorage.getItem("userThemeFavicon") !== null) {
   document.querySelector("link[rel*='icon']").href = localStorage.getItem("userThemeFavicon");
 }
 
-// Yank theme colorBackground from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--theme-color-background", localStorage.getItem("userThemeColor")
-);
+// Grab theme colorBackground from localStorage and use it (if it exists).
+if (localStorage.getItem("userThemeColor") !== null) {
+  document.documentElement.style.setProperty(
+    "--theme-color-background", localStorage.getItem("userThemeColor")
+  );
+}
 
-// Yank theme textColor from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--theme-color-accent-primary", localStorage.getItem("usercolorAccentPrimary")
-);
+// Grab theme primary accent color from localStorage and use it (if it exists).
+if (localStorage.getItem("userColorAccentPrimary") !== null) {
+  document.documentElement.style.setProperty(
+    "--theme-color-accent-primary", localStorage.getItem("userColorAccentPrimary")
+  );
+}
 
-// Yank theme textColor from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--theme-color-accent-secondary", localStorage.getItem("usercolorAccentSecondary")
-);
+// Grab theme secondary accent color from localStorage and use it (if it exists).
+if (localStorage.getItem("userColorAccentSecondary") !== null) {
+  document.documentElement.style.setProperty(
+    "--theme-color-accent-secondary", localStorage.getItem("userColorAccentSecondary")
+  );
+}
 
-// Yank theme textColor from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--theme-color-text", localStorage.getItem("userTextColor")
-);
+// Grab theme text color from localStorage and use it (if it exists).
+if (localStorage.getItem("userTextColor") !== null) {
+  document.documentElement.style.setProperty(
+    "--theme-color-text", localStorage.getItem("userTextColor")
+  );
+}
 
-// Yank theme textColor from localStorage and use it.
-document.documentElement.style.setProperty(
-  "--theme-color-max-contrast", localStorage.getItem("userColorMaxContrast")
-);
+// Grab theme maximum contrast color from localStorage and use it (if it exists).
+if (localStorage.getItem("userColorMaxContrast") !== null) {
+  document.documentElement.style.setProperty(
+    "--theme-color-max-contrast", localStorage.getItem("userColorMaxContrast")
+  );
+}
 
 document.addEventListener("DOMContentLoaded", function() {
 
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
-
-   // Favicon
-   // TODO: Determine if javascript related to switching favicon can 
-   //       simplified or removed if/once `prefers-color-scheme` 
-   //       are implemented media queries 
-   const changeFavicon = link => {
-    let $favicon = document.querySelector('link[rel="icon"]')
-    // If a <link rel="icon"> element already exists,
-    // change its href to the given link.
+  const lightModeBtn = document.getElementById('light-mode');
+  const darkModeBtn = document.getElementById('dark-mode');
+  const userThemePreference = localStorage.getItem("userThemePreference");
+  
+  const changeFavicon = link => {
+    const $favicon = document.querySelector('link[rel="icon"]')
     if ($favicon !== null) {
       $favicon.href = link
-    // Otherwise, create a new element and append it to <head>.
-    } else {
+    } 
+    else {
       $favicon = document.createElement("link")
       $favicon.rel = "icon"
       $favicon.href = link
@@ -76,36 +77,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
-      const lightModeBtn = document.getElementById('light-mode');
-      const darkModeBtn = document.getElementById('dark-mode');
       const color = e.target.getAttribute('data-color');
       const colorAccentPrimary = e.target.getAttribute('data-color-accent-primary');
       const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary')
       const colorBackground = e.target.getAttribute('data-color-background');
       const colorMaxContrast = e.target.getAttribute('data-color-max-contrast');
       const themeFavicon = e.target.getAttribute('data-favicon');
-      // console.log(lightModeBtn);
+      const theme = e.target.getAttribute('data-theme');
+
       if (e.target.id == 'light-mode') {
-        // console.log('clicked light mode');
         darkModeBtn.classList.remove('is-active');
-        item.classList.toggle('is-active');
+        item.classList.add('is-active');
       }
       else {
-        // console.log('clicked dark mode')
         lightModeBtn.classList.remove('is-active');
-        item.classList.toggle('is-active');
+        item.classList.add('is-active');
       }
-      
-
-      // testing
-      console.log(
-        color,
-        colorAccentPrimary,
-        colorAccentSecondary,
-        colorBackground,
-        colorMaxContrast,
-        themeFavicon
-      );
 
       // Update theme styles
       handleThemeUpdate({
@@ -116,16 +103,79 @@ document.addEventListener("DOMContentLoaded", function() {
         '--theme-color-text': color,
       });
 
-      // Favicon
+      // Update favicon
       changeFavicon(themeFavicon);
 
       // Save the value for next time page is visited.
       localStorage.setItem("userThemeColor", colorBackground);
       localStorage.setItem("userTextColor", color);
-      localStorage.setItem("usercolorAccentPrimary", colorAccentPrimary);
-      localStorage.setItem("usercolorAccentSecondary", colorAccentSecondary);
+      localStorage.setItem("userColorAccentPrimary", colorAccentPrimary);
+      localStorage.setItem("userColorAccentSecondary", colorAccentSecondary);
       localStorage.setItem("userColorMaxContrast", colorMaxContrast);
       localStorage.setItem("userThemeFavicon", themeFavicon);
+      localStorage.setItem("userThemePreference", theme);
+
+      // testing
+      // console.log(
+      //   color,
+      //   colorAccentPrimary,
+      //   colorAccentSecondary,
+      //   colorBackground,
+      //   colorMaxContrast,
+      //   themeFavicon,
+      //   theme        
+      // );
+
     });
   });
+
+  // Check for existing theme data in `localStorage` on page load
+  // Adds `is-active` class to "appropriate" theme switcher button
+  // This preference is not related to system (light/dark mode) settings
+  // I address that later
+  
+  // If no previous user preference exist
+  if (userThemePreference == null) {
+    if (window.matchMedia && 
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      darkModeBtn.classList.add('is-active');
+    }
+    else {
+      lightModeBtn.classList.add('is-active');
+    }
+  }
+  // If user preference is "light mode"
+  else if (userThemePreference == "light") {
+    darkModeBtn.classList.remove('is-active');
+    lightModeBtn.classList.add('is-active');
+  }
+  // Else user preference  is "dark mode"
+  else {
+    lightModeBtn.classList.remove('is-active');
+    darkModeBtn.classList.add('is-active');
+  }
+
+  // Update theme colors when user changes system settings
+  // Intended to work even if user has interacted with the theme  
+  // switcher buttons and `localStorage` theme data exists.
+  //
+  // I had to use `addListener` here because `addEventListener` is not
+  // currently supported in Safari (as of 08.29.2020)
+  // See: https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/addListener
+
+  const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function switchThemeColors(e) {
+    // dark mode
+    if (e.matches) {
+      lightModeBtn.classList.remove('is-active');
+      darkModeBtn.click();
+    } 
+    // light mode
+    else {
+      darkModeBtn.classList.remove('is-active');
+      lightModeBtn.click();
+    }
+  }
+  darkModeQuery.addListener(switchThemeColors);
 });
