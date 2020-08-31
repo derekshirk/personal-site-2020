@@ -8,6 +8,7 @@ if (window.netlifyIdentity) {
   });
 }
 
+
 // 1. Check to see if a theme specific favicon is saved in local storage
 // 2. If it is, use it.
 // 3. If not, do nothing (defaults to using whatever favicon is defined in `<head>`).
@@ -47,6 +48,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
 
+  // Dark mode detection for theme switcher UI (on page load)
+  const lightModeBtn = document.getElementById('light-mode');
+  const darkModeBtn = document.getElementById('dark-mode');
+  // console.log(darkModeBtn);
+  const userThemePreference = localStorage.getItem("userThemePreference");
+  if (userThemePreference == null) {
+    // check for dark mode on page load
+    if (window.matchMedia && 
+        window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      darkModeBtn.classList.add('is-active');
+    }
+    else {
+      lightModeBtn.classList.add('is-active');
+    }
+    // take action when user changes system settings
+    window.matchMedia('(prefers-color-scheme: dark)')
+        .addEventListener('change', event => {
+      if (event.matches) {
+        //dark mode
+        lightModeBtn.classList.remove('is-active');
+        darkModeBtn.classList.add('is-active');
+      } 
+      else {
+        darkModeBtn.classList.remove('is-active');
+        lightModeBtn.classList.add('is-active');
+      }
+    });
+  }
+  else if (userThemePreference == "light") {
+    console.log('user preference is light');
+    darkModeBtn.classList.remove('is-active');
+    lightModeBtn.classList.add('is-active');
+  }
+  else {
+    console.log('user preference is dark');
+    lightModeBtn.classList.remove('is-active');
+    darkModeBtn.classList.add('is-active');
+  }
+
    // Favicon
    // TODO: Determine if javascript related to switching favicon can 
    //       simplified or removed if/once `prefers-color-scheme` 
@@ -76,14 +116,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
-      const lightModeBtn = document.getElementById('light-mode');
-      const darkModeBtn = document.getElementById('dark-mode');
       const color = e.target.getAttribute('data-color');
       const colorAccentPrimary = e.target.getAttribute('data-color-accent-primary');
       const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary')
       const colorBackground = e.target.getAttribute('data-color-background');
       const colorMaxContrast = e.target.getAttribute('data-color-max-contrast');
       const themeFavicon = e.target.getAttribute('data-favicon');
+      const theme = e.target.getAttribute('data-theme');
       // console.log(lightModeBtn);
       if (e.target.id == 'light-mode') {
         // console.log('clicked light mode');
@@ -96,7 +135,6 @@ document.addEventListener("DOMContentLoaded", function() {
         item.classList.toggle('is-active');
       }
       
-
       // testing
       console.log(
         color,
@@ -104,7 +142,8 @@ document.addEventListener("DOMContentLoaded", function() {
         colorAccentSecondary,
         colorBackground,
         colorMaxContrast,
-        themeFavicon
+        themeFavicon,
+        theme        
       );
 
       // Update theme styles
@@ -126,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem("usercolorAccentSecondary", colorAccentSecondary);
       localStorage.setItem("userColorMaxContrast", colorMaxContrast);
       localStorage.setItem("userThemeFavicon", themeFavicon);
+      localStorage.setItem("userThemePreference", theme);
     });
   });
 });
