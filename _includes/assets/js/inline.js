@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     centerX = eyeArea.left + R,
     centerY = eyeArea.top + R;
 
-    document.addEventListener("mousemove", (e)=>{
+    document.addEventListener("mousemove", (e) => {
     let x = e.clientX - centerX,
         y = e.clientY - centerY,
         theta = Math.atan2(y,x),
