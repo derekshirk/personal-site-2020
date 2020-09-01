@@ -5,6 +5,7 @@
 .Banner-label {
   color: var(--theme-color-accent-primary);
   font-size: 0.9rem;
+  letter-spacing: 0.015em;
   text-transform: uppercase;
 }
 

@@ -1,12 +1,16 @@
 input,
 textarea,
 button {
-  font-family: "Avenir", "Avenir Next", sans-serif;
   font-size: 1rem;
   margin-bottom: 1em;
   padding: 1em;
   width: 100%;
 }
+
+/**
+ * TODO
+ * 1. Replace `1px` with CSS custom property
+ */
 
 input,
 textarea {
