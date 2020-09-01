@@ -3,25 +3,27 @@ layout: layouts/base.njk
 section: project
 ---
 
-{# TODO
- 1. [DELETE] This file is not currently in use 08.28.2020
+{# 
+ This file is not currently in use.
+ Keep it around as an example for future reference.
  #}
+ 
 <article>
 
- <section class="SectionIntro">
+  <section class="SectionIntro">
     <h1>{{ title }}</h1>
     <p class="u-textSize2 u-md-textSize3">
-      Some projects that I've had the pleasure to work on
+      Subtitle goes here
     </p>
   </section>
 
   {{ layoutContent | safe }}
 
-  {# <p>
+  <p>
     <small>
       <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
     </small>
-  </p> #}
+  </p>
 
   {% if tags %}
     <p>
