@@ -37,7 +37,7 @@
 @media (--lg-viewport) {
   .Grid--smallThenBig {
     grid-gap: 10%;
-    grid-template-columns: 35% 55%;
+    grid-template-columns: 36% 54%;
   }
 }
 
