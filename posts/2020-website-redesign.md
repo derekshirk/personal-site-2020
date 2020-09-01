@@ -37,7 +37,7 @@ My previous site was predominantly purple (which I liked), and I wanted to carry
 Once I had established a solid design framework, I moved on to addressing more technical aspects of the site, which allowed me to more efficiently iterate on smaller design details once I had buttoned up some of the site's functional aspects.
 
 ## Front-end Features
-Browser capabilities and the front-end landscape have significantly matured since 2017, and I had grand ambitions for how I wanted to do things differently from my previous WordPress site. A few key aspects I was focused on where:
+Browser capabilities and the front-end landscape have significantly matured since 2017, and I had grand ambitions for how I wanted to do things differently from my previous WordPress site. A few key aspects I was focused on were:
 
 - Static site generator
 - Modern CSS grid layout
