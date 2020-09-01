@@ -10,6 +10,11 @@
             src="{{ book.data.cover }}"
             alt=""
             class="Bookshelf-art"
+            {% if loop.index > 9 %}
+            loading="lazy"
+            {% endif %}
+            width="600"
+            height="900"
           >
         </figure>
       {% if book.data.url %}

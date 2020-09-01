@@ -42,6 +42,11 @@
 }
 
 .Bookshelf-cover {
+  background-color: tomato;
+  background-color: var(--color-silver);
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .Bookshelf-art {
