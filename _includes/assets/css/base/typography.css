@@ -1,8 +1,29 @@
+@font-face {
+  font-family: var(--font-family);
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/inter/Inter-Regular.woff2?v=3.13") format("woff2"),
+       url("/static/fonts/inter/Inter-Regular.woff?v=3.13") format("woff");
+}
+
+@font-face {
+  font-family: var(--font-family-variable);
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/static/fonts/inter/Inter-roman.var.woff2?v=3.13") format("woff2");
+}
+
 body {
   color: var(--theme-color-text);
-  font-family: var(--font-family);
-  font-weight: 460;
   font-size: 1em;
+  font-family: var(--font-family), sans-serif;
+  letter-spacing: -0.033em;
+  @supports (font-variation-settings: normal) {
+    font-family: var(--font-family-variable), sans-serif;
+  }
 }
 
 p,
@@ -35,8 +56,7 @@ samp {
 
 :--headings {
   color: var(--theme-color-max-contrast);
-  font-family: var(--font-family);
-  font-variation-settings: "wght" 800, "wdth" 700;
+  font-variation-settings: "wght" 800;
   margin-bottom: 0.25rem;
 }
 
@@ -44,9 +64,9 @@ samp {
   background-color: var(--theme-color-accent-primary);
   color: white;
   display: inline-block;
-  font-family: var(--font-family);
   font-size: 0.75em;
-  font-variation-settings: "wght" 750,"wdth" 500;
+  font-variation-settings: "wght" 750;
+  letter-spacing: 0.0125em;
   margin-top: .75em;
   padding: 0.25em 0.5em;
   text-decoration: none;
@@ -97,10 +117,4 @@ blockquote p {
   font-weight: 400;
   padding: 1.25rem;
   width: 110%;
-}
-
-@font-face {
-  font-family: var(--font-family);
-  src: url('/static/fonts/inter/inter.otf') format('opentype');
-  font-weight: 100 900;
 }

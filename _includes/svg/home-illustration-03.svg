@@ -1,5 +1,6 @@
 <svg class="home-illustration floating" width="437px" height="342px" viewBox="0 0 437 342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g id="home-illustration-03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+ <!-- [DELETE] this file! -->
+   <g id="home-illustration-03" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <rect id="Mask-Copy" fill="#EAEAEA" opacity="0.425106957" transform="translate(208.000000, 158.000000) rotate(2.000000) translate(-208.000000, -158.000000) " x="5" y="40" width="406" height="236" rx="5"></rect>
       <g id="Group-5" transform="translate(119.000000, 254.000000)">
           <path d="M4.375,0 L226.375,0 C228.584139,-4.05812251e-16 230.375,1.790861 230.375,4 L230.375,84 C230.375,86.209139 228.584139,88 226.375,88 L4.375,88 C2.165861,88 0.375,86.209139 0.375,84 L0.375,4 C0.375,1.790861 2.165861,4.05812251e-16 4.375,0 Z" id="Rectangle-Copy-2" fill="#1D1E22"></path>

@@ -17,7 +17,7 @@
 
 @media (--lg-viewport) {
   .Banner-projects .Banner {
-    transform: translateX(-8vw);
+    transform: translateX(-9vw);
   }
 }
 
