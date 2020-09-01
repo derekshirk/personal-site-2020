@@ -16,10 +16,6 @@
   }
 }
 
-.home-illustration {
-  width: 100%;
-}
-
 @media (--lg-viewport) {
   .Grid--homeShowcase {
     grid-gap: 5%;

@@ -5,7 +5,7 @@ date: 2019-07-30
 tags:
   - post
   - "2018DRAFT"
-customClass: u-bgFancy--bank-note
+# customClass:
 ---
 
 I set out to launch a side-project in under 24-hours. I wanted to choose something obtainable. Something where I could start small and grow as what I built attracted new users. The end result is the MergeLinks Newsletter, a weekly email of curated links to articles, resources, freebies and inspiration for web designers and developers. Here’s a quick overview of the time I spent launching my side project.

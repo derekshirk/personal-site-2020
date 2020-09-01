@@ -5,7 +5,7 @@ date: 2019-07-30
 tags:
   - post
   - "2019"
-customClass: u-bgFancy--bank-note
+# customClass:
 ---
 
 I'd like to share some browser features that everyone, not only designers and developers can embrace to make surfing the web more productive. While some of these things may seem scary at first to someone who has never tried them I've tried to identify things with a low technical barrier or things that only require simple keyboard shortcuts.
