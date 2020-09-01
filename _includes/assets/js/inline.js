@@ -13,39 +13,29 @@ if (localStorage.getItem("userThemeFavicon") !== null) {
 }
 
 // Grab theme colorBackground from localStorage and use it (if it exists).
-if (localStorage.getItem("userThemeColor") !== null) {
-  document.documentElement.style.setProperty(
-    "--theme-color-background", localStorage.getItem("userThemeColor")
-  );
-}
+document.documentElement.style.setProperty(
+  "--theme-color-background", localStorage.getItem("userThemeColor")
+);
 
 // Grab theme primary accent color from localStorage and use it (if it exists).
-if (localStorage.getItem("userColorAccentPrimary") !== null) {
-  document.documentElement.style.setProperty(
-    "--theme-color-accent-primary", localStorage.getItem("userColorAccentPrimary")
-  );
-}
+document.documentElement.style.setProperty(
+  "--theme-color-accent-primary", localStorage.getItem("userColorAccentPrimary")
+);
 
 // Grab theme secondary accent color from localStorage and use it (if it exists).
-if (localStorage.getItem("userColorAccentSecondary") !== null) {
-  document.documentElement.style.setProperty(
-    "--theme-color-accent-secondary", localStorage.getItem("userColorAccentSecondary")
-  );
-}
+document.documentElement.style.setProperty(
+  "--theme-color-accent-secondary", localStorage.getItem("userColorAccentSecondary")
+);
 
 // Grab theme text color from localStorage and use it (if it exists).
-if (localStorage.getItem("userTextColor") !== null) {
-  document.documentElement.style.setProperty(
-    "--theme-color-text", localStorage.getItem("userTextColor")
-  );
-}
+document.documentElement.style.setProperty(
+  "--theme-color-text", localStorage.getItem("userTextColor")
+);
 
 // Grab theme maximum contrast color from localStorage and use it (if it exists).
-if (localStorage.getItem("userColorMaxContrast") !== null) {
-  document.documentElement.style.setProperty(
-    "--theme-color-max-contrast", localStorage.getItem("userColorMaxContrast")
-  );
-}
+document.documentElement.style.setProperty(
+  "--theme-color-max-contrast", localStorage.getItem("userColorMaxContrast")
+);
 
 document.addEventListener("DOMContentLoaded", function() {
 
