@@ -66,5 +66,4 @@ My prior site incorporated some animations which over time, I found increasingly
 
 I significantly reduced the speed and distance covered by any animated elements. Additionally, since the animated content is near text, and that can be triggering for users with vestibular disorders, I placed the CSS animation behind a `supports-reduced-motion` media query. Finally, just for fun I added a subtle cursor-tracking script that enables the whale's pupil to follow the cursor around the screen.
 
-## 
 That's it for now. Thanks for checking out my new site! Feedback is welcome via [GitHub issues](https://github.com/derekshirk/personal-site-2020/issues). I am excited to continually improve upon this initial release and keep sharing articles about the various techniques I've found useful.
