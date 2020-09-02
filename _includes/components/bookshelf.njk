@@ -18,17 +18,16 @@
 
       <div class="Bookshelf-meta">
 
-         <h4 class="Bookshelf-itemTitle">
+         <h3 class="Bookshelf-itemTitle">
           {% if book.data.title %}
-
             {{ book.data.title }}
           {% else %}
             Untitled
           {% endif %}
-        </h4>
+        </h3>
 
         {% if book.data.author %}
-          <p class="u-textShrink2 u-md-textShrink1">
+          <p class="u-md-textShrink1">
             {{ book.data.author }}
           </p>
         {% endif %}
