@@ -23,7 +23,7 @@ My primary design goals were:
 - Achieve WCAG 2 [color](https://www.w3.org/TR/WCAG21/#use-of-color) and [contrast](https://www.w3.org/TR/WCAG21/#contrast-minimum) criterion
 - Implement support for dark mode
 
-Overall I'm pleased with the results, and I was able to address each of my objectives. There are still plenty of opportunities for improvements that I'd like to address, both visual and technical. However, I felt good enough to ship what I had so far. There's something about this site that excites me and inspires me to keep improving it, more so than previous launches.
+Overall I'm pleased with the results, and I was able to address each of my objectives. There are still plenty of opportunities for improvements that I'd like to address, both visual and technical. However, I felt good enough to ship what I had so far. There's something about this site that excites and inspires me to keep improving it, more so than previous launches.
 
 ## Design Process
 My initial concepts started in [Sketch](https://www.sketch.com/), but as soon as I began to identify a direction that I was happy with, I shifted to designing in-browser. From there, I continued to experiment and iterate.
