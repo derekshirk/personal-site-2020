@@ -1,6 +1,6 @@
 ---
 title: Hooray! I redesigned my website
-summary: A few notes on my goals, the process, tools, and techniques I used along the way. 
+summary: A few notes on my goals, the process, and techniques I used along the way. 
 date: 2020-08-27
 tags:
   - post
@@ -10,22 +10,22 @@ tags:
 
 I've lost count of the number of iterations my website has undergone over the years. I had a good run of keeping things fresh. Yet, my previous redesign was long overdue for an update — I hadn't updated it since 2017!
 
-I'm very excited to share this redesign with you along with an overview of my goals, a few notes on my process, tools, and various techniques I incorporated along the way.
+I'm very excited to share this redesign with you along with an overview of my goals, a few notes on my process, and various techniques I incorporated along the way.
 
-## Design objectives
+## Goals
 
 My primary design goals were:
 
-- Keep it (seemingly) simple
-- Less serious, more fun and whimsical
+- Keep it simple
+- Less serious - more fun and whimsical
 - Increase whitespace
 - Improve legibility
 - Achieve WCAG 2 [color](https://www.w3.org/TR/WCAG21/#use-of-color) and [contrast](https://www.w3.org/TR/WCAG21/#contrast-minimum) criterion
 - Implement support for dark mode
 
-Overall I'm pleased with the results, and I was able to address each of my objectives. There are still plenty of opportunities for improvements that I'd like to address, both visual and technical. However, I felt good enough to ship what I had so far. There's something about this site that excites and inspires me to keep improving it, more so than previous launches.
+Overall I'm pleased with the results. There are still plenty of opportunities for improvements that I'd like to address, both visual and technical. However, I felt good enough to ship what I had so far. There's something about this site that excites and inspires me to keep improving it, more so than previous launches.
 
-## Design Process
+## Design process
 My initial concepts started in [Sketch](https://www.sketch.com/), but as soon as I began to identify a direction that I was happy with, I shifted to designing in-browser. From there, I continued to experiment and iterate.
 
 I'm attracted to portfolio sites that incorporate illustration and thought adding my own would make my website feel more approachable. I found two drawings in my sketchbook that I thought would be good candidates and set about redrawing them in Illustrator.
@@ -38,7 +38,7 @@ My previous site was predominantly purple (which I liked), and I wanted to carry
 
 Once I had established a solid design framework, I moved on to addressing more technical aspects of the site, which allowed me to more efficiently iterate on smaller design details once I had buttoned up some of the site's functional aspects.
 
-## Front-end Features
+## Front-end features
 Browser capabilities and the front-end landscape have significantly matured since 2017, and I had grand ambitions for how I wanted to do things differently from my previous WordPress site. A few key aspects I was focused on were:
 
 - Choosing a static site generator
@@ -55,13 +55,13 @@ After researching and experimenting with the available static site generators, I
 [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) or CSS variables are powerful and really fun to use. They are the secret sauce behind my light and dark mode themes and a key ingredient in my themeable SVG favicon.
 
 ## Dark mode support
-While I'm not completely satisfied with the current theme switcher UI, this feature paired with dark mode support are easily the aspects of my site that I am most proud. The trickiest aspect of this was incorporating dark mode support via the `prefers-color-scheme` media queries _and_ a theme switcher interface. 
+While I'm not completely satisfied with the current theme switcher UI, I'm quite proud of how well this feature and dark mode support are working together.
 
 <figure class="u-releaseWide u-padEnds03">
   <img src="/static/img/posts/2020-redesign-sample-01.jpg">
 </figure>
 
-I opted to write the user's theme (switcher) selections to `localStorage`, and getting the two methods of theme switching to work seamlessly together without tripping over each other required a significant amount of consideration. I hope to write a more comprehensive article on the specifics of how I went about achieving this soon.
+I opted to write the user's theme selections to `localStorage`, and getting the two methods of theme switching to work seamlessly together without tripping over each other required some consideration. I hope to write a more comprehensive article on the specifics of how I went about achieving this soon.
 
 ## Designing for reduced motion
 My prior site incorporated some animations which over time, I found increasingly overdone and distracting. Looking back, I hate to think about how users with motion sensitivity were affected by this. This time around, I still wanted to incorporate some motion but instead opted for a more subtle and inclusive approach.
