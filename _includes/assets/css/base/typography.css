@@ -38,8 +38,11 @@ p:not(:last-of-type) {
 
 ol, 
 ul {
-  list-style: inside;
   line-height: 1.6;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 1.4em;
+  text-indent: -1.4em;
 }
 
 code,
@@ -90,6 +93,7 @@ a[href]:hover {
 p a[href] {
   color: var(--theme-color-accent-primary);
   text-decoration-color: var(--theme-color-text);
+  font-variation-settings: "wght" 500;
 
   &:hover {
     color: var(--theme-color-text);
