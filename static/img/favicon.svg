@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+<svg class="favicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
 
   <style>
+    .favicon {
+      background-color: #fff;
+    }
     path { fill: #8a6cbd; }
     @media (prefers-color-scheme: dark) {
       path { fill: #ff6393; }

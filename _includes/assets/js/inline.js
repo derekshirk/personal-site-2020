@@ -71,11 +71,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const $favicon = document.querySelector('link[rel="icon"]')
     if ($favicon !== null) {
       $favicon.href = link
+      $favicon.type = "image/png"
     } 
     else {
       $favicon = document.createElement("link")
       $favicon.rel = "icon"
       $favicon.href = link
+      $favicon.type = "image/png"
       document.head.appendChild($favicon)
     }
   }
