@@ -37,7 +37,7 @@ My previous site was predominantly purple (which I liked), and I wanted to carry
 Once I had established a solid design framework, I moved on to addressing more technical aspects of the site, which allowed me to more efficiently iterate on smaller design details once I had buttoned up some of the site's functional aspects.
 
 ## Front-end Features
-Browser capabilities and the front-end landscape have significantly matured since 2017, and I had grand ambitions for how I wanted to do things differently from my previous WordPress site. A few key aspects I was focused on where:
+Browser capabilities and the front-end landscape have significantly matured since 2017, and I had grand ambitions for how I wanted to do things differently from my previous WordPress site. A few key aspects I was focused on were:
 
 - Static site generator
 - Modern CSS grid layout
@@ -50,7 +50,7 @@ Browser capabilities and the front-end landscape have significantly matured sinc
 After researching and experimenting with the available static site generators, I chose Eleventy for its flexibility and simplicity. Yes, it's built times are fast too (which I appreciate), but that wasn't a huge concern for me with my small portfolio site. The site is hosted on [Netlify](https://www.netlify.com/), and the two are a perfect marriage.
 
 ## Theming with CSS custom properties
-CSS custom properties or CSS variables are powerful and a delight to use. They are the secrete sauce behind my light and dark mode themes and a key ingredient in my themeable SVG favicon.
+CSS custom properties or CSS variables are powerful and a delight to use. They are the secret sauce behind my light and dark mode themes and a key ingredient in my themeable SVG favicon.
 
 ## Dark mode support
 While I'm not completely satisfied with the current theme switcher UI, this feature and dark mode support are easily the aspects of my site that I am most proud of and indeed forced me to flex my front-end design muscles. This trickiest aspect of this was incorporating dark mode support via the `prefers-color-scheme` media queries and a theme switcher interface. 
