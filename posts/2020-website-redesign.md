@@ -30,7 +30,9 @@ My initial concepts started in [Sketch](https://www.sketch.com/), but as soon as
 
 I'm attracted to portfolio sites that incorporate illustration and thought adding my own would make my website feel more approachable. I found two drawings in my sketchbook that I thought would be good candidates and set about redrawing them in Illustrator.
 
-![whale sketch](/static/img/posts/whale-sketch.jpg)
+<figure class="u-releaseWide u-padEnds03">
+  <img src="/static/img/posts/whale-sketch.jpg">
+</figure>
 
 My previous site was predominantly purple (which I liked), and I wanted to carry over that primary "brand color", yet in a more subtle "tip-of-the-hat" fashion. From there, I continued to refine my color selections and devise pallets for a light and dark theme.
 
