@@ -49,6 +49,8 @@ header nav li:last-of-type {
 .Header-link[href] {
   color: var(--theme-color-max-contrast);
   font-size: 1rem;
+  font-weight: bold;
+  font-weight: 800;
   font-variation-settings: "wght" 750;
   text-decoration: none;
 }

@@ -5,6 +5,7 @@ body {
   letter-spacing: -0.033em;
   @supports (font-variation-settings: normal) {
     font-family: var(--font-family-variable), sans-serif;
+    font-variation-settings: "wght" 450;
   }
 }
 
@@ -41,6 +42,8 @@ samp {
 
 :--headings {
   color: var(--theme-color-max-contrast);
+  font-weight: bold;
+  font-weight: 800;
   font-variation-settings: "wght" 800;
   margin-bottom: 0.25rem;
 }
