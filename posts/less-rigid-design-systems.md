@@ -1,6 +1,6 @@
 ---
 title: Less rigid design systems
-summary: Here are a few ideas on how to avoid letting your design systems stifle creativity promote more situational judgment. 
+summary: A few ideas on how to prevent your design systems from stifling creativity and instead, encourage more situational judgment. 
 date: 2020-04-21
 link: https://cloudfour.com/thinks/less-rigid-design-systems/
 tags:
@@ -9,4 +9,4 @@ tags:
   - "2020"
 ---
 
-Here are a few ideas on how to avoid letting your design systems stifle creativity promote more situational judgment. 
+A Cloud Four blog post where I share a few ideas on how to prevent your design systems from stifling creativity and instead, encourage more situational judgment.
