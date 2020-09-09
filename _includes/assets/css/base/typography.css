@@ -78,5 +78,8 @@ a[href]:hover {
 :--headings a[href]:hover {
   color: var(--theme-color-accent-primary);
   text-decoration-color: var(--theme-color-max-contrast);
-  /* text-decoration-color: inherit; */
+  
+  svg path {
+    fill: var(--theme-color-max-contrast);
+  }
 }
