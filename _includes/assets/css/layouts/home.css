@@ -5,14 +5,27 @@
 
 .Grid--homeHero {
   justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (--lg-viewport) {
   .Grid--homeHero {
     grid-template-columns: 50% 45%;
-    min-height: 56vh;
+    margin: 0 auto;
     max-width: 95vw;
+    min-height: 50vh;
+    padding-left: 0;
+    padding-right: 0;
     
+  }
+}
+
+@media (min-width: 1860px) {
+  .Grid--homeHero {
+    min-height: 56vh;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
