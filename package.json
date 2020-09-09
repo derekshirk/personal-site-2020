@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/derekshirk/personal-site-2020/issues"
   },
-  "homepage": "https://github.com/derekshirk/personal-site-2020",
+  "homepage": "https://derekshirk.com",
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
     "eleventy-plugin-svg-contents": "0.7.0",
