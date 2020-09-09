@@ -3,6 +3,10 @@
  * 1. Make utilities for all theme colors
  */
 
-.u-theme-accentSecondary {
+.u-theme-text-accentPrimary {
+  color: var(--theme-color-accent-primary);
+}
+
+ .u-theme-accentSecondary {
   background-color: var(--theme-color-accent-secondary);
 }
