@@ -4,12 +4,12 @@
 
 :root {
   --color-black: #232323;
-  --color-black-alt: #353F44;
-  --color-blue: #4eb4d9;
+  --color-black-alt: #384043;
+  --color-blue: #0dd9e4;
   --color-blue-alt: #4484ce;
   --color-cool-blue: #F3FBFE;
   --color-blue-gray: #dfecf1;
-  --color-purple: #8a6cbd;
+  --color-purple: #7754b0;
   --color-dark-purple: #342a47;
   --color-dark-purple-alt: #271f35;
   --color-grape: #94618e;
@@ -39,7 +39,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --theme-color-background: var(--color-black-alt);
-    --theme-color-accent-primary: var(--color-pink);
+    --theme-color-accent-primary: var(--color-blue);
     --theme-color-accent-secondary: var(--color-gray-dark);
     --theme-color-text: var(--color-silver);
     --theme-color-max-contrast: var(--color-white);

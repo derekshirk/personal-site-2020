@@ -1,6 +1,6 @@
 .Label {
   background-color: var(--theme-color-accent-primary);
-  color: white;
+  color: var(--theme-color-background);
   display: inline-block;
   font-size: 0.75em;
   font-variation-settings: "wght" 750;
