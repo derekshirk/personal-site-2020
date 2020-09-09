@@ -21,9 +21,6 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify CSS
-  // @TODO
-  // 1. Consider PostCSS
-  // 2. Consider Autoprefixer
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
@@ -72,7 +69,8 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // Get only content that matches a tag
+  // TODO
+  // Remove: this is unused
   eleventyConfig.addCollection("sideProjects", function(collection) {
     return collection.getFilteredByTag("side-project");
   });
