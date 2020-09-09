@@ -1,13 +1,3 @@
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    if (!user) {
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-}
-
 if (localStorage.getItem("userThemeFavicon") !== null) {
   document.querySelector("link[rel*='icon']").href = localStorage.getItem("userThemeFavicon");
 }
