@@ -10,3 +10,7 @@
  .u-theme-accentSecondary {
   background-color: var(--theme-color-accent-secondary);
 }
+
+.u-theme-text-color {
+  color: var(--theme-color-text);
+}
