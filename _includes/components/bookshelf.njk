@@ -16,7 +16,7 @@
 
   {% for book in bookslist | reverse %}
     {% if loop.first %}
-      <article class="Bookshelf-item grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl u-padBottomNone">
+      <article class="Bookshelf-item grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl u-padBottomNone u-spaceTop1 u-lg-spaceTopNone">
         {% if book.data.url %}
           <a href="{{ book.data.url }}" class="Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l u-padBottomNone u-textUnderlineNone">
         {% endif %}
@@ -31,7 +31,7 @@
             >
           </figure>
         </div>
-        <div class="Bookshelf-meta grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padNone">
+        <div class="Bookshelf-meta grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padRight3 u-padTopNone u-padLeftNone">
           {% if book.data.title %}
             <h3 class="u-block u-textGrow2 u-md-textGrow3 u-xl-textGrow4">
               {{ book.data.title }}
@@ -58,7 +58,7 @@
 
 <section class="Bookshelf-content u-spaceTop">
   {% for book in bookslist | reverse %}
-    {% if loop.index > 1 %}
+    {% if (loop.index > 1) and (not book.data.hidden) %}
       <article class="Bookshelf-item">
 
         {% if book.data.url %}
@@ -89,9 +89,6 @@
               <p class="u-md-textShrink1">{{ book.data.author }}</p>
             {% endif %}
 
-            {% if book.data.summary %}
-              <p>{{ book.data.summary }}</p>
-            {% endif %}
           </div>
 
         {% if book.data.url %}
