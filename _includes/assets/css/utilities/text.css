@@ -190,8 +190,6 @@
  * Decoration
  */
 
-.u-textUnderlineNone,
-.u-textUnderlineNone * {
+.u-textUnderlineNone {
   text-decoration: none !important;
 }
-

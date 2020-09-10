@@ -55,16 +55,6 @@
   }
 }
 
-/* @media (--lg-viewport) {
-  .Bookshelf-item:first-of-type {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-  }
-} */
-
-.Bookshelf-cover {
-}
-
 .Bookshelf-art {
   display: block;
 }
@@ -79,9 +69,3 @@
     padding: 0.335rem 0.75rem 0.75rem 0;
   }
 }
-
-/* @media (--lg-viewport) {
-  .Bookshelf-item:first-of-type .Bookshelf-itemTitle {
-    font-size: 200% !important;
-  }
-} */
