@@ -1,6 +1,20 @@
+:root {
+  --logo-size: 48px;
+}
+
 .Logo {
-  @media (max-width: 319px) {
+  height: var(--logo-size);
+  transition: transform 350ms ease;
+  width: var(--logo-size);
+}
+
+@media (max-width: 319px) {
+  .Logo {
     height: 24px;
     width: 24px;
   }
+}
+
+.Logo:hover {
+  transform: scale(1.1);
 }
