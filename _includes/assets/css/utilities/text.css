@@ -187,9 +187,9 @@
 }
 
 /**
- * Theme colors
+ * Decoration
  */
 
-.u-textThemeHeading {
-  color: var(--theme-color-accent-primary);
+.u-textUnderlineNone {
+  text-decoration: none !important;
 }

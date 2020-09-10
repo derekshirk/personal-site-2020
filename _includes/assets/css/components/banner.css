@@ -1,5 +1,29 @@
 .Banner {
+  background-color: var(--theme-color-accent-secondary);
+  padding: 1rem;
   position: relative;
+}
+
+.Banner--simple {
+  background-color: transparent;
+}
+
+@media (--md-viewport) {
+  .Banner--offset {
+    padding: 2rem;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner--offset {
+    margin-left: 8vw;
+  }
+}
+
+@media (--lg-viewport) {
+  .Banner--offset .Banner-content {
+    transform: translateX(-9vw);
+  }
 }
 
 .Banner-label {
@@ -48,7 +72,7 @@
   font-size: 1.2rem;
 }
 
-@media (--lg-viewport) {
+@media (--xl-viewport) {
   .Banner-subtitle {
     font-size: 1.4rem;
   }
