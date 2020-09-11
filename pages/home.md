@@ -6,4 +6,4 @@ permalink: /
 navtitle: Home
 ---
 
-**I'm currently seeking work!** Browse past [projects](/designs), browse my [blog](/writes) or see what I've been [reading](/reads).
+**I'm currently seeking work!** Browse past [projects](/designs), check out my [blog](/writes), or see what I've been [reading](/reads).
