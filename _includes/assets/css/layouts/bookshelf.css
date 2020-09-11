@@ -64,8 +64,12 @@
   color: var(--theme-color-text);
 }
 
-@media (--md-viewport) {
+@media (min-width: 500px) {
   .Bookshelf-meta {
     padding: 0.335rem 0.75rem 0.75rem 0;
   }
+}
+
+.Bookshelf-current {
+  height: 100%;
 }
