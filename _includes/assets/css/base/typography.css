@@ -48,17 +48,6 @@ strong {
   color: var(--color-white);
 }
 
-a[href] {
-  color: var(--theme-color-accent-primary);
-  text-decoration-color: var(--theme-color-max-contrast);
-  font-variation-settings: "wght" 500;
-}
-
-a[href]:hover {
-  color: var(--theme-color-max-contrast);
-  text-decoration-color: var(--theme-color-accent-primary);
-}
-
 :--headings {
   color: var(--theme-color-max-contrast);
   font-weight: bold;
@@ -67,19 +56,41 @@ a[href]:hover {
   margin-bottom: 0.25rem;
 }
 
-:--headings a[href] {
+a[href] {
+  border-bottom: 0.2rem solid var(--theme-color-accent-primary);
+  color: var(--theme-color-accent-primary);
+  font-variation-settings: "wght" 500;
+  padding-bottom: .03em;
+  text-decoration: none;
+  transition: border-color 100ms ease, color 100ms ease;
+}
+
+a[href]:hover {
   color: var(--theme-color-max-contrast);
-  text-decoration: underline;
-  text-decoration-color: inherit;
-  text-decoration-color: var(--theme-color-accent-primary);
+  border-color: var(--theme-color-max-contrast);
+}
+
+:--headings a[href] {
+  border: 0;
+  color: var(--theme-color-accent-primary);
   font-variation-settings: "wght" 750;
+  padding-bottom: 0;
+  transition: color 100ms ease;
+
+  .link-external {
+    width: 0.8em;
+    top: 5px;
+  }
+
+  .link-external path {
+    transition: fill 100ms ease;
+  }
 }
 
 :--headings a[href]:hover {
-  color: var(--theme-color-accent-primary);
-  text-decoration-color: var(--theme-color-max-contrast);
-  
-  svg path {
-    fill: var(--theme-color-max-contrast);
+  color: var(--theme-color-max-contrast);
+
+  .link-external path {
+    fill: var(--theme-color-accent-primary);
   }
 }
