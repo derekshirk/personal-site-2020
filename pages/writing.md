@@ -3,7 +3,7 @@ layout: layouts/writing.njk
 title: Writing
 tags:
   - nav
-navtitle: Writing
+navtitle: Blog
 date: 2019-01-01
 permalink: /writes/index.html
 ---

@@ -6,4 +6,4 @@ permalink: /
 navtitle: Home
 ---
 
-**I'm currently seeking work!** Browse past [projects](/works), enjoy some [writing](/writes) or witness my obsession with smoothie bowls on [Twitter](https://twitter.com/derek_shirk).  
+**I'm currently seeking work!** Browse past [projects](/designs), browse my [blog](/writes) or see what I've been [reading](/reads).

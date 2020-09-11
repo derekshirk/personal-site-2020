@@ -39,7 +39,7 @@
 }
 
 .ArticleSectionLabel {
-  color: var(--theme-color-accent-primary);
+  color: var(--theme-color-max-contrast);
   font-size: 1.65rem;
   margin-top: 1rem;
 }
