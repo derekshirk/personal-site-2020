@@ -18,7 +18,7 @@
     {% if loop.first %}
       <article class="Bookshelf-item grid-whole@xs grid-whole@s grid-half@m grid-half@l grid-half@xl u-padBottomNone u-spaceTop1 u-lg-spaceTopNone">
         {% if book.data.url %}
-          <a href="{{ book.data.url }}" class="Bookshelf-current Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l u-padBottomNone u-textUnderlineNone">
+          <a href="{{ book.data.url }}" class="Bookshelf-current Grid-wrapper grid-whole@xs grid-whole@s grid-half@m grid-half@l u-padBottomNone u-textUnderlineNone u-borderNone">
         {% endif %}
         <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-objectFitCover">
           <figure class="Bookshelf-cover">
@@ -62,7 +62,7 @@
       <article class="Bookshelf-item">
 
         {% if book.data.url %}
-          <a href="{{ book.data.url }}" class="Bookshelf-info">
+          <a href="{{ book.data.url }}" class="Bookshelf-info u-borderNone">
         {% endif %}
           <figure class="Bookshelf-cover">
             <img
