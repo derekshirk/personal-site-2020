@@ -69,3 +69,7 @@
     padding: 0.335rem 0.75rem 0.75rem 0;
   }
 }
+
+.Bookshelf-current {
+  height: 100%;
+}
