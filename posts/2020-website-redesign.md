@@ -1,7 +1,7 @@
 ---
 title: Hooray! I redesigned my website
 summary: A few notes on my goals, the process, and techniques I used along the way. 
-date: 2020-08-27
+date: 2020-09-09
 tags:
   - post
   - latest
