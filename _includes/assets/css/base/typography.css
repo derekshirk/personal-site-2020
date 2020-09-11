@@ -31,12 +31,11 @@ ul {
 code,
 kbd,
 samp {
-  background-color: #f1f1f1;
+  background-color: var(--color-black);
   border-radius: var(--border-width-lg);
-  color: #232323;
-  color: var(--theme-color-accent-primary);
+  color: var(--color-white);
   font-size: 96%;
-  padding: 0.0125rem 0.5rem;
+  padding: 0.1rem 0.45rem;
 }
 
 strong {
@@ -56,24 +55,22 @@ strong {
   margin-bottom: 0.25rem;
 }
 
-a[href] {
+a {
   border-bottom: 0.2rem solid var(--theme-color-accent-primary);
   color: var(--theme-color-accent-primary);
-  font-variation-settings: "wght" 500;
   padding-bottom: .03em;
   text-decoration: none;
   transition: border-color 100ms ease, color 100ms ease;
 }
 
-a[href]:hover {
+a:hover {
   color: var(--theme-color-max-contrast);
   border-color: var(--theme-color-max-contrast);
 }
 
-:--headings a[href] {
+:--headings a {
   border: 0;
   color: var(--theme-color-accent-primary);
-  font-variation-settings: "wght" 750;
   padding-bottom: 0;
   transition: color 100ms ease;
 
@@ -87,7 +84,7 @@ a[href]:hover {
   }
 }
 
-:--headings a[href]:hover {
+:--headings a:hover {
   color: var(--theme-color-max-contrast);
 
   .link-external path {
