@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+section: now
+permalink: /now/index.html
+---
+
+{% include 'compositions/hero-writing.njk' %}
+
+<div class="Container ContainerProse--extra u-padTop1 u-md-padTop3">
+  <section class="u-lg-padTop6 u-spaceItems">
+    <h1>{{ title }}</h1>
+    {{ layoutContent | safe }}
+  </section>
+</div>
