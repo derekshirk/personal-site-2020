@@ -6,4 +6,5 @@ url: https://amzn.to/3c0X2Gg
 date: 2016-07-02
 tags:
   - Psychological Fiction
+  - Favorite
 ---
