@@ -6,6 +6,13 @@
 
 .Banner--simple {
   background-color: transparent;
+  padding: 0;
+}
+
+@media (--lg-viewport) {
+  .Banner--simple {
+    padding: 1rem;
+  }
 }
 
 @media (--md-viewport) {
