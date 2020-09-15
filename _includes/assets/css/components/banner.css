@@ -84,3 +84,7 @@
     font-size: 1.4rem;
   }
 }
+
+.Banner-subtitle p {
+  line-height: 1.56;
+}
