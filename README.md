@@ -1,14 +1,15 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
 
 # My Personal Site 
+
+![2020-website-redesign](https://user-images.githubusercontent.com/1427548/93402366-705a1e80-f839-11ea-90c5-25be326face5.png)
+
 My personal website, blog and portfolio.
 
 - PostCSS
 - Dark mode support
 - Theme switcher
 - Netlify CMS (Not currently in use)
-
-![Home page screenshot taken 09.02.2020](https://user-images.githubusercontent.com/1427548/92078425-148c9180-ed73-11ea-9df0-e2da4e20aa55.png)
 
 Built with [Eleventy](https://www.11ty.io/), an awesome 
 static site generator. Includes [Netlify CMS](https://www.netlifycms.org/), and 
