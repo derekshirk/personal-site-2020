@@ -26,8 +26,8 @@ module.exports = class {
       require('autoprefixer'),
       require('postcss-modular-scale-unit'),
       require('postcss-color-mix'),
-      require('cssnano'),
-      require('postcss-color-mod-function')
+      require('postcss-color-mod-function'),
+      require('cssnano')
     ])
     .process(rawCss, { from: rawFilepath })
     .then(result => result.css);
