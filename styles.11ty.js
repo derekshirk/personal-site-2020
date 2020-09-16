@@ -22,7 +22,6 @@ module.exports = class {
       require('postcss-import'),
       require('postcss-for'),
       require('postcss-mixins'),
-      require('precss'),
       require('autoprefixer'),
       require('postcss-modular-scale-unit'),
       require('postcss-color-mix'),
