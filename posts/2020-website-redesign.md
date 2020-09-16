@@ -58,7 +58,7 @@ After researching and experimenting with the available static site generators, I
 While I'm not completely satisfied with the current theme switcher UI, I'm quite proud of how well this feature and dark mode support are working together.
 
 <figure class="u-releaseWide u-padEnds03">
-  <img src="/static/img/posts/2020-redesign-sample-01.jpg">
+  <img src="/static/img/posts/2020-website-darkmode.jpg">
 </figure>
 
 I opted to write the user's theme selections to `localStorage`, and getting the two methods of theme switching to work seamlessly together without tripping over each other required some consideration. I hope to write a more comprehensive article on the specifics of how I went about achieving this soon.
