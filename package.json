@@ -31,7 +31,7 @@
     "stylelint-config-cloudfour-suit": "3.0.0"
   },
   "dependencies": {
-    "autoprefixer": "9.8.6",
+    "autoprefixer": "10.0.0",
     "clean-css": "4.2.3",
     "cssnano": "4.1.10",
     "html-minifier": "4.0.0",
