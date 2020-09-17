@@ -52,14 +52,15 @@ strong {
   font-weight: bold;
   font-weight: 800;
   font-variation-settings: "wght" 800;
+  line-height: 1.18;
   margin-bottom: 0.25rem;
 }
 
 a {
-  border-bottom: 0.2rem solid var(--theme-color-accent-primary);
+  /* border-bottom: 0.2rem solid var(--theme-color-accent-primary); */
   color: var(--theme-color-accent-primary);
   padding-bottom: .03em;
-  text-decoration: none;
+  text-decoration: underline;
   transition: border-color 100ms ease, color 100ms ease;
 }
 
@@ -72,6 +73,7 @@ a:hover {
   border: 0;
   color: var(--theme-color-accent-primary);
   padding-bottom: 0;
+  text-decoration: none;
   transition: color 100ms ease;
 
   .link-external {
