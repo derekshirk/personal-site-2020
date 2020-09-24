@@ -11,4 +11,14 @@
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Derek Shirk personal site" />
+  <meta property="og:description" content="Derek Shirk is a design-thinker and a design-maker, with a recent focus on making user friendly, inclusive, and modular designs for screens." />
+  <meta property="og:url" content="https://derekshirk.com/" />
+  <meta property="og:site_name" content="Derek Shirk personal site" />
+  <meta property="og:image" content="/static/img/open-graph-image-default.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:site" content="@derek_shirk" />
+  <meta name="twitter:text:title" content="{{ title }}" />
+  <meta name="twitter:card" content="summary" />
 </head>
