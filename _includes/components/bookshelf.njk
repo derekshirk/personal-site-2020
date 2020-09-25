@@ -7,8 +7,7 @@
       <h2 class="Banner-title">
         A collection of books I've enjoyed reading.
       </h2>
-      <p
-        class="Banner-subtitle u-spaceTop">
+      <p class="Banner-subtitle u-spaceTop">
         In the case of good books, the point is not to see how many of them you can get through, but rather how many can get through to you. – Mortimer J. Adler
       </p>
     </div>
@@ -22,13 +21,23 @@
         {% endif %}
         <div class="grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-objectFitCover">
           <figure class="Bookshelf-cover">
-            <img
-              src="{{ book.data.cover }}"
-              alt="{{ book.data.title }} book cover"
-              class="Bookshelf-art"
-              width="600"
-              height="900"
-            >
+            <picture>
+              <source 
+                srcset="{{ book.data.cover_avif }}" 
+                type="image/avif"
+              >
+              <source 
+                srcset="{{ book.data.cover_webp }}" 
+                type="image/webp"
+              >
+              <img 
+                src="{{ book.data.cover }}" 
+                alt="{{ book.data.title }} book cover"
+                class="Bookshelf-art"
+                width="600"
+                height="900"
+              >
+            </picture>
           </figure>
         </div>
         <div class="Bookshelf-meta grid-whole@xs grid-half@s grid-half@m grid-half@l grid-half@xl u-padRight3 u-padTopNone u-padLeftNone">
@@ -65,16 +74,26 @@
           <a href="{{ book.data.url }}" class="Bookshelf-info u-borderNone">
         {% endif %}
           <figure class="Bookshelf-cover">
-            <img
-              src="{{ book.data.cover }}"
-              alt="{{ book.data.title }} book cover"
-              class="Bookshelf-art"
-              {% if loop.index > 11 %}
-              loading="lazy"
-              {% endif %}
-              width="600"
-              height="900"
-            >
+            <picture>
+              <source 
+                srcset="{{ book.data.cover_avif }}" 
+                type="image/avif"
+              >
+              <source 
+                srcset="{{ book.data.cover_webp }}" 
+                type="image/webp"
+              >
+              <img 
+                src="{{ book.data.cover }}" 
+                alt="{{ book.data.title }} book cover"
+                class="Bookshelf-art"
+                {% if loop.index > 11 %}
+                loading="lazy"
+                {% endif %}
+                width="600"
+                height="900"
+              >
+            </picture>
           </figure>
         
           <div class="Bookshelf-meta">
