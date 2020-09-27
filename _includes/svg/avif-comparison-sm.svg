@@ -1,0 +1,23 @@
+<svg width="770px" height="426px" viewBox="0 0 770 426" xmlns="http://www.w3.org/2000/svg">
+  <path d="M38,199 L496,199 C516.98682,199 534,216.01318 534,237 C534,257.98682 516.98682,275 496,275 L38,275 C17.0131795,275 2.57014425e-15,257.98682 0,237 C-2.57014425e-15,216.01318 17.0131795,199 38,199 Z" id="Rectangle-Copy" fill="#000000"></path>
+  <text id=".webp" font-family="Inter-ExtraBold, Inter" font-size="36" font-weight="600" letter-spacing="-0.62" fill="#000000">
+      <tspan x="31.7065341" y="187">.webp</tspan>
+  </text>
+  <text id="30%-smaller-than-.jp" font-family="Inter-Bold, Inter" font-size="27" font-weight="bold" letter-spacing="-0.09" fill="#FFFFFF">
+      <tspan x="31" y="246">30% smaller than .jpeg</tspan>
+  </text>
+  <path d="M38,351 L732,351 C752.98682,351 770,368.01318 770,389 C770,409.98682 752.98682,427 732,427 L38,427 C17.0131795,427 2.57014425e-15,409.98682 0,389 C-2.57014425e-15,368.01318 17.0131795,351 38,351 Z" id="Rectangle-Copy-2" fill="#000000"></path>
+  <text id=".jpeg" font-family="Inter-ExtraBold, Inter" font-size="36" font-weight="600" letter-spacing="-0.62" fill="#000000">
+      <tspan x="31.0715909" y="339">.jpeg</tspan>
+  </text>
+  <text id="larger-than-necessar" font-family="Inter-Bold, Inter" font-size="27" font-weight="bold" letter-spacing="-0.09" fill="#FFFFFF">
+      <tspan x="31" y="398">larger than necessary</tspan>
+  </text>
+  <path d="M38,47 L347,47 C367.98682,47 385,64.0131795 385,85 C385,105.98682 367.98682,123 347,123 L38,123 C17.0131795,123 2.57014425e-15,105.98682 0,85 C-2.57014425e-15,64.0131795 17.0131795,47 38,47 Z" id="Rectangle" fill="#000000"></path>
+  <text id="50%-smaller-than-.jp" font-family="Inter-Bold, Inter" font-size="27" font-weight="bold" letter-spacing="-0.09" fill="#FFFFFF">
+      <tspan x="31" y="94">50% smaller than .jpeg</tspan>
+  </text>
+  <text id=".avif" font-family="Inter-ExtraBold, Inter" font-size="36" font-weight="600" letter-spacing="-0.62" fill="#000000">
+      <tspan x="31.9224432" y="35">.avif</tspan>
+  </text>
+</svg>

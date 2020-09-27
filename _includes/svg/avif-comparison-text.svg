@@ -1,0 +1,25 @@
+<svg width="770px" height="176px" viewBox="0 0 770 176" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22,-2.84217094e-14 L363,-2.84217094e-14 C375.150264,-3.06536768e-14 385,9.8497355 385,22 C385,34.1502645 375.150264,44 363,44 L22,44 C9.8497355,44 1.48797825e-15,34.1502645 0,22 C-1.48797825e-15,9.8497355 9.8497355,-2.61897421e-14 22,-2.84217094e-14 Z" id="Rectangle" fill="#000000"></path>
+  <path d="M22,66 L512,66 C524.150264,66 534,75.8497355 534,88 C534,100.150264 524.150264,110 512,110 L22,110 C9.8497355,110 1.48797825e-15,100.150264 0,88 C-5.04069193e-15,75.8497355 9.8497355,66 22,66 Z" id="Rectangle-Copy" fill="#000000"></path>
+  <path d="M22,132 L748,132 C760.150264,132 770,141.849736 770,154 C770,166.150264 760.150264,176 748,176 L22,176 C9.8497355,176 1.48797825e-15,166.150264 0,154 C-1.48797825e-15,141.849736 9.8497355,132 22,132 Z" id="Rectangle-Copy-2" fill="#000000"></path>
+  <g id="Text" transform="translate(25.000000, 12.000000)" fill="#FFFFFF" font-size="15" letter-spacing="0.45">
+    <text id="50%-smaller-than-.jp" font-family="Inter-Bold, Inter" font-weight="bold">
+        <tspan x="0" y="15">50% smaller than .jpeg</tspan>
+    </text>
+    <text id=".avif" font-family="Inter-ExtraBold, Inter" font-weight="600">
+        <tspan x="303.592685" y="15">.avif</tspan>
+    </text>
+    <text id=".webp" font-family="Inter-ExtraBold, Inter" font-weight="600">
+        <tspan x="440.169389" y="82">.webp</tspan>
+    </text>
+    <text id=".jpeg" font-family="Inter-ExtraBold, Inter" font-weight="600">
+        <tspan x="686.65483" y="148">.jpeg</tspan>
+    </text>
+    <text id="80%-smaller-than-.jp" font-family="Inter-Bold, Inter" font-weight="bold">
+        <tspan x="0" y="82">80% smaller than .jpeg</tspan>
+    </text>
+    <text id="larger-than-necessar" font-family="Inter-Bold, Inter" font-weight="bold">
+        <tspan x="0" y="148">larger than necessary</tspan>
+    </text>
+  </g>
+</svg>
