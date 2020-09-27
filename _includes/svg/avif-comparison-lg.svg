@@ -1,0 +1,23 @@
+<svg width="770px" height="176px" viewBox="0 0 770 176" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22,-2.84217094e-14 L363,-2.84217094e-14 C375.150264,-3.06536768e-14 385,9.8497355 385,22 C385,34.1502645 375.150264,44 363,44 L22,44 C9.8497355,44 1.48797825e-15,34.1502645 0,22 C-1.48797825e-15,9.8497355 9.8497355,-2.61897421e-14 22,-2.84217094e-14 Z" id="Rectangle" fill="#000000"></path>
+  <path d="M22,66 L512,66 C524.150264,66 534,75.8497355 534,88 C534,100.150264 524.150264,110 512,110 L22,110 C9.8497355,110 1.48797825e-15,100.150264 0,88 C-5.04069193e-15,75.8497355 9.8497355,66 22,66 Z" id="Rectangle-Copy" fill="#000000"></path>
+  <path d="M22,132 L748,132 C760.150264,132 770,141.849736 770,154 C770,166.150264 760.150264,176 748,176 L22,176 C9.8497355,176 1.48797825e-15,166.150264 0,154 C-1.48797825e-15,141.849736 9.8497355,132 22,132 Z" id="Rectangle-Copy-2" fill="#000000"></path>
+  <text id=".avif" font-family="Inter-ExtraBold, Inter" font-size="15" font-weight="600" letter-spacing="0.45" fill="#FFFFFF">
+      <tspan x="25.5926847" y="27">.avif</tspan>
+  </text>
+  <text id=".webp" font-family="Inter-ExtraBold, Inter" font-size="15" font-weight="600" letter-spacing="0.45" fill="#FFFFFF">
+      <tspan x="25.1693892" y="94">.webp</tspan>
+  </text>
+  <text id="30%-smaller-than-.jp" font-family="Inter-Bold, Inter" font-size="15" font-weight="bold" letter-spacing="0.45" fill="#FFFFFF">
+      <tspan x="335" y="94">30% smaller than .jpeg</tspan>
+  </text>
+  <text id=".jpeg" font-family="Inter-ExtraBold, Inter" font-size="15" font-weight="600" letter-spacing="0.45" fill="#FFFFFF">
+      <tspan x="25.6548295" y="160">.jpeg</tspan>
+  </text>
+  <text id="larger-than-necessar" font-family="Inter-Bold, Inter" font-size="15" font-weight="bold" letter-spacing="0.45" fill="#FFFFFF">
+      <tspan x="581" y="160">larger than necessary</tspan>
+  </text>
+  <text id="50%-smaller-than-.jp" font-family="Inter-Bold, Inter" font-size="15" font-weight="bold" letter-spacing="0.45" fill="#FFFFFF">
+      <tspan x="186" y="27">50% smaller than .jpeg</tspan>
+  </text>
+</svg>

@@ -17,6 +17,7 @@ I'm very excited to share this redesign with you along with an overview of my go
 My primary design goals were:
 
 - Keep it simple
+- Make it really fast
 - Less serious - more fun and whimsical
 - Increase whitespace
 - Improve legibility

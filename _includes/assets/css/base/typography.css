@@ -31,9 +31,9 @@ ul {
 code,
 kbd,
 samp {
-  background-color: var(--color-black);
+  background-color: var(--theme-color-accent-secondary);
   border-radius: var(--border-width-lg);
-  color: var(--color-white);
+  color: var(--theme-color-max-contrast);
   font-size: 96%;
   padding: 0.1rem 0.45rem;
 }
