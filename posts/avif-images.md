@@ -8,11 +8,11 @@ tags:
   - "2020"
 ---
 
-I am always looking for ways to build faster web experiences. Speed was one of my primary goals with my most recent [website redesign](/posts/hooray!-i-redesigned-my-website). I've done a decent job so far, but I still have plenty of opportunities to improve my page speeds and overall [performance](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fderekshirk.com). 
+I am always looking for ways to build faster web experiences. Speed was one of my primary goals with my most recent [website redesign](/posts/hooray!-i-redesigned-my-website). I've done a decent job so far, however I still have plenty of opportunities to improve my page speeds and overall [performance](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fderekshirk.com). 
 
-Shortly after launching my new website, I was introduced to AVIF image compression thanks to this [article](https://jakearchibald.com/2020/avif-has-landed/) by Jake Archibald. Jake goes deep (really deep) in that article, and I highly recommend checking it out - you might want to prepare some snacks 😉. 
+Shortly after launching my new website, I discovered AVIF image compression thanks to this [article](https://jakearchibald.com/2020/avif-has-landed/) by Jake Archibald. Jake goes deep (really deep) in that article, and I highly recommend checking it out - you might want to prepare some snacks 😉. 
 
-I'm going to keep things much simpler. This post should give you a basic overview of what AVIF compression is, where it's currently supported and how I used it to improve the page speed of my site by reducing my image payload by `68%`. 
+I'm going to keep things much simpler. This post should give you a basic overview of what AVIF is, where it's currently supported, and how I used it to improve my site's page speed by reducing my image payload by `68%`. 
 
 In Jake's article, he says: 
 
@@ -83,9 +83,9 @@ AVIF is generated from the keyframes of [AV1 video](https://en.wikipedia.org/wik
 
 ## Browser Support
 
-AVIF currently works in Chrome 85 (which includes the Brave browser), and it sounds like Android support is coming soon. Firefox 80 can display AVIF images with an enabled flag, but they are working on a full implementation. I expect Firefox support to be released soon, as they have a proven track record of moving fast on these types of enhancements.  I'm unsure of what to expect from Safari, but apparently, they are involved with the [team](https://aomedia.org/) that helped create AV1 — so that's promising. 
+AVIF currently works in Chrome 85 (which includes the Brave browser). It sounds like Android support is coming soon. Firefox 80 can display AVIF images with an enabled flag. I expect full Firefox support to be released soon, as they have a proven track record of moving fast on these types of enhancements. I'm unsure of what to expect from Safari, but apparently, they are involved with the [team](https://aomedia.org/) that helped create AV1 — so that's promising. 
 
-If you are interested in enabling AVIF support in Firefox 80, you can type `about:config` in the URL bar, search for `image.avif.enabled`, and set the parameter's value to `true`.
+Are you interested in enabling AVIF support in Firefox 80 now? Enter `about:config` in the URL bar, search for `image.avif.enabled`, and set the parameter's value to `true`.
 
 <picture>
   <source srcset="/static/img/posts/firefox-about-config.avif" type="image/avif">
@@ -115,27 +115,27 @@ Since AVIF is not yet supported everywhere, I embraced the `<picture>` element f
 
 The images are listed in the order that they should be loaded. The browser will display the first image format it supports. If the browser doesn't support `<picture>`, it will fall back to using the default `<img>` source.
 
-I try to keep images on my site to a minimum; however, I have two pages where numerous images are inescapable. My [Projects](/designs) and [Bookshelf](/reads) pages rely heavily on displaying lots of pictures, so naturally I worked on optimizing them first. 
+I try to keep images on my site to a minimum; however, I have two pages where numerous images are inescapable. My [Projects](/designs) and [Bookshelf](/reads) pages rely heavily on displaying lots of pictures, so naturally, I worked on optimizing them first. 
 
-I used [Squoosh](https://squoosh.app/) to generate my AVIF, WEBP, and MozJpeg assets. In my opinion, Squoosh was the best option I found for optimizing my images into the formats I wanted. If you are comfortable in the command line, there are options you can use such as [libavif](https://github.com/AOMediaCodec/libavif). However, I much preferred visually adjusting the options for each image in Squoosh, so I could manually optimize for the best ratio of quality and compression with each asset. 
+I used [Squoosh](https://squoosh.app/) to generate my AVIF, WEBP, and MozJpeg assets. In my opinion, Squoosh was the best option I found for optimizing my images into the formats I wanted. If you are comfortable in the command line, there are tools you can use, such as [libavif](https://github.com/AOMediaCodec/libavif). However, I preferred visually adjusting the options for each image in Squoosh, so I could manually optimize for the best ratio of quality and compression with each asset. 
 
-I was also able to squeeze out some additional compression gains for my fallback images because in the hast of launching my site, I neglected to compress my jpegs with MozJpeg. I have also added [native image lazy loading](https://web.dev/browser-level-image-lazy-loading/) in a few select areas on this site. This, paired with AVIF compression has resulted in better than expected performance gains in supported browsers. 
+I was also able to squeeze out some additional compression gains for my fallback images because in the hast of launching my site, I neglected to compress my jpegs with MozJpeg. I have also added [native image lazy loading](https://web.dev/browser-level-image-lazy-loading/) in a few select areas on this site. This, paired with AVIF compression, has resulted in better than expected performance gains in supported browsers. 
 
 Here are some before and after data comparisons I captured from the network panel while working on this update. 
 
 #### Projects page
 
-Prior to optimizing my images, my projects page contained `21` images totaling `4.1 MB` in size. With AVIF I was able to reduce this to `1.3 MB`. That's a `68.29%` reduction in bytes.
+Before optimizing my images, my projects page contained `21` images totaling `4.1 MB` in size. With AVIF, I was able to reduce this to `1.3 MB`. That's a `68.29%` reduction in bytes.
 
 
 #### Bookshelf page
 
-My Bookshelf page, contained `61` images totaling `4.7 MB`. After AVIF compression I was able reduce that to `1.5 MB` for a `68.1%` reduction. Not bad!
+My Bookshelf page contained `61` images totaling `4.7 MB`. After AVIF compression, I was able to reduce that to `1.5 MB` for a `68.1%` reduction. Not bad!
 
 
-## Trouble with Firefox and Netlify
+## Some trouble with Firefox and Netlify
 
-Thanks to a [post](https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/) by Dan Klammer, I was able to remedy this before it caused an issue for me. Apparently, Netlify servers will return a `Content-Type: application/octet-stream header` in firefox when AVIF images are being served. This means that the [AVIF] images will not load. Dan suggests adding the following custom header info to your `netlify.toml` configuration file. I've tested this and it works as described.  
+Thanks to a [post](https://reachlightspeed.com/blog/using-the-new-high-performance-avif-image-format-on-the-web-today/) by Dan Klammer, I was able to remedy this before it caused an issue for me. Netlify servers will return a `Content-Type: application/octet-stream header` in firefox when AVIF images are being served. This means that the [AVIF] images will not load. Dan suggests adding the following custom header info to your `netlify.toml` configuration file. I've tested this, and it works as described.  
 
 ```toml
 [[headers]]
@@ -151,4 +151,4 @@ If you're looking for suggestions on how to insert AVIF images into a WordPress 
 
 ## Summary
 
-To conclude this article, I will repeat Jake's sentiment. The time to care about AVIF is now. With that being said, I understand that there are a lot more important things going on in the world that require our focus and attention. But if you're looking to spend some time improving the performance of your site by reducing the file size of images sent over the wire, AVIF is an excellent place to start. 
+To conclude this article, I will repeat Jake's sentiment. The time to care about AVIF is now. With that being said, I understand that there are many more important things going on in the world that require our focus and attention. But if you're looking to spend some time improving the performance of your site by reducing the file size of images, AVIF is an excellent place to start.
