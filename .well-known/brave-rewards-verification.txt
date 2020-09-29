@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: derekshirk.com
+Token: d4f0b6216c7e5b61255fe3fc4ceaacd398ef76b949ee88c781e7629b8b2bea5d
