@@ -28,10 +28,10 @@ document.documentElement.style.setProperty(
 );
 
 document.addEventListener("DOMContentLoaded", function() {
+  console.log('Available for hire');
 
   const whale = document.querySelector('.Illustration-whale');
   if (whale) {
-    console.log('thar she blows');
     let eyeBall = document.querySelector('.eyeball'),
     pupil = document.querySelector('.pupil'),
     eyeArea = eyeBall.getBoundingClientRect(),
@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
-      console.log('click a theme switcher button');
       const color = e.target.getAttribute('data-color');
       const colorAccentPrimary = e.target.getAttribute('data-color-accent-primary');
       const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary')
@@ -92,12 +91,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const theme = e.target.getAttribute('data-theme');
 
       if (e.target.id == 'activate-light-mode') {
-        console.log("clicked button to active light mode");
         darkModeBtn.classList.add('is-active');
         item.classList.remove('is-active');
       }
       else {
-        console.log("clicked button to active dark mode");
         lightModeBtn.classList.add('is-active');
         item.classList.remove('is-active');
       }
