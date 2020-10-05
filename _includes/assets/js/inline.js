@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   const themeSwitchers = document.querySelectorAll('.js-theme-switcher');
-  const lightModeBtn = document.getElementById('light-mode');
-  const darkModeBtn = document.getElementById('dark-mode');
+  const lightModeBtn = document.getElementById('activate-light-mode');
+  const darkModeBtn = document.getElementById('activate-dark-mode');
   const userThemePreference = localStorage.getItem("userThemePreference");
   
   const changeFavicon = link => {
@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   themeSwitchers.forEach((item) => {
     item.addEventListener('click', (e) => {
+      console.log('click a theme switcher button');
       const color = e.target.getAttribute('data-color');
       const colorAccentPrimary = e.target.getAttribute('data-color-accent-primary');
       const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary')
@@ -90,13 +91,15 @@ document.addEventListener("DOMContentLoaded", function() {
       const themeFavicon = e.target.getAttribute('data-favicon');
       const theme = e.target.getAttribute('data-theme');
 
-      if (e.target.id == 'light-mode') {
-        darkModeBtn.classList.remove('is-active');
-        item.classList.add('is-active');
+      if (e.target.id == 'activate-light-mode') {
+        console.log("clicked button to active light mode");
+        darkModeBtn.classList.add('is-active');
+        item.classList.remove('is-active');
       }
       else {
-        lightModeBtn.classList.remove('is-active');
-        item.classList.add('is-active');
+        console.log("clicked button to active dark mode");
+        lightModeBtn.classList.add('is-active');
+        item.classList.remove('is-active');
       }
 
       // Update theme styles
@@ -135,15 +138,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Check for existing theme data in `localStorage` on page load
-  // Adds `is-active` class to "appropriate" theme switcher button
+  // Adds `is-active` class to appropriate theme switcher button
   // This preference is not related to system (light/dark mode) settings
-  // I address that later
+  // I will look at addressing that later
   
   // If no previous user preference exist
   if (userThemePreference == null) {
     if (window.matchMedia && 
         window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      darkModeBtn.classList.add('is-active');
+      lightModeBtn.classList.add('is-active');
     }
     else {
       lightModeBtn.classList.add('is-active');
@@ -151,13 +154,13 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   // If user preference is "light mode"
   else if (userThemePreference == "light") {
-    darkModeBtn.classList.remove('is-active');
-    lightModeBtn.classList.add('is-active');
+    lightModeBtn.classList.remove('is-active');
+    darkModeBtn.classList.add('is-active');
   }
   // Else user preference  is "dark mode"
   else {
-    lightModeBtn.classList.remove('is-active');
-    darkModeBtn.classList.add('is-active');
+    darkModeBtn.classList.remove('is-active');
+    lightModeBtn.classList.add('is-active');
   }
 
   // Update theme colors when user changes system settings

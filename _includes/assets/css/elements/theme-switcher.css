@@ -1,7 +1,3 @@
-/**
- * @Define utilities
- */
-
 :root {
   --theme-switcher-border-color: var(--theme-color-text);
   --theme-switcher-size: 48px;
@@ -9,6 +5,26 @@
 
 .ThemeSwitcher {
   display: flex;
+}
+
+.ThemeSwitcher--lg {
+  display: none;
+}
+
+@media (min-width: 350px) {
+  .ThemeSwitcher--lg {
+    display: flex;
+  }
+}
+
+.ThemeSwitcher--sm {
+  display: flex;
+}
+
+@media (min-width: 350px) {
+  .ThemeSwitcher--sm {
+    display: none;
+  }
 }
 
 @media (--md-viewport) {
@@ -24,9 +40,11 @@
 
 .ThemeSwitcher-item {
   align-items: center;
+  background-color: var(--theme-color-accent-secondary);
+  color: var(--theme-color-max-contrast);
   border-radius: 50%;
-  border: var(--border-width-md) solid var(--theme-color-max-contrast);
-  box-shadow: inset 0 0 0 var(--border-width-md) var(--theme-color-background);
+  border: var(--border-width-md) solid var(--theme-color-accent-secondary);
+  /* box-shadow: inset 0 0 0 var(--border-width-md) var(--theme-color-background); */
   display: flex;
   font-size: 1.5em;
   height: var(--theme-switcher-size);
@@ -34,16 +52,25 @@
   margin: 0;
   padding: 0;
   width: var(--theme-switcher-size);
+  display: none;
 
   svg {
     pointer-events: none;
   }
+  
 
-  &:focus {
+  &:focus,
+  &:hover  {
     outline: 0;
-    box-shadow: 0 0 0 3px var(--theme-color-accent-primary);
+    border: var(--border-width-md) solid var(--theme-color-accent-primary);
+    /* box-shadow: 0 0 0 3px var(--theme-color-accent-primary); */
+    svg path {
+      fill: var(--theme-color-accent-primary);
+    }
   }
   &.is-active {
-    box-shadow: 0 0 0 3px var(--theme-color-accent-primary);
+    /* box-shadow: 0 0 0 3px var(--theme-color-accent-primary); */
+    display: flex;
+
   }
 }
