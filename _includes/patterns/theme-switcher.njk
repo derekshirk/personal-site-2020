@@ -5,41 +5,35 @@
   3. add visually hidden class
  #}
 
-<ul class="ThemeSwitcher u-listReset">
-  <li class="ThemeSwitcher-listElement">
-    <button
-      id="light-mode"
-      class="ThemeSwitcher-item
-      u-bgWhite u-textBlack
-      js-theme-switcher"
-      data-color="var(--color-gray-666)"
-      data-color-accent-primary="var(--color-purple)"
-      data-color-accent-secondary="var(--color-blue-gray)"
-      data-color-background="var(--color-cool-blue)"
-      data-color-max-contrast="var(--color-black)"
-      data-favicon="/static/img/favicon-purple.png"
-      data-theme="light"
-    >
-      {% include "svg/icon-sun.svg" %}
-      <span class="u-hidden">Theme: light mode</span>
-    </button>
-  </li>
-  <li class="ThemeSwitcher-listElement">
-    <button
-      id="dark-mode"
-      class="ThemeSwitcher-item
-             u-bgBlack u-textWhite
-             js-theme-switcher"
-      data-color="var(--color-silver)"
-      data-color-accent-primary="var(--color-blue)"
-      data-color-accent-secondary="var(--color-gray-dark)"
-      data-color-background="var(--color-black-alt)"
-      data-color-max-contrast="var(--color-white)"
-      data-favicon="/static/img/favicon-blue.png"
-      data-theme="dark"
-    >
-    {% include "svg/icon-moon.svg" %}
-    <span class="u-hidden">Theme: dark mode</span>
-    </button>
-  </li>
-</ul>
+<div class="ThemeSwitcher u-padLeft06">
+  <button
+    class="ThemeSwitcher-item
+            js-theme-switcher"
+    id="activate-dark-mode"
+    data-color="var(--color-silver)"
+    data-color-accent-primary="var(--color-blue)"
+    data-color-accent-secondary="var(--color-gray-dark)"
+    data-color-background="var(--color-black-alt)"
+    data-color-max-contrast="var(--color-white)"
+    data-favicon="/static/img/favicon-blue.png"
+    data-theme="dark"
+  >
+    {% include "svg/icon-moon-filled.svg" %}
+    <span class="u-hidden">Switch to dark mode</span>
+  </button>
+  <button
+    class="ThemeSwitcher-item
+    js-theme-switcher"
+    id="activate-light-mode"
+    data-color="var(--color-gray-666)"
+    data-color-accent-primary="var(--color-purple)"
+    data-color-accent-secondary="var(--color-blue-gray)"
+    data-color-background="var(--color-cool-blue)"
+    data-color-max-contrast="var(--color-black)"
+    data-favicon="/static/img/favicon-purple.png"
+    data-theme="light"
+  >
+    {% include "svg/icon-sun-filled.svg" %}
+    <span class="u-hidden">Switch to light mode</span>
+  </button>
+</div>
