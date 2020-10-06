@@ -17,7 +17,11 @@ section: post
     {% if link %}  
       <span class="u-flex">
         <a class="theme-button" href="{{link}}">
-          Read article
+          {% if link_title %}
+            {{ link_title }}
+          {% else %}
+            View link
+          {% endif %}
         </a>
       </span>
     {% endif %}
