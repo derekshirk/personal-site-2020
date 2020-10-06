@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+section: now
+permalink: /now/index.html
+---
+
+{# {% include 'compositions/hero-writing.njk' %} #}
+
+<div class="Container ContainerProse--extra u-padTop1 u-md-padTop3">
+  <section class="u-lg-padTop6 u-spaceItems">
+    <header>
+      <h1 class="u-textGrow6">{{ title }}</h1>
+      <p class="u-textGrow2"><strong>Last updated:</strong> 
+        {{ date | readableDate }}
+      </p>
+    </header>
+    <div class="u-textGrow1 u-staggerItems02">
+      {{ layoutContent | safe }}
+    </div>
+  </section>
+</div>
