@@ -23,7 +23,6 @@ Checkout my [Bookshelf](/reads) page to see what I'm currently reading.
 <div class="u-spaceTop6">
 
 ### About Now
-Inspired by [Derek Sivers](https://sivers.org/nowff). If you have your own site, you should [make one too](http://nownownow.com/about).
+Inspired by [Derek Sivers](https://sivers.org/nowff). If you have your own site, you should [make one too](https://nownownow.com/about).
 
 </div>
-
