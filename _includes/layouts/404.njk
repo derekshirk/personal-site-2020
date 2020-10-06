@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+class: 404
+section: 404
+---
+
+<section class="ContentHome u-lg-padTop6">
+  <article class="ContentHome-inner u-padTop02">
+    <div class="Grid Grid--homeHero">
+      <div class="u-spaceTop u-md-spaceTopNone u-flex u-flexAlignItemsCenter u-flexJustifyCenter">
+        <div class="Banner Banner--simple">
+          <h2 class="Banner-title">
+           {{ layoutContent | striptags(true) | safe }}
+          </h2>
+          <span class="u-flex">
+            <a class="theme-button u-spaceTop6" href="/">
+              Return home
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="Illustration-whale u-flex u-flexAlignItemsCenter u-spaceTop6 u-md-spaceTop4 u-lg-spaceTopNone">
+        {% include "svg/illustration-whale.svg" %}
+      </div>
+    </div>
+    <div class="Container u-textCenter u-padSidesNone">
+      {% include "svg/illustration-wavy-line.svg" %}
+    </div>
+  </article>
+</section>
