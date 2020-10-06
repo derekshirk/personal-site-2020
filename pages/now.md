@@ -1,14 +1,29 @@
 ---
 layout: layouts/now.njk
-title: Now
-date: 2020-09-12
+title: What I'm Doing Now
+date: 2020-10-05
 permalink: /now/index.html
 ---
 
-This is what I'm doing now: 
-
+- Looking for a new job 
 - Eating plants
-- Reading books about plants
-- Looking for a new job
-- Staying in the house
+- Running
+- Reading books about running and food
+- Tinkering on this website as much as I can
+- Keeping our two new kittens alive and happy while doing my best to teach them not to scratch at our furniture. I'd say, I'm doing a good job at the first two. 
+- After 8 years of having an empty [Dribbble account](https://dribbble.com/derekshirk), I'm working on improving my dribbble game.
+
+<div class="u-spaceTop6">
+
+## Currently Reading
+Checkout my [Bookshelf](/reads) page to see what I'm currently reading. 
+
+</div>
+
+<div class="u-spaceTop6">
+
+### About Now
+Inspired by [Derek Sivers](https://sivers.org/nowff). If you have your own site, you should [make one too](http://nownownow.com/about).
+
+</div>
 
