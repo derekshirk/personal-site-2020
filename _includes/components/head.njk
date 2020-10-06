@@ -1,13 +1,37 @@
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Derek Shirk is a design-thinker and a design-maker, with a focus on making user-friendly, inclusive, and modular designs for screens.">
+  <meta name="author" content="Derek Shirk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link id="favicon" rel="icon" type="image/svg" href="/static/img/favicon.svg" />
   <title>{{ title or renderData.title or metadata.title }}</title>
   <link rel="preload" href="/static/fonts/inter/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
+  {% if section == "post" %} 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" />
+  {% endif %}
   <link rel="prerender" href="https://derekshirk.com/designs" />
   {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Derek Shirk's Personal Website" />
+  <meta property="og:description" content="Derek Shirk is a design-thinker and a design-maker, with a focus on making user-friendly, inclusive, and modular designs for screens." />
+  <meta property="og:url" content="https://derekshirk.com/" />
+  <meta property="og:site_name" content="Derek Shirk's Personal Website" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:site" content="@derek_shirk" />
+  <meta name="twitter:creator" content="@derek_shirk">
+  <meta name="twitter:text:title" content="{{ title }}" />
+  {% if section == "home" %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/static/img/twitter-card-image.png">
+  <meta property="og:image" content="/static/img/open-graph-image-default.png" />
+  {% else %}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/static/img/twitter-card-image-sm.png">
+  <meta property="og:image" content="/static/img/twitter-card-image-sm.png" />
+  {% endif %}
+  
 </head>

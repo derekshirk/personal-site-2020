@@ -6,6 +6,13 @@
 
 .Banner--simple {
   background-color: transparent;
+  padding: 0;
+}
+
+@media (--lg-viewport) {
+  .Banner--simple {
+    padding: 1rem;
+  }
 }
 
 @media (--md-viewport) {
@@ -76,4 +83,8 @@
   .Banner-subtitle {
     font-size: 1.4rem;
   }
+}
+
+.Banner-subtitle p {
+  line-height: 1.56;
 }

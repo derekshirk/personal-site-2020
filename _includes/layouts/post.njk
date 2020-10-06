@@ -5,23 +5,23 @@ section: post
 
 {% include 'compositions/hero-writing.njk' %}
 
-<article class="Container ContainerProse u-padTop1 u-md-padTop3 u-spaceItems u-textSize1">
+<article class="Container ContainerProse u-padTop1 u-md-padTop3 u-textSize1">
 
-  <header class="u-lg-padTop6">
-    <h4 class="Banner-label">{{ page.date | readableDate }}</h4>
-    <h1 class="u-textSize4 u-md-textSize6">{{ title }}</h1>
-  </header>
+  <div class="u-spaceItems">
+    <header class="u-lg-padTop6">
+      <h4 class="Banner-label">{{ page.date | readableDate }}</h4>
+      <h1 class="u-textSize4 u-md-textSize6">{{ title }}</h1>
+    </header>
 
-  {{ layoutContent | safe }}
-
-  {% if link %}
-    <div class="u-flex">
-      <span class="u-spaceRight03">
-        {% include "svg/icon-link-alt.svg" %}
+    {{ layoutContent | safe }}
+    {% if link %}  
+      <span class="u-flex">
+        <a class="theme-button" href="{{link}}">
+          Read article
+        </a>
       </span>
-      <a href="{{link}}">Read article</a>
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
 
   {# {% if tags %}
     <p>

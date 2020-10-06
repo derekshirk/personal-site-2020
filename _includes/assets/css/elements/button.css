@@ -1,6 +1,38 @@
-button {
-  background-color: var(--theme-color-background);
-  border: 1px solid transparent;
-  color: var(--theme-color-text);
+:root {
+  --button-shadow: #06010c;
+}
+
+button,
+.theme-button {
   cursor: pointer;
+}
+
+.theme-button {
+  background-color: var(--theme-color-accent-primary);
+  border-radius: 8px;
+  border: 0.28125em solid var(--button-shadow);
+  box-shadow: -5px 5px 0 var(--button-shadow);
+  box-sizing: border-box;
+  color: var(--theme-color-background);
+  cursor: pointer;
+  font-variation-settings: "wght" 600;
+  font-weight: 600;
+  letter-spacing: .01em;
+  margin: 0.75em 0 1.5em 0;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.theme-button:not(:disabled):active {
+  background: var(--theme-color-accent-primary);
+  box-shadow: none;
+  transform: translate(-5px, 5px);
+}
+
+.theme-button:not(:disabled):hover {
+  box-shadow: -3px 3px 0 var(--button-shadow);
+  border-color: var(--button-shadow);
+  transform: translate(-2px, 2px);
+  color: var(--theme-color-background);
 }

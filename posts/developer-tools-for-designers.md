@@ -5,7 +5,6 @@ date: 2020-05-07
 link: https://cloudfour.com/thinks/developer-tools-for-designers/
 tags:
   - post
-  - latest
   - "2020"
 ---
 
