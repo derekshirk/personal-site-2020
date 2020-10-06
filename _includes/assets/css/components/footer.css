@@ -2,15 +2,19 @@
   border-top: var(--border-width-sm) solid var(--theme-color-accent-secondary);
 }
 
-.Footer-socialList {
+.Footer-List {
   display: inline-flex;
   flex-wrap: wrap;
 }
 
-.Footer-socialLinks {
+.Footer-Links {
   margin-right: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.125em;
   &:last-of-type {
     margin-right: 0;
+  }
+
+  a {
+    color: var(--theme-color-max-contrast);
   }
 }

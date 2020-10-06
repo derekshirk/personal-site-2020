@@ -60,6 +60,7 @@ a {
   color: var(--theme-color-accent-primary);
   padding-bottom: .03em;
   text-decoration: underline;
+  text-decoration-color: var(--theme-color-text);
   transition: border-color 100ms ease, color 100ms ease;
 }
 
