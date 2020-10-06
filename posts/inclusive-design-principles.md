@@ -1,6 +1,6 @@
 ---
 title: Inclusive design principles
-summary: An excellent resource for anyone interested in desinging more inclusive experiences. 
+summary: An excellent resource for anyone interested in designing more inclusive experiences. 
 date: 2020-10-05
 link: https://inclusivedesignprinciples.org/
 link_title: View site
