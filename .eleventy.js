@@ -22,9 +22,6 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify CSS
-  // @TODO
-  // 1. Consider PostCSS
-  // 2. Consider Autoprefixer
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
@@ -52,6 +49,13 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
+  // only content in the `posts/` directory
+  eleventyConfig.addCollection("posts", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.inputPath.match(/^\.\/posts\//) !== null;
+    });
+  });
+    
   // only content in the `books/` directory
   eleventyConfig.addCollection("books", function(collection) {
     return collection.getAllSorted().filter(function(item) {
@@ -59,23 +63,23 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
-    });
-  });
-
   // only content in the `projects/` directory
-  eleventyConfig.addCollection("projects", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/projects\//) !== null;
-    });
-  });
+  // eleventyConfig.addCollection("projects", function(collection) {
+  //   return collection.getAllSorted().filter(function(item) {
+  //     return item.inputPath.match(/^\.\/projects\//) !== null;
+  //   });
+  // });
 
   // Get only content that matches a tag
-  eleventyConfig.addCollection("sideProjects", function(collection) {
-    return collection.getFilteredByTag("side-project");
+  // eleventyConfig.addCollection("sideProjects", function(collection) {
+  //   return collection.getFilteredByTag("side-project");
+  // });
+
+  // only content in the `testimonials/` directory
+  eleventyConfig.addCollection("testimonials", function(collection) {
+    return collection.getAllSorted().filter(function(item) {
+      return item.inputPath.match(/^\.\/testimonials\//) !== null;
+    });
   });
 
   // Get only content that matches a tag
@@ -98,6 +102,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/fonts");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy("_includes/svg/");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
