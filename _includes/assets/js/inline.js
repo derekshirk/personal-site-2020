@@ -17,6 +17,11 @@ document.documentElement.style.setProperty(
   "--theme-color-accent-secondary", localStorage.getItem("userColorAccentSecondary")
 );
 
+// Grab theme tertiary accent color from localStorage and use it (if it exists).
+document.documentElement.style.setProperty(
+  "--theme-color-accent-tertiary", localStorage.getItem("userColorAccentTertiary")
+);
+
 // Grab theme text color from localStorage and use it (if it exists).
 document.documentElement.style.setProperty(
   "--theme-color-text", localStorage.getItem("userTextColor")
@@ -84,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function() {
     item.addEventListener('click', (e) => {
       const color = e.target.getAttribute('data-color');
       const colorAccentPrimary = e.target.getAttribute('data-color-accent-primary');
-      const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary')
+      const colorAccentSecondary = e.target.getAttribute('data-color-accent-secondary');
+      const colorAccentTertiary = e.target.getAttribute('data-color-accent-tertiary')
       const colorBackground = e.target.getAttribute('data-color-background');
       const colorMaxContrast = e.target.getAttribute('data-color-max-contrast');
       const themeFavicon = e.target.getAttribute('data-favicon');
@@ -103,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
       handleThemeUpdate({
         '--theme-color-accent-primary': colorAccentPrimary,
         '--theme-color-accent-secondary': colorAccentSecondary,
+        '--theme-color-accent-tertiary': colorAccentTertiary,
         '--theme-color-background': colorBackground,
         '--theme-color-max-contrast': colorMaxContrast,
         '--theme-color-text': color,
@@ -116,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem("userTextColor", color);
       localStorage.setItem("userColorAccentPrimary", colorAccentPrimary);
       localStorage.setItem("userColorAccentSecondary", colorAccentSecondary);
+      localStorage.setItem("userColorAccentTertiary", colorAccentTertiary);
       localStorage.setItem("userColorMaxContrast", colorMaxContrast);
       localStorage.setItem("userThemeFavicon", themeFavicon);
       localStorage.setItem("userThemePreference", theme);
@@ -125,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
       //   color,
       //   colorAccentPrimary,
       //   colorAccentSecondary,
+      //   colorAccentTertiary,
       //   colorBackground,
       //   colorMaxContrast,
       //   themeFavicon,

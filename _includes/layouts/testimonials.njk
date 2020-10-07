@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+section: testimonials
+permalink: /testimonials/index.html
+---
+
+<div class="Container ContainerProse--extra u-padTop1 u-md-padTop3">
+  
+  <section class="Testimonial-wrapper u-lg-padTop6 u-spaceItems">
+    <header>
+      <h1 class="u-textGrow6">{{ title }}</h1>
+    </header>
+    
+    <div class="u-textGrow1 u-staggerItems02 u-spaceTop6">
+      {% set testimonials = collections.testimonials %}
+      <ul class="u-listReset u-spaceItems6">
+      {% for testimonial in testimonials | reverse %}
+        <li class="Testimonial">
+          {{ testimonial.templateContent | safe }}
+          <div class="Testimonial-meta">
+            <img
+              class="Testimonial-profilePhoto"
+              src="{{ testimonial.data.photo }}" 
+              alt="{{ testimonial.data.title }} profile photo."
+            >
+            <div class="Testimonial-human">
+              <div class="Testimonial-name">
+                {{ testimonial.data.name }}
+              </div>
+              <div class="Testimonial-job u-textShrink1">
+                {{ testimonial.data.job_title}}
+              </div>
+            </div>
+          </div>
+          <div class="Testimonial-embellishment">
+            {% include "_includes/svg/icon-quote.svg" %}
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+
+  </section>
+</div>
