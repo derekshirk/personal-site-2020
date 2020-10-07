@@ -33,7 +33,7 @@ document.documentElement.style.setProperty(
 );
 
 document.addEventListener("DOMContentLoaded", function() {
-  console.log('Available for hire');
+  console.log('Available for hire: derekshirk@gmail.com');
 
   const whale = document.querySelector('.Illustration-whale');
   if (whale) {
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function() {
       lightModeBtn.classList.add('is-active');
     }
     else {
-      lightModeBtn.classList.add('is-active');
+      darkModeBtn.classList.add('is-active');
     }
   }
   // If user preference is "light mode"
