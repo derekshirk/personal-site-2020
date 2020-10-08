@@ -10,6 +10,27 @@
   width: 100%;
 }
 
+@media (--md-viewport) {
+  .Container--wide {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media (--lg-viewport) {
+  .Container--wide {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+@media (--xl-viewport) {
+  .Container--wide {
+    max-width: 72vw;
+    margin: 0 auto;
+  }
+}
+
 .ContainerProse {
   margin: 0 auto;
   max-width: 50rem;
