@@ -8,6 +8,6 @@ tags:
   - testimonial
 ---
 
-Derek is a talented designer and strategic problem solver. I enjoyed working with him at Cloud Four on various front-end and design system projects and was consistently impressed by the quality and creativity of his output. Derek consistently produces effective and inclusive interfaces that solve complex problems that prioritize user needs. 
+I’ve partnered with Derek on multiple design and UX projects. I’ve always been impressed by the quality of his work, his broad knowledge in both design and development, and his excellent communication skills. 
 
-Besides being well-versed in sketching, prototyping, and designing in the browser, he is also a talented front-end developer and a masterful communicator. I would recommend Derek to anyone looking to fill a front-end design or strategic role.
+Derek’s design decisions command great respect, but he is also an excellent listener and ready to adjust his visions to meet client needs. I would not hesitate to enlist Derek as a UX strategist or designer on any project.
