@@ -9,9 +9,14 @@ section: 404
     <div class="Grid Grid--homeHero">
       <div class="u-spaceTop u-md-spaceTopNone u-flex u-flexAlignItemsCenter u-flexJustifyCenter">
         <div class="Banner Banner--simple">
+          <h1 class="Banner-label">{{ banner_label }}</h1>
           <h2 class="Banner-title">
-           {{ layoutContent | striptags(true) | safe }}
+            {{ banner_title }}
+           {# {{ layoutContent | striptags(true) | safe }} #}
           </h2>
+          <div class="Banner-subtitle u-spaceTop">
+            {{ banner_subtitle }}
+          </div>
           <span class="u-flex">
             <a class="theme-button u-spaceTop6" href="/">
               Return home
