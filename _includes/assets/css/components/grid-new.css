@@ -5,6 +5,12 @@
   grid-template-columns: repeat(12, [col] 1fr [col]);
 }
 
+@media (--lg-viewport) {
+  .Grid--gapLarge {
+    gap: 4vw;
+  }
+}
+
 @media screen and (min-width: 200px) and (max-width: 599px) {
   .grid-quarter\@xs {
     grid-column: span 3;
