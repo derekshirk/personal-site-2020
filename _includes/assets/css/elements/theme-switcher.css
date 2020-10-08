@@ -26,9 +26,11 @@
   padding: 0;
   width: var(--theme-switcher-size);
   display: none;
+  transition: border-color 100ms ease, color 100ms ease;
 
   svg {
     pointer-events: none;
+    transition: fill 100ms ease;
   }
   
 
@@ -36,9 +38,10 @@
   &:hover  {
     outline: 0;
     border: var(--border-width-md) solid var(--theme-color-accent-primary);
-    svg path {
+    color: var(--theme-color-accent-primary);
+    /* svg path {
       fill: var(--theme-color-accent-primary);
-    }
+    } */
   }
   &.is-active {
     display: flex;

@@ -16,6 +16,7 @@
   --color-mint: #3ac7a7;
   --color-turkey: #fff0eb;
   --color-white: white;
+  --color-white-alt: #fbfbfb;
   --color-pink: #ff6393;
   --color-green: #bbe187;
   --color-silver: #f3f3f3;
@@ -32,7 +33,7 @@
   --theme-color-background: var(--color-cool-blue);
   --theme-color-accent-primary: var(--color-purple);
   --theme-color-accent-secondary: var(--color-blue-gray);
-  --theme-color-accent-tertiary: var(--color-white);
+  --theme-color-accent-tertiary: var(--color-white-alt);
   --theme-color-text: var(--color-gray-666);
   --theme-color-max-contrast: var(--color-black);
 }
