@@ -1,17 +1,17 @@
 ---
 layout: layouts/now.njk
 title: What I'm Doing Now
-date: 2020-10-05
+date: 2020-11-05
 permalink: /now/index.html
 ---
 
-- Looking for a new job 
+- Designing with Figma
+- Organizing my life with [Notion](https://notion.so)
 - Eating plants
-- Running
-- Reading books about running and food
-- Tinkering on this website as much as I can
-- Keeping our two new kittens alive and happy while doing my best to teach them not to scratch at our furniture. I'd say, I'm doing a good job at the first two. 
-- After 8 years of having an empty [Dribbble account](https://dribbble.com/derekshirk), I'm working on improving my Dribbble game.
+- Running (in the morning for a change)
+- Cleaning out my closet
+- Trying to stretch more
+- Playing Ghost of Tsushima but not as often as I'd like
 
 <div class="u-spaceTop6">
 
