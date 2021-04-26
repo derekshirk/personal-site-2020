@@ -27,7 +27,7 @@
     "eleventy-plugin-svg-contents": "0.7.0",
     "luxon": "1.25.0",
     "markdown-it": "12.0.2",
-    "markdown-it-anchor": "6.0.0",
+    "markdown-it-anchor": "7.1.0",
     "stylelint": "13.7.2",
     "stylelint-config-cloudfour-suit": "3.0.0"
   },
