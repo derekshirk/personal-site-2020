@@ -29,10 +29,10 @@
     "markdown-it": "12.0.2",
     "markdown-it-anchor": "6.0.0",
     "stylelint": "13.7.2",
-    "stylelint-config-cloudfour-suit": "3.0.0"
+    "stylelint-config-cloudfour-suit": "5.0.1"
   },
   "dependencies": {
-    "postcss-mixins": "6.2.3",
+    "postcss-mixins": "7.0.0",
     "autoprefixer": "10.0.1",
     "clean-css": "4.2.3",
     "cssnano": "4.1.10",
