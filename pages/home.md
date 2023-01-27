@@ -6,4 +6,5 @@ permalink: /
 navtitle: Home
 ---
 
-Browse past [projects](/designs) and [testimonials](/testimonials), check out my [blog](/writes), or see what I've been [reading](/reads).
+Currently working as a Principal Product Designer at Driveway. 
+<!-- Browse past [projects](/designs) and [testimonials](/testimonials), check out my [blog](/writes), or see what I've been [reading](/reads). -->
