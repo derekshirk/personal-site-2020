@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "postcss-mixins": "6.2.3",
-    "autoprefixer": "10.0.1",
+    "autoprefixer": "10.4.19",
     "clean-css": "4.2.3",
     "cssnano": "4.1.10",
     "html-minifier": "4.0.0",
